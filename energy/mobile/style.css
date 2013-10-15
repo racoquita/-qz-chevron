@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a img {
+  border: none;
+}
+img {
+  width: 320px;
+  height: 150px;
+}

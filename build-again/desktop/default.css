@@ -1,0 +1,17 @@
+body
+{
+background-image:		url("bg.jpg");
+background-repeat: 		no-repeat;
+background-attachment: 	scroll;
+background-position: 	top center;
+margin:0;
+padding:0;
+}
+
+.wrapper
+{
+width:					720px;
+margin:					auto;
+position:				relative;
+}
+

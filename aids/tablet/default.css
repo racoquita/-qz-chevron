@@ -1,0 +1,84 @@
+body
+{
+background-image:		url("bg.jpg");
+background-repeat: 		no-repeat;
+background-attachment: 	scroll;
+background-position: 	top center;
+margin:0;
+padding:0;
+}
+
+.topwrapper
+{
+width:					480px;
+margin:					auto;
+position:				relative;
+}
+
+.middlewrapper
+{
+width:					480px;
+margin:					auto;
+position:				relative;
+}
+
+.bottomwrapper
+{
+width:					480px;
+margin:					auto;
+position:				relative;
+}
+
+#slider li
+{ 
+margin:				0;
+padding:			0;
+width: 				480px;
+height:				323px;
+overflow:			hidden; 
+}
+
+.graphic, #prevBtn, #nextBtn, #slider1prev, #slider1next
+{
+margin:				0;
+padding:			0;
+display:			block;
+overflow:			hidden;
+text-indent:		-8000px;
+}
+
+/* Easy Slider */
+
+#slider ul, #slider li
+{
+margin:				0;
+padding:			0;
+list-style:			none;
+}
+		
+#prevBtn, #nextBtn, #slider1next, #slider1prev
+{ 
+display:			block;
+position:			absolute;
+left:				0px;
+top:				70px;
+z-index:			2;
+}
+		
+#nextBtn, #slider1next
+{ 
+left:				447px;
+}
+		
+#prevBtn a, #nextBtn a, #slider1next a, #slider1prev a
+{  
+display:			block;
+width:				33px;
+height:				73px;
+background:			url('previous.jpg') no-repeat 0 0;	
+}
+		
+#nextBtn a, #slider1next a
+{ 
+background:			url('next.jpg') no-repeat 0 0;	
+}
