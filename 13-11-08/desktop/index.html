@@ -90,7 +90,7 @@
 		var slidePos = 0;
 		var leftPos = -150;
 		var rightPos = 1250;
-		var startPt = 197;
+		var startPt = -3;
 		var frame2Done = false;
 		var frame3Done = false;
 		var frame4Done = false;
@@ -109,10 +109,10 @@
 			if(slidePos==3){ TweenLite.set(bubble3, {visibility:'hidden'}); }
 		}
 		function ctaRolled(){
-			TweenLite.to(ctaarrow, .3, {left:526});
+			TweenLite.to(ctaarrow, .3, {left:326});
 		}
 		function ctaOff(){
-			TweenLite.to(ctaarrow, .3, {left:520});
+			TweenLite.to(ctaarrow, .3, {left:320});
 		}
 		function onInit(){
 			var t1 = document.getElementById("txt1");
@@ -165,11 +165,10 @@
 		function checkAnimation(){
 			if(slidePos==0){
 				TweenLite.set(infobtn, {visibility:'hidden'});
-				TweenLite.set(reddot, {left:503});
+				TweenLite.set(reddot, {left:303});
 			}
-
 			if(slidePos==1){
-				TweenLite.set(reddot, {left:521});
+				TweenLite.set(reddot, {left:321});
 				TweenLite.set(infobtn, {visibility:'visible'});
 				if(!frame2Done){
 					frame2Done = true;
@@ -188,7 +187,7 @@
 			}
 			if(slidePos==2){
 				TweenLite.set(infobtn, {visibility:'visible'});
-				TweenLite.set(reddot, {left:538});
+				TweenLite.set(reddot, {left:338});
 				if(!frame3Done){
 					frame3Done = true;
 					TweenLite.set(f3people, {scaleX:0, scaleY:0, opacity:0});
@@ -199,7 +198,7 @@
 			}
 			if(slidePos==3){
 				TweenLite.set(infobtn, {visibility:'visible'});
-				TweenLite.set(reddot, {left:555});
+				TweenLite.set(reddot, {left:355});
 				TweenLite.set(cta, {visibility:'hidden'});
 				TweenLite.set(ctaarrow, {visibility:'hidden'});
 				if(!frame4Done){
@@ -216,7 +215,7 @@
 			}
 			if(slidePos==4){
 				TweenLite.set(infobtn, {visibility:'hidden'});
-				TweenLite.set(reddot, {left:572});
+				TweenLite.set(reddot, {left:372});
 				TweenLite.set(ctaarrow, {visibility:'visible', opacity:0});
 				TweenLite.set(cta, {visibility:'visible', opacity:0});
 				TweenLite.to(cta, .4, {opacity:1, delay:.4, ease:Cubic.easeIn});

@@ -66,19 +66,22 @@ a.fill-div {
 #base-port{
 	overflow:hidden;
 	position:relative;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	padding:0;
 	border:0;
-	width:1100px;
+	width:100%;
+	min-width: 700px;
+	max-width: 1100px;
 	height:480px;
+	background: url('http://ads.qz.com/sponsors/chevron/13-11-08/desktop/imgs/paper.jpg') no-repeat scroll top left;
 }
 #container{
 	overflow:hidden;
-	position:absolute;
+	position:relative;
 	margin: 0 auto;
 	padding:0;
 	border:0;
-	width:1100px;
+	width:700px;
 	height:480px;
 }
 #bgContainer{ 
@@ -105,7 +108,7 @@ a.fill-div {
 	width: 15px;
 	height: 13px;
 	top:266px;
-	left:520px;
+	left:320px;
 	visibility:hidden;
 }
 #cta {
@@ -114,7 +117,7 @@ a.fill-div {
 	width: 260px;
 	height: 15px;
 	top:265px;
-	left:256px;
+	left:56px;
 	visibility:hidden;
 }
 #infobtn {
@@ -123,7 +126,7 @@ a.fill-div {
 	width: 29px;
 	height: 29px;
 	top:425px;
-	left:212px;
+	left:12px;
 	visibility:hidden;
 }
 #bubble1 {
@@ -132,7 +135,7 @@ a.fill-div {
 	width: 627px;
 	height: 215px;
 	top:220px;
-	left:188px;
+	left:-12px;
 	visibility:hidden;
 }
 #bubble2 {
@@ -141,7 +144,7 @@ a.fill-div {
 	width: 627px;
 	height: 215px;
 	top:220px;
-	left:188px;
+	left:-12px;
 	visibility:hidden;
 }
 #bubble3 {
@@ -150,13 +153,13 @@ a.fill-div {
 	width: 627px;
 	height: 285px;
 	top:150px;
-	left:188px;
+	left:-12px;
 	visibility:hidden;
 }
 #paperBg {
-	background: url('http://ads.qz.com/sponsors/chevron/13-11-08/desktop/imgs/paper.jpg') no-repeat scroll top left;
+	/*background: url('http://ads.qz.com/sponsors/chevron/13-11-08/desktop/imgs/paper.jpg') no-repeat scroll top left;
 	width: 1100px;
-	height: 480px;
+	height: 480px;*/
 }
 #slide {
 	position:absolute;
@@ -165,7 +168,7 @@ a.fill-div {
 }
 #slide1 {
 	position:absolute;
-	width: 800px;
+	width: 700px;
 	height: 480px;
 }
 #txt1 {
@@ -174,7 +177,7 @@ a.fill-div {
 	width: 535px;
 	height: 125px;
 	top:150px;
-	left:210px;
+	left:10px;
 	
 }
 #txt1b {
@@ -183,11 +186,11 @@ a.fill-div {
 	width: 408px;
 	height: 38px;
 	top:290px;
-	left:210px;
+	left:10px;
 }
 #slide2 {
 	position:absolute;
-	width: 800px;
+	width: 700px;
 	height: 480px;
 	left:1200px;
 }
@@ -197,7 +200,7 @@ a.fill-div {
 	width: 597px;
 	height: 28px;
 	top:30px;
-	left:215px;
+	left:15px;
 }
 #f2bigman {
 	position:absolute;
@@ -205,7 +208,7 @@ a.fill-div {
 	width: 185px;
 	height: 217px;
 	top:130px;
-	left:590px;
+	left:390px;
 }
 #txt2b {
 	position:absolute;
@@ -213,7 +216,7 @@ a.fill-div {
 	width: 291px;
 	height: 120px;
 	top:170px;
-	left:280px;
+	left:80px;
 }
 #f2lines {
 	position:absolute;
@@ -221,7 +224,7 @@ a.fill-div {
 	width: 185px;
 	height: 235px;
 	top:113px;
-	left:590px;
+	left:390px;
 }
 #f2smallman1 {
 	position:absolute;
@@ -229,7 +232,7 @@ a.fill-div {
 	width: 33px;
 	height: 47px;
 	top:95px;
-	left:555px;
+	left:355px;
 }
 #f2smallman2{
 	position:absolute;
@@ -237,7 +240,7 @@ a.fill-div {
 	width: 29px;
 	height: 48px;
 	top:92px;
-	left:748px;
+	left:548px;
 }
 #f2smallman3{
 	position:absolute;
@@ -245,11 +248,11 @@ a.fill-div {
 	width: 31px;
 	height: 52px;
 	top:325px;
-	left:775px;
+	left:575px;
 }
 #slide3 {
 	position:absolute;
-	width: 800px;
+	width: 700px;
 	height: 480px;
 	left:2400px;
 }
@@ -259,7 +262,7 @@ a.fill-div {
 	width: 483px;
 	height: 64px;
 	top:30px;
-	left:218px;
+	left:18px;
 }
 #f3map {
 	position:absolute;
@@ -267,7 +270,7 @@ a.fill-div {
 	width: 502px;
 	height: 249px;
 	top:145px;
-	left:344px;
+	left:144px;
 }
 #f3circle {
 	position:absolute;
@@ -275,7 +278,7 @@ a.fill-div {
 	width: 152px;
 	height: 152px;
 	top:124px;
-	left:278px;
+	left:78px;
 }
 #f3lines {
 	position:absolute;
@@ -283,7 +286,7 @@ a.fill-div {
 	width: 309px;
 	height: 142px;
 	top:166px;
-	left:428px;
+	left:228px;
 }
 #f3people {
 	position:absolute;
@@ -291,11 +294,11 @@ a.fill-div {
 	width: 309px;
 	height: 224px;
 	top:146px;
-	left:462px;
+	left:262px;
 }
 #slide4 {
 	position:absolute;
-	width: 800px;
+	width: 700px;
 	height: 480px;
 	left:3600px;
 }
@@ -305,7 +308,7 @@ a.fill-div {
 	width: 545px;
 	height: 64px;
 	top:30px;
-	left:218px;
+	left:18px;
 }
 #txt4b {
 	position:absolute;
@@ -313,7 +316,7 @@ a.fill-div {
 	width: 586px;
 	height: 16px;
 	top:145px;
-	left:260px;
+	left:60px;
 }
 #f42012 {
 	position:absolute;
@@ -321,7 +324,7 @@ a.fill-div {
 	width: 45px;
 	height: 17px;
 	top:230px;
-	left:278px;
+	left:78px;
 }
 #f42020 {
 	position:absolute;
@@ -329,7 +332,7 @@ a.fill-div {
 	width: 49px;
 	height: 17px;
 	top:292px;
-	left:278px;
+	left:78px;
 }
 #f4bartxt1 {
 	position:absolute;
@@ -337,7 +340,7 @@ a.fill-div {
 	width: 94px;
 	height: 29px;
 	top:220px;
-	left:360px;
+	left:160px;
 }
 #f4bartxt2 {
 	position:absolute;
@@ -345,7 +348,7 @@ a.fill-div {
 	width: 172px;
 	height: 29px;
 	top:282px;
-	left:360px;
+	left:160px;
 }
 #f4bar1 {
 	position:absolute;
@@ -353,7 +356,7 @@ a.fill-div {
 	width: 142px;
 	height: 43px;
 	top:215px;
-	left:340px;
+	left:140px;
 }
 #f4bar2 {
 	position:absolute;
@@ -361,7 +364,7 @@ a.fill-div {
 	width: 280px;
 	height: 43px;
 	top:275px;
-	left:340px;
+	left:140px;
 }
 #f4circle {
 	position:absolute;
@@ -369,11 +372,11 @@ a.fill-div {
 	width: 151px;
 	height: 152px;
 	top:195px;
-	left:660px;
+	left:460px;
 }
 #slide5 {
 	position:absolute;
-	width: 800px;
+	width: 700px;
 	height: 480px;
 	left:4800px;
 }
@@ -383,7 +386,7 @@ a.fill-div {
 	width: 584px;
 	height: 29px;
 	top:184px;
-	left:256px;
+	left:56px;
 }
 #txt5b {
 	position:absolute;
@@ -391,7 +394,7 @@ a.fill-div {
 	width: 537px;
 	height: 22px;
 	top:224px;
-	left:256px;
+	left:56px;
 }
 #reddot {
 	position:absolute;
@@ -399,7 +402,7 @@ a.fill-div {
 	width: 12px;
 	height: 12px;
 	top:438px;
-	left:503px;
+	left:303px;
 }
 #larrow {
 	position:absolute;
@@ -407,7 +410,7 @@ a.fill-div {
 	width: 26px;
 	height: 37px;
 	top:220px;
-	left:200px;
+	left:0px;
 	visibility:hidden;
 }
 #rarrow {
@@ -416,7 +419,7 @@ a.fill-div {
 	width: 26px;
 	height: 37px;
 	top:220px;
-	left:872px;
+	left:672px;
 }
 #nav {
 	position:absolute;
@@ -424,7 +427,7 @@ a.fill-div {
 	width: 81px;
 	height: 12px;
 	top:438px;
-	left:503px;
+	left:303px;
 }
 #logo {
 	position:absolute;
@@ -432,7 +435,7 @@ a.fill-div {
 	width: 73px;
 	height: 69px;
 	top:381px;
-	left:818px;
+	left:618px;
 }
 /* ==========================================================================
    Helper classes
