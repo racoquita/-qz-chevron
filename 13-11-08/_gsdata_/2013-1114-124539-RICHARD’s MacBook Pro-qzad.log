@@ -1,0 +1,25 @@
+2013-11-14 12:45:39: -- qzad: ANALYSIS started by User on 'RICHARD’s MacBook Pro' (GoodSync 4.3.3.3)
+2013-11-14 12:45:39: /Applications/MAMP/htdocs/quartz/chevron/13-11-08 =PropDels=> /Applications/MAMP/htdocs/quartz/qzads/sponsors/chevron/13-11-08, CopyCreateTime
+2013-11-14 12:45:39: L: State file does not exist: /Applications/MAMP/htdocs/quartz/chevron/13-11-08/_gsdata_/_file_state._gs
+2013-11-14 12:45:39: L: No State File found, New State will be built
+2013-11-14 12:45:39: L: Files: 479 (excluded 26). Folders: 83 (excluded 0). /dev/disk0s2 HFS, Free: 389.6 GB, Total: 604.4 GB
+2013-11-14 12:45:39: R: State file does not exist: /Applications/MAMP/htdocs/quartz/qzads/sponsors/chevron/13-11-08/_gsdata_/_file_state._gs
+2013-11-14 12:45:39: R: No State File found, New State will be built
+2013-11-14 12:45:39: R: Files: 479 (excluded 26). Folders: 82 (excluded 0). /dev/disk0s2 HFS, Free: 389.6 GB, Total: 604.4 GB
+2013-11-14 12:45:39: /desktop/css/style.min.css: Warning: Older file to replace Newer file
+2013-11-14 12:45:39: /tablet/index.html: Warning: Older file to replace Newer file
+2013-11-14 12:45:39: Changes: 5, Conflicts: 0, CopyTime: 0, CopyState: 0/557, Errors: 0
+2013-11-14 12:45:39: Left to Right: Copy File: 5 
+2013-11-14 12:45:39: -- Analysis Completed. Time 00:00:00, Speed: Many files/s
+2013-11-14 12:45:39: 
+2013-11-14 12:45:42: New _gsdata_ folder(s) created, so rescan all job folders for their ghosts
+2013-11-14 12:45:42: == qzad: SYNC started by User on 'RICHARD’s MacBook Pro'
+2013-11-14 12:45:42: /Applications/MAMP/htdocs/quartz/chevron/13-11-08 =PropDels=> /Applications/MAMP/htdocs/quartz/qzads/sponsors/chevron/13-11-08, CopyCreateTime
+2013-11-14 12:45:42: Create Folder '/Applications/MAMP/htdocs/quartz/qzads/sponsors/chevron/13-11-08/ready'
+2013-11-14 12:45:42: Copy Over '/Applications/MAMP/htdocs/quartz/chevron/13-11-08/desktop/css/style.css' -> '/Applications/MAMP/htdocs/quartz/qzads/sponsors/chevron/13-11-08/desktop/css/style.css'
+2013-11-14 12:45:42: Copy Over '/Applications/MAMP/htdocs/quartz/chevron/13-11-08/desktop/css/style.min.css' -> '/Applications/MAMP/htdocs/quartz/qzads/sponsors/chevron/13-11-08/desktop/css/style.min.css'
+2013-11-14 12:45:42: Copy Over '/Applications/MAMP/htdocs/quartz/chevron/13-11-08/desktop/index.html' -> '/Applications/MAMP/htdocs/quartz/qzads/sponsors/chevron/13-11-08/desktop/index.html'
+2013-11-14 12:45:42: Copy Over '/Applications/MAMP/htdocs/quartz/chevron/13-11-08/tablet/index.html' -> '/Applications/MAMP/htdocs/quartz/qzads/sponsors/chevron/13-11-08/tablet/index.html'
+2013-11-14 12:45:42: Items Synced OK: 562, Errors: 0
+2013-11-14 12:45:42: == Sync Completed. Time: 00:00:00, Speed: 
+2013-11-14 12:45:42: 

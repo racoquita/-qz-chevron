@@ -90,7 +90,7 @@
 		var slidePos = 0;
 		var leftPos = -150;
 		var rightPos = 1250;
-		var startPt = -3;
+		var startPt = 197;
 		var frame2Done = false;
 		var frame3Done = false;
 		var frame4Done = false;
@@ -173,11 +173,11 @@
 				if(!frame2Done){
 					frame2Done = true;
 					var f2bigman = document.getElementById("f2bigman");
-					TweenLite.set(f2bigman, {scaleX:0, scaleY:0, opacity:0});
-					TweenLite.set(f2smallman1, {scaleX:0, scaleY:0, opacity:0});
-					TweenLite.set(f2smallman2, {scaleX:0, scaleY:0, opacity:0});
-					TweenLite.set(f2smallman3, {scaleX:0, scaleY:0, opacity:0});
-					TweenLite.set(f2lines, {scaleX:0, scaleY:0, opacity:0});
+					TweenLite.set(f2bigman, {scaleX:0.1, scaleY:0.1, opacity:0});
+					TweenLite.set(f2smallman1, {scaleX:0.1, scaleY:0.1, opacity:0});
+					TweenLite.set(f2smallman2, {scaleX:0.1, scaleY:0.1, opacity:0});
+					TweenLite.set(f2smallman3, {scaleX:0.1, scaleY:0.1, opacity:0});
+					TweenLite.set(f2lines, {scaleX:0.1, scaleY:0.1, opacity:0});
 					TweenLite.to(f2bigman, .4, {delay:.4, scaleX:1, scaleY:1, opacity:1, ease:Cubic.easeIn});
 					TweenLite.to(f2lines, .4, {delay:.6, scaleX:1, scaleY:1, opacity:1, ease:Cubic.easeIn});
 					TweenLite.to(f2smallman1, .4, {delay:.8, scaleX:1, scaleY:1, opacity:1, ease:Cubic.easeIn});
@@ -190,8 +190,8 @@
 				TweenLite.set(reddot, {left:338});
 				if(!frame3Done){
 					frame3Done = true;
-					TweenLite.set(f3people, {scaleX:0, scaleY:0, opacity:0});
-					TweenLite.set(f3lines, {scaleX:0, scaleY:0, opacity:0, transformOrigin:"left 100px"});
+					TweenLite.set(f3people, {scaleX:0.1, scaleY:0.1, opacity:0});
+					TweenLite.set(f3lines, {scaleX:0.1, scaleY:0.1, opacity:0, transformOrigin:"left 100px"});
 					TweenLite.to(f3lines, .6, {delay:.4, scaleX:1, scaleY:1, opacity:1, ease:Cubic.easeIn});
 					TweenLite.to(f3people, .6, {delay:.8, scaleX:1, scaleY:1, opacity:1, ease:Cubic.easeIn});
 				}
@@ -205,8 +205,8 @@
 					frame4Done = true;
 					TweenLite.set(f4bartxt1, {opacity:0});
 					TweenLite.set(f4bartxt2, {opacity:0});
-					TweenLite.set(f4bar1, {scaleX:0, opacity:0, transformOrigin:"left 540px"});
-					TweenLite.set(f4bar2, {scaleX:0, opacity:0, transformOrigin:"left 540px"});
+					TweenLite.set(f4bar1, {scaleX:0.1, opacity:0, transformOrigin:"left 540px"});
+					TweenLite.set(f4bar2, {scaleX:0.1, opacity:0, transformOrigin:"left 540px"});
 					TweenLite.to(f4bar1, .5, {delay:.4, scaleX:1, opacity:1, ease:Cubic.easeIn});
 					TweenLite.to(f4bar2, .5, {delay:.8, scaleX:1, opacity:1, ease:Cubic.easeIn});
 					TweenLite.to(f4bartxt1, .5, {delay:.8, opacity:1, ease:Cubic.easeIn});
