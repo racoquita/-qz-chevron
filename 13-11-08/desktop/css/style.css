@@ -178,7 +178,7 @@ a.fill-div {
 	height: 125px;
 	top:150px;
 	left:10px;
-	
+	opacity: 0;
 }
 #txt1b {
 	position:absolute;
@@ -187,6 +187,7 @@ a.fill-div {
 	height: 38px;
 	top:290px;
 	left:10px;
+	opacity: 0;
 }
 #slide2 {
 	position:absolute;
@@ -403,6 +404,7 @@ a.fill-div {
 	height: 12px;
 	top:438px;
 	left:303px;
+	visibility: hidden;
 }
 #larrow {
 	position:absolute;
@@ -420,6 +422,7 @@ a.fill-div {
 	height: 37px;
 	top:220px;
 	left:672px;
+	visibility: hidden;
 }
 #nav {
 	position:absolute;
@@ -428,6 +431,7 @@ a.fill-div {
 	height: 12px;
 	top:438px;
 	left:303px;
+	visibility: hidden;
 }
 #logo {
 	position:absolute;

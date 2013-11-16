@@ -1,0 +1,256 @@
+<link rel="stylesheet" type="text/css" href="../desktop/css/style.css">
+<style type="text/css">
+	
+</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1">
+
+<script src="http://ads.qz.com/sponsors/chevron/13-11-08/desktop/js/minified/TweenLite.min.js"></script>
+<script src="http://ads.qz.com/sponsors/chevron/13-11-08/desktop/js/minified/easing/EasePack.min.js"></script>
+<script src="http://ads.qz.com/sponsors/chevron/13-11-08/desktop/js/minified/plugins/CSSPlugin.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+<script id="ix-namer"
+	data-ix-name="Chevron Desktop v3"
+	src="http://ads.qz.com/js/qzad/qzad-1.0.js"
+	type="text/javascript"></script>
+<script src="http://app.qz.com/js/frameMessager/QZIX.js" type="text/javascript"></script>
+<script src="http://app.qz.com/js/frameMessager/frameMessager.js" type="text/javascript"></script>
+
+<div id="qzad">
+	<div id="base-port">
+		<div id="container">
+			<div id="logo"></div>
+			<div id="slide">
+				<div id = "slide1">
+					<div id="txt1"></div>
+					<div id="txt1b"></div>
+				</div>
+				<div id = "slide2">
+					<div id="txt2"></div>
+					<div id="txt2b"></div>
+					<div id="f2lines"></div>
+					<div id="f2bigman"></div>
+					<div id="f2smallman1"></div>
+					<div id="f2smallman2"></div>
+					<div id="f2smallman3"></div>
+				</div>
+				<div id = "slide3">
+					<div id="txt3"></div>
+					<div id="f3map"></div>
+					<div id="f3circle"></div>
+					<div id="f3lines"></div>
+					<div id="f3people"></div>
+				</div>
+				<div id = "slide4">
+					<div id="txt4"></div>
+					<div id="txt4b"></div>
+					<div id="f4bar1"></div>
+					<div id="f4bar2"></div>
+					<div id="f42012"></div>
+					<div id="f42020"></div>
+					<div id="f4bartxt1"></div>
+					<div id="f4bartxt2"></div>
+					<div id="f4circle"></div>
+				</div>
+				<div id = "slide5">
+					<div id="txt5"></div>
+					<div id="txt5b"></div>
+				</div>
+			</div>
+
+			<div id="nav"></div>
+			<div id="paperBg"></div>
+			<div id="clickBg"></div>
+			<div id="reddot"></div>
+			<div id="rarrow">
+				<a href="javascript:moveRight();" class="fill-div"></a>
+			</div>
+			<div id="larrow">
+				<a href="javascript:moveLeft();" class="fill-div"></a>
+			</div>
+			<div id="bubble1"></div>
+			<div id="bubble2"></div>
+			<div id="bubble3"></div>
+			<div id="infobtn" onmouseover="infoRolled();" onmouseout="infoOff();"></div>
+			<div id="ctaarrow"></div>
+			<div id="cta" onmouseover="ctaRolled();" onmouseout="ctaOff();"></div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	var tweens = [];
+	var slideSettled = true;
+	var spd1 = .35;
+	var slidePos = 0;
+	var leftPos = -150;
+	var rightPos = 1250;
+	var startPt = 197;
+	var frame2Done = false;
+	var frame3Done = false;
+	var frame4Done = false;
+	var frame5Done = false;
+
+	$(document).ready(function(){
+		QZAD.init({
+            el: document.getElementById('base-port'), frameHeight: 550,
+            App: { on: function() {startAd()}, off: function() {resetAd()}}
+        });
+	});
+    
+    function startAd() {
+    	onInit();
+    }
+    function resetAd() {
+    	for(var i = 0, length = tweens.length; i < length; i++) {
+    		tweens[i].pause(0);
+	    }
+	    frame2Done = false;
+	    frame3Done = false;
+	    frame4Done = false;
+	    frame5Done = false;
+
+	    $('#slide, #larrow, #rarrow, #nav, #reddot, #infobtn').removeAttr('style');
+
+	    slidePos = 0;
+	    TweenLite.to(slide, 0, {x:0, ease:Cubic.easeIn});
+    }
+   
+	function infoRolled(){
+		if(slidePos==1){ TweenLite.set(bubble1, {visibility:'visible'}); }
+		if(slidePos==2){ TweenLite.set(bubble2, {visibility:'visible'}); }
+		if(slidePos==3){ TweenLite.set(bubble3, {visibility:'visible'}); }
+	}
+	function infoOff(){
+		if(slidePos==1){ TweenLite.set(bubble1, {visibility:'hidden'}); }
+		if(slidePos==2){ TweenLite.set(bubble2, {visibility:'hidden'}); }
+		if(slidePos==3){ TweenLite.set(bubble3, {visibility:'hidden'}); }
+	}
+	function ctaRolled(){
+		tweens.push(TweenLite.to(ctaarrow, .3, {left:326}));
+	}
+	function ctaOff(){
+		tweens.push(TweenLite.to(ctaarrow, .3, {left:320}));
+	}
+	function onInit(){
+		var t1 = document.getElementById("txt1");
+		var t1b = document.getElementById("txt1b");
+		TweenLite.set(t1, {scaleX:3, scaleY:3, opacity:0});
+		TweenLite.set(t1b, {scaleX:3, scaleY:3, opacity:0});
+		animateIn();
+	}
+	function animateIn() {
+		var t1 = document.getElementById("txt1");
+		var t1b = document.getElementById("txt1b");
+		tweens.push(TweenLite.to(t1, .4, {opacity:1, scaleX:1, scaleY:1, ease:Cubic.easeIn}));
+		tweens.push(TweenLite.to(t1b, .4, {delay:.2, opacity:1, scaleX:1, scaleY:1, ease:Cubic.easeIn}));
+
+		TweenLite.set(rarrow, {visibility:'visible'});
+		TweenLite.set(reddot, {visibility:'visible'});
+		TweenLite.set(nav, {visibility:'visible'});
+	}
+	function moveRight(){
+		var larrow = document.getElementById("larrow");
+		var rarrow = document.getElementById("rarrow");
+		var slide = document.getElementById("slide");
+		
+		if(slidePos < 4 && slideSettled){	
+			TweenLite.set(larrow, {visibility:'visible'});
+			slidePos++;
+			checkAnimation();
+			moveSlide();
+		}
+		if(slidePos == 4) {
+			TweenLite.set(rarrow, {visibility:'hidden'});
+		}
+	}
+	function moveLeft(){
+		var larrow = document.getElementById("larrow");
+		var rarrow = document.getElementById("rarrow");
+		var slide = document.getElementById("slide");
+		
+		if(slidePos > 0 && slideSettled){
+			TweenLite.set(rarrow, {visibility:'visible'});
+			slidePos--;
+			checkAnimation();
+			moveSlide();
+		}
+		if(slidePos == 0){
+			TweenLite.set(larrow, {visibility:'hidden'});
+		}
+	}
+	function moveSlide(){
+		var slide = document.getElementById("slide");
+		var slidenum = -1200 * slidePos;
+		tweens.push(TweenLite.to(slide, .4, {x:slidenum, ease:Cubic.easeIn}));
+	}
+	function checkAnimation(){
+		if(slidePos==0){
+			TweenLite.set(infobtn, {visibility:'hidden'});
+			TweenLite.set(reddot, {left:303});
+		}
+		if(slidePos==1){
+			TweenLite.set(reddot, {left:321});
+			TweenLite.set(infobtn, {visibility:'visible'});
+			if(!frame2Done){
+				frame2Done = true;
+				var f2bigman = document.getElementById("f2bigman");
+				TweenLite.set(f2bigman, {scaleX:0.1, scaleY:0.1, opacity:0});
+				TweenLite.set(f2smallman1, {scaleX:0.1, scaleY:0.1, opacity:0});
+				TweenLite.set(f2smallman2, {scaleX:0.1, scaleY:0.1, opacity:0});
+				TweenLite.set(f2smallman3, {scaleX:0.1, scaleY:0.1, opacity:0});
+				TweenLite.set(f2lines, {scaleX:0.1, scaleY:0.1, opacity:0});
+				tweens.push(TweenLite.to(f2bigman, .4, {delay:.4, scaleX:1, scaleY:1, opacity:1, ease:Cubic.easeIn}));
+				tweens.push(TweenLite.to(f2lines, .4, {delay:.6, scaleX:1, scaleY:1, opacity:1, ease:Cubic.easeIn}));
+				tweens.push(TweenLite.to(f2smallman1, .4, {delay:.8, scaleX:1, scaleY:1, opacity:1, ease:Cubic.easeIn}));
+				tweens.push(TweenLite.to(f2smallman2, .4, {delay:1, scaleX:1, scaleY:1, opacity:1, ease:Cubic.easeIn}));
+				tweens.push(TweenLite.to(f2smallman3, .4, {delay:1.2, scaleX:1, scaleY:1, opacity:1, ease:Cubic.easeIn}));
+			}
+		}
+		if(slidePos==2){
+			TweenLite.set(infobtn, {visibility:'visible'});
+			TweenLite.set(reddot, {left:338});
+			if(!frame3Done){
+				frame3Done = true;
+				TweenLite.set(f3people, {scaleX:0.1, scaleY:0.1, opacity:0});
+				TweenLite.set(f3lines, {scaleX:0.1, scaleY:0.1, opacity:0, transformOrigin:"left 100px"});
+				tweens.push(TweenLite.to(f3lines, .6, {delay:.4, scaleX:1, scaleY:1, opacity:1, ease:Cubic.easeIn}));
+				tweens.push(TweenLite.to(f3people, .6, {delay:.8, scaleX:1, scaleY:1, opacity:1, ease:Cubic.easeIn}));
+			}
+		}
+		if(slidePos==3){
+			TweenLite.set(infobtn, {visibility:'visible'});
+			TweenLite.set(reddot, {left:355});
+			TweenLite.set(cta, {visibility:'hidden'});
+			TweenLite.set(ctaarrow, {visibility:'hidden'});
+			if(!frame4Done){
+				frame4Done = true;
+				TweenLite.set(f4bartxt1, {opacity:0});
+				TweenLite.set(f4bartxt2, {opacity:0});
+				TweenLite.set(f4bar1, {scaleX:0.1, opacity:0, transformOrigin:"left 540px"});
+				TweenLite.set(f4bar2, {scaleX:0.1, opacity:0, transformOrigin:"left 540px"});
+				tweens.push(TweenLite.to(f4bar1, .5, {delay:.4, scaleX:1, opacity:1, ease:Cubic.easeIn}));
+				tweens.push(TweenLite.to(f4bar2, .5, {delay:.8, scaleX:1, opacity:1, ease:Cubic.easeIn}));
+				tweens.push(TweenLite.to(f4bartxt1, .5, {delay:.8, opacity:1, ease:Cubic.easeIn}));
+				tweens.push(TweenLite.to(f4bartxt2, .5, {delay:1, opacity:1, ease:Cubic.easeIn}));
+			}
+		}
+		if(slidePos==4){
+			TweenLite.set(infobtn, {visibility:'hidden'});
+			TweenLite.set(reddot, {left:372});
+			TweenLite.set(ctaarrow, {visibility:'visible', opacity:0});
+			TweenLite.set(cta, {visibility:'visible', opacity:0});
+			tweens.push(TweenLite.to(cta, .4, {opacity:1, delay:.4, ease:Cubic.easeIn}));
+			tweens.push(TweenLite.to(ctaarrow, .4, {opacity:1, delay:.4, ease:Cubic.easeIn}));
+			if(!frame5Done){
+				frame5Done = true;
+				TweenLite.set(txt5, {scaleX:3, scaleY:3, opacity:0});
+				TweenLite.set(txt5b, {scaleX:3, scaleY:3, opacity:0});
+				tweens.push(TweenLite.to(txt5, .5, {delay:.4, scaleX:1, scaleY:1, opacity:1, ease:Cubic.easeIn}));
+				tweens.push(TweenLite.to(txt5b, .5, {delay:.6, scaleX:1, scaleY:1, opacity:1, ease:Cubic.easeIn}));
+			}
+		}
+	}
+</script>
+

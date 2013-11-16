@@ -102,27 +102,26 @@
 		var frame4Done = false;
 		var frame5Done = false;
 	
-		!EB.isInitialized()) ? EB.addEventListener(EBG.EventName.EB_INITIALIZED, onInit) : onInit();
+		!EB.isInitialized() ? EB.addEventListener(EBG.EventName.EB_INITIALIZED, onInit) : onInit();
 		
 		function infoRolled(){
 			if(!infoOpen){
-					infoOpen = true;
-					if(slidePos==1){
-						TweenLite.set(bubble1, {visibility:'visible', scaleX:.7, scaleY:.7});
-					}
-					if(slidePos==2){
-						TweenLite.set(bubble2, {visibility:'visible', scaleX:.7, scaleY:.7});
-					}
-					if(slidePos==3){
-						TweenLite.set(bubble3, {visibility:'visible', scaleX:.7, scaleY:.7});
-					}
+				infoOpen = true;
+				if(slidePos==1){
+					TweenLite.set(bubble1, {visibility:'visible', scaleX:.7, scaleY:.7});
+				}
+				if(slidePos==2){
+					TweenLite.set(bubble2, {visibility:'visible', scaleX:.7, scaleY:.7});
+				}
+				if(slidePos==3){
+					TweenLite.set(bubble3, {visibility:'visible', scaleX:.7, scaleY:.7});
+				}
 			}
 			else{
 				infoOff();
 			}
 		
 		}
-		
 		function infoOff(){
 			infoOpen = false;
 			if(slidePos==1){
@@ -135,15 +134,12 @@
 				TweenLite.set(bubble3, {visibility:'hidden'});
 			}
 		}
-		
 		function ctaRolled(){
 			TweenLite.to(ctaarrow, .3, {left:318});
 		}
-		
 		function ctaOff(){
 			TweenLite.to(ctaarrow, .3, {left:312});
 		}
-	
 		function onInit(){
 			var t1 = document.getElementById("txt1");
 			var t1b = document.getElementById("txt1b");
@@ -151,14 +147,12 @@
 			TweenLite.set(t1b, {scaleX:3, scaleY:3, opacity:0});
 			animateIn();
 		}
-		
 		function animateIn() {
 			var t1 = document.getElementById("txt1");
 			var t1b = document.getElementById("txt1b");
 			TweenLite.to(t1, .4, {opacity:1, scaleX:1, scaleY:1, ease:Cubic.easeIn});
 			TweenLite.to(t1b, .4, {delay:.2, opacity:1, scaleX:1, scaleY:1, ease:Cubic.easeIn});
 		}
-		
 		function moveRight(){
 			infoOff();
 			var larrow = document.getElementById("larrow");
@@ -166,7 +160,6 @@
 			var slide = document.getElementById("slide");			
 			
 			if(slidePos < 4 && slideSettled){
-					
 					TweenLite.set(larrow, {visibility:'visible'});
 					slidePos++;
 					checkAnimation();
@@ -268,66 +261,21 @@
 					TweenLite.set(txt5b, {scaleX:3, scaleY:3, opacity:0});
 					TweenLite.to(txt5, .5, {delay:.4, scaleX:1, scaleY:1, opacity:1, ease:Cubic.easeIn});
 					TweenLite.to(txt5b, .5, {delay:.6, scaleX:1, scaleY:1, opacity:1, ease:Cubic.easeIn});
-				}			}
+				}			
+			}
 		}
-		
-		
 	</script>
 	<script type="text/javascript" charset="utf-8">
-		
-	var hammertime = Hammer(document.getElementById("base-port"));
-    console.log(hammertime);
+		var hammertime = Hammer(document.getElementById("base-port"));
 
-    // the whole area
-    hammertime.on("swipeleft", function(ev) {
-		ev.preventDefault();
-        //if(window.console) { console.log(ev); }
-        moveRight ();
-    });
-	hammertime.on("swiperight", function(ev) {
-        //if(window.console) { console.log(ev); }
-		ev.preventDefault();
-        moveLeft();
-    });
-	
-	/*var interval = this.setInterval(checkSize,500);
-	
-	function checkSize(){
-		var random = Math.random()*10;
-		TweenLite.set(container, {left:random})
-		var width = EB._adConfig.width;
-		if(width < 1100){
-			var centerWidth = (width-1100)/2;
-			TweenLite.set(container, {left:random})
-		}
-		else {
-			TweenLite.set(container, {left:0})
-		}
-	}*/
-	
-	/*window.onresize = function(event){
-
-		var w = window,
-		    d = document,
-		    e = d.documentElement,
-		    g = d.getElementsByTagName('body')[0],
-		    width = w.innerWidth || e.clientWidth || g.clientWidth,
-		    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
-		
-			var container = document.getElementById("container");
-			var className = '';
-			if(width < 1100){
-				var centerWidth = (width-1100)/2;
-				TweenLite.set(container, {left:centerWidth})
-			}
-			else {
-				TweenLite.set(container, {left:0})
-			}
-
-	};*/
-
-	//call the function so it happens on page load to get initial classes correct.
-	//window.onresize();
+	    hammertime.on("swipeleft", function(ev) {
+			ev.preventDefault();
+	        moveRight ();
+	    });
+		hammertime.on("swiperight", function(ev) {
+			ev.preventDefault();
+	        moveLeft();
+	    });
 	</script>
 </body>
 </html>

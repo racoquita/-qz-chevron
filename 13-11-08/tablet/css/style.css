@@ -80,6 +80,7 @@ a.fill-div {
 	border:0;
 	width:480px;
 	height:550px;
+	background: url('http://ads.qz.com/sponsors/chevron/13-11-08/tablet/imgs/paper.jpg') no-repeat scroll top left;
 }
 
 #container{
@@ -168,9 +169,9 @@ a.fill-div {
 	visibility:hidden;
 }
 #paperBg {
-	background: url('http://ads.qz.com/sponsors/chevron/13-11-08/tablet/imgs/paper.jpg') no-repeat scroll top left;
+	/*background: url('http://ads.qz.com/sponsors/chevron/13-11-08/tablet/imgs/paper.jpg') no-repeat scroll top left;
 	width: 480px;
-	height: 550px;
+	height: 550px;*/
 }
 
 #guide {
@@ -203,7 +204,7 @@ a.fill-div {
 	height: 197px;
 	top:130px;
 	left:15px;
-	
+	opacity: 0;
 }
 #txt1b {
 	position:absolute;
@@ -212,6 +213,7 @@ a.fill-div {
 	height: 38px;
 	top:354px;
 	left:15px;
+	opacity: 0;
 }
 
 #slide2 {
@@ -435,6 +437,7 @@ a.fill-div {
 	height: 12px;
 	top:530px;
 	left:201px;
+	visibility: hidden;
 }
 
 #larrow {
@@ -453,6 +456,7 @@ a.fill-div {
 	height: 37px;
 	top:248px;
 	left:448px;
+	visibility: hidden;
 }
 #nav {
 	position:absolute;
@@ -461,6 +465,7 @@ a.fill-div {
 	height: 12px;
 	top:530px;
 	left:201px;
+	visibility: hidden;
 }
 #logo {
 	position:absolute;
