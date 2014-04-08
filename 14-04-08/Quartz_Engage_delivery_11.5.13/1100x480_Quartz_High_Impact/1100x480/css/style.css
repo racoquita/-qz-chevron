@@ -1,0 +1,556 @@
+/* Resets ------ */ 
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+	margin:0;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+a.fill-div {
+		display:block;
+	    height: 100%;
+	    width: 100%;
+	    text-decoration: none;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+#base-port{
+	overflow:hidden;
+	position:relative;
+	margin: 0 auto;
+	padding:0;
+	border:0;
+	width:1100px;
+	height:480px;
+}
+
+#container{
+	overflow:hidden;
+	position:absolute;
+	margin: 0 auto;
+	padding:0;
+	border:0;
+	width:1100px;
+	height:480px;
+}
+
+#bgContainer{ 
+		width: 100%; 
+		height: 100%; 
+		display: block;
+		background: #ffffff;
+		opacity:.6;
+		position:absolute;
+		-webkit-transform: translate3d(0,0,0);
+}
+
+#clickBg {
+	position:absolute;
+	width: 100%; 
+	height: 100%;
+	background: #ffffff;
+	opacity:0;
+	display:block;
+	top:0px;
+}
+
+#ctaarrow {
+	position:absolute;
+	background: url('../imgs/cta_arrows.png') no-repeat scroll top left;
+	width: 15px;
+	height: 13px;
+	top:266px;
+	left:520px;
+	visibility:hidden;
+}
+#cta {
+	position:absolute;
+	background: url('../imgs/cta.png') no-repeat scroll top left;
+	width: 260px;
+	height: 15px;
+	top:265px;
+	left:256px;
+	visibility:hidden;
+}
+#infobtn {
+	position:absolute;
+	background: url('../imgs/infobtn.png') no-repeat scroll top left;
+	width: 29px;
+	height: 29px;
+	top:425px;
+	left:212px;
+	visibility:hidden;
+}
+
+#bubble1 {
+	position:absolute;
+	background: url('../imgs/bubble1.png') no-repeat scroll top left;
+	width: 627px;
+	height: 215px;
+	top:220px;
+	left:188px;
+	visibility:hidden;
+}
+#bubble2 {
+	position:absolute;
+	background: url('../imgs/bubble2.png') no-repeat scroll top left;
+	width: 627px;
+	height: 215px;
+	top:220px;
+	left:188px;
+	visibility:hidden;
+}
+#bubble3 {
+	position:absolute;
+	background: url('../imgs/bubble3.png') no-repeat scroll top left;
+	width: 627px;
+	height: 285px;
+	top:150px;
+	left:188px;
+	visibility:hidden;
+}
+#paperBg {
+	background: url('../imgs/paper.jpg') no-repeat scroll top left;
+	width: 1100px;
+	height: 480px;
+}
+
+#slide {
+	position:absolute;
+	width: 6000px;
+	height: 480px;
+}
+
+#slide1 {
+	position:absolute;
+	width: 800px;
+	height: 480px;
+}
+
+#txt1 {
+	position:absolute;
+	background: url('../imgs/txt1.png') no-repeat scroll top left;
+	width: 535px;
+	height: 125px;
+	top:150px;
+	left:210px;
+	
+}
+#txt1b {
+	position:absolute;
+	background: url('../imgs/txt1b.png') no-repeat scroll top left;
+	width: 408px;
+	height: 38px;
+	top:290px;
+	left:210px;
+}
+
+#slide2 {
+	position:absolute;
+	width: 800px;
+	height: 480px;
+	left:1200px;
+}
+
+#txt2 {
+	position:absolute;
+	background: url('../imgs/txt2.png') no-repeat scroll top left;
+	width: 597px;
+	height: 28px;
+	top:30px;
+	left:215px;
+}
+
+#f2bigman {
+	position:absolute;
+	background: url('../imgs/f2_bigman.png') no-repeat scroll top left;
+	width: 185px;
+	height: 217px;
+	top:130px;
+	left:590px;
+}
+#txt2b {
+	position:absolute;
+	background: url('../imgs/txt2b.png') no-repeat scroll top left;
+	width: 291px;
+	height: 120px;
+	top:170px;
+	left:280px;
+}
+#f2lines {
+	position:absolute;
+	background: url('../imgs/f2_lines.png') no-repeat scroll top left;
+	width: 185px;
+	height: 235px;
+	top:113px;
+	left:590px;
+}
+#f2smallman1 {
+	position:absolute;
+	background: url('../imgs/f2_smallman1.png') no-repeat scroll top left;
+	width: 33px;
+	height: 47px;
+	top:95px;
+	left:555px;
+}
+#f2smallman2{
+	position:absolute;
+	background: url('../imgs/f2_smallman2.png') no-repeat scroll top left;
+	width: 29px;
+	height: 48px;
+	top:92px;
+	left:748px;
+}
+#f2smallman3{
+	position:absolute;
+	background: url('../imgs/f2_smallman3.png') no-repeat scroll top left;
+	width: 31px;
+	height: 52px;
+	top:325px;
+	left:775px;
+}
+
+#slide3 {
+	position:absolute;
+	width: 800px;
+	height: 480px;
+	left:2400px;
+}
+#txt3 {
+	position:absolute;
+	background: url('../imgs/txt3.png') no-repeat scroll top left;
+	width: 483px;
+	height: 64px;
+	top:30px;
+	left:218px;
+}
+#f3map {
+	position:absolute;
+	background: url('../imgs/f3_map.png') no-repeat scroll top left;
+	width: 502px;
+	height: 249px;
+	top:145px;
+	left:344px;
+}
+#f3circle {
+	position:absolute;
+	background: url('../imgs/f3_circle.png') no-repeat scroll top left;
+	width: 152px;
+	height: 152px;
+	top:124px;
+	left:278px;
+}
+#f3lines {
+	position:absolute;
+	background: url('../imgs/f3_lines.png') no-repeat scroll top left;
+	width: 309px;
+	height: 142px;
+	top:166px;
+	left:428px;
+}
+#f3people {
+	position:absolute;
+	background: url('../imgs/f3_people.png') no-repeat scroll top left;
+	width: 309px;
+	height: 224px;
+	top:146px;
+	left:462px;
+}
+
+#slide4 {
+	position:absolute;
+	width: 800px;
+	height: 480px;
+	left:3600px;
+}
+#txt4 {
+	position:absolute;
+	background: url('../imgs/txt4.png') no-repeat scroll top left;
+	width: 545px;
+	height: 64px;
+	top:30px;
+	left:218px;
+}
+#txt4b {
+	position:absolute;
+	background: url('../imgs/txt4b.png') no-repeat scroll top left;
+	width: 586px;
+	height: 16px;
+	top:145px;
+	left:260px;
+}
+#f42012 {
+	position:absolute;
+	background: url('../imgs/f4_2012.png') no-repeat scroll top left;
+	width: 45px;
+	height: 17px;
+	top:230px;
+	left:278px;
+}
+#f42020 {
+	position:absolute;
+	background: url('../imgs/f4_2020.png') no-repeat scroll top left;
+	width: 49px;
+	height: 17px;
+	top:292px;
+	left:278px;
+}
+#f4bartxt1 {
+	position:absolute;
+	background: url('../imgs/f4_bartxt1.png') no-repeat scroll top left;
+	width: 94px;
+	height: 29px;
+	top:220px;
+	left:360px;
+}
+#f4bartxt2 {
+	position:absolute;
+	background: url('../imgs/f4_bartxt2.png') no-repeat scroll top left;
+	width: 172px;
+	height: 29px;
+	top:282px;
+	left:360px;
+}
+#f4bar1 {
+	position:absolute;
+	background: url('../imgs/f4_bar1.png') no-repeat scroll top left;
+	width: 142px;
+	height: 43px;
+	top:215px;
+	left:340px;
+}
+#f4bar2 {
+	position:absolute;
+	background: url('../imgs/f4_bar2.png') no-repeat scroll top left;
+	width: 280px;
+	height: 43px;
+	top:275px;
+	left:340px;
+}
+#f4circle {
+	position:absolute;
+	background: url('../imgs/f4_circle.png') no-repeat scroll top left;
+	width: 151px;
+	height: 152px;
+	top:195px;
+	left:660px;
+}
+
+#slide5 {
+	position:absolute;
+	width: 800px;
+	height: 480px;
+	left:4800px;
+}
+#txt5 {
+	position:absolute;
+	background: url('../imgs/txt5.png') no-repeat scroll top left;
+	width: 584px;
+	height: 29px;
+	top:184px;
+	left:256px;
+}
+#txt5b {
+	position:absolute;
+	background: url('../imgs/txt5b.png') no-repeat scroll top left;
+	width: 537px;
+	height: 22px;
+	top:224px;
+	left:256px;
+}
+
+#reddot {
+	position:absolute;
+	background: url('../imgs/reddot.png') no-repeat scroll top left;
+	width: 12px;
+	height: 12px;
+	top:438px;
+	left:503px;
+}
+
+#larrow {
+	position:absolute;
+	background: url('../imgs/larrow.png') no-repeat scroll top left;
+	width: 26px;
+	height: 37px;
+	top:220px;
+	left:200px;
+	visibility:hidden;
+}
+#rarrow {
+	position:absolute;
+	background: url('../imgs/rarrow.png') no-repeat scroll top left;
+	width: 26px;
+	height: 37px;
+	top:220px;
+	left:872px;
+}
+#nav {
+	position:absolute;
+	background: url('../imgs/graynav.png') no-repeat scroll top left;
+	width: 81px;
+	height: 12px;
+	top:438px;
+	left:503px;
+}
+#logo {
+	position:absolute;
+	background: url('../imgs/logo.png') no-repeat scroll top left;
+	width: 73px;
+	height: 69px;
+	top:381px;
+	left:818px;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*#guide {
+	position:absolute;
+	background: url('../imgs/endguide2.png') no-repeat scroll top left;
+	width: 720px;
+	height: 480px;
+	opacity:.5;
+	top:0px;
+	left:190px;
+}*/
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+	Small Overrides
+*/
+.small #base-port{
+	width:200px;
+}
+.small #ctaarrow{
+	
+}
+
+/*
+	Medium Overrides
+*/
+	
+
