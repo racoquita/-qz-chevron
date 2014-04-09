@@ -110,6 +110,10 @@ a.fill-div {
 	opacity:0;
 	display:block;
 	top:0px;
+	cursor: default;
+}
+#clickBg a {
+	cursor: default;
 }
 
 #ctaarrow {
