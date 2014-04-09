@@ -8,14 +8,17 @@ function customInt() {
 //Clickthrough handler
 function bkndClicked(){
 	EB.clickthrough("bkndclicked");
+
 }
 
 function tabClicked(){
 	EB.clickthrough("ctaclicked");
+
 }
 
 function ctaClicked(){
 	EB.clickthrough("ctaclicked");
+	
 }
 
 function rightClicked(){
@@ -25,7 +28,9 @@ function rightClicked(){
 function leftClicked(){
 	moveLeft();
 }
-
+function gotowebsite(){
+	gotosite();
+}
 
 
 

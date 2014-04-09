@@ -8,16 +8,30 @@
 	<title>Chevron Quartz 1100x480</title>
 	<!-- Date: 2013-10-15 -->
 	<link rel="stylesheet" media="all" href="css/style.css"/>
+	<style>
+		#frameLink{
+			position: absolute;
+			display: block;
+			top:0;
+			left:0;
+			bottom:0;
+			right: 0;
+			visibility: hidden;
+
+		}
+	</style>
 </head>
 <body>
 	<script type="text/javascript" src="http://ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
 	<script type="text/javascript" src="js/behavior.js"></script>
 	<script type="text/javascript" src="js/rich_banner.js"></script>
+
 	<script src="js/minified/TweenLite.min.js"></script>
 	<script src="js/minified/easing/EasePack.min.js"></script>
 	<script src="js/minified/plugins/CSSPlugin.min.js"></script>
 	
 	<div id="base-port">
+
 		<div id="container">
 		<div id="logo">
 		</div>
@@ -61,8 +75,11 @@
 				</div>
 			</div>
 			<div id = "slide4">
+				
 				<div id="txt5"></div>
 				<div id="txt5b"></div>
+				
+
 			</div>
 			
 		</div>
@@ -80,11 +97,13 @@
 		
 		<div id="reddot">
 		</div>
-		
+		<a target="_blank" href="javascript:gotowebsite();" id="frameLink" ></a>
 		<div id="rarrow">
 			<a href="javascript:rightClicked();" class="fill-div"></a>
 		</div>
 		
+
+
 		<div id="larrow">
 			<a href="javascript:leftClicked();" class="fill-div"></a>
 		</div>
@@ -100,13 +119,15 @@
 		
 		<div id="infobtn" onmouseover="infoRolled();" onmouseout="infoOff();">
 		</div>
-		
 		<div id="ctaarrow">
 		</div>
+		
+		
 		
 		<div id="cta" onmouseover="ctaRolled();" onmouseout="ctaOff();">
 			<a href="javascript:ctaClicked();" class="fill-div"></a>
 		</div>
+		
 		
 		</div>
 	</div>
@@ -133,12 +154,14 @@
 		function infoRolled(){
 			if(slidePos==1){
 				TweenLite.set(bubble1, {visibility:'visible'});
+				
 			}
 			if(slidePos==2){
 				TweenLite.set(bubble2, {visibility:'visible'});
 			}
 			if(slidePos==3){
 				TweenLite.set(bubble3, {visibility:'visible'});
+				TweenLite.set(frameLink, {visibility:'visible'});
 			}
 		}
 		
@@ -160,6 +183,10 @@
 		
 		function ctaOff(){
 			TweenLite.to(ctaarrow, .3, {left:520});
+		}
+		function gotosite(){
+			
+			window.open ('http://www.chevron.com/');
 		}
 	
 		function onInit(){
@@ -183,7 +210,7 @@
 			var slide = document.getElementById("slide");
 			
 			if(slidePos < 3 && slideSettled){
-					
+					TweenLite.set(frameLink, {visibility:'hidden'});
 					TweenLite.set(larrow, {visibility:'visible'});
 					slidePos++;
 					//switchDot();
@@ -191,7 +218,7 @@
 					moveSlide();
 			}
 			if(slidePos == 3) {
-				
+				TweenLite.set(frameLink, {visibility:'visible'});
 				TweenLite.set(rarrow, {visibility:'hidden'});
 			}
 		}
@@ -217,6 +244,7 @@
 			var slidenum = -1200 * slidePos;
 			TweenLite.to(slide, .4, {x:slidenum, ease:Cubic.easeIn});
 		}
+
 		
 		function checkAnimation(){
 			
@@ -246,6 +274,7 @@
 				TweenLite.set(infobtn, {visibility:'visible'});
 				TweenLite.set(cta, {visibility:'hidden'});
 				TweenLite.set(ctaarrow, {visibility:'hidden'});
+				TweenLite.set(frameLink, {visibility:'hidden'});
 				TweenLite.set(reddot, {left:538});
 				if(!frame3Done){
 					frame3Done = true;
@@ -262,13 +291,18 @@
 				TweenLite.set(cta, {visibility:'visible', opacity:0});
 				TweenLite.to(cta, .4, {opacity:1, delay:.4, ease:Cubic.easeIn});
 				TweenLite.to(ctaarrow, .4, {opacity:1, delay:.4, ease:Cubic.easeIn});
+				TweenLite.set(frameLink, {visibility:'visible'});
+				
 				if(!frame4Done){
 
 					frame4Done = true;
+					TweenLite.set(frameLink, {visibility:'visible', opacity:1});
 					TweenLite.set(txt5, {scaleX:3, scaleY:3, opacity:0});
 					TweenLite.set(txt5b, {scaleX:3, scaleY:3, opacity:0});
 					TweenLite.to(txt5, .5, {delay:.4, scaleX:1, scaleY:1, opacity:1, ease:Cubic.easeIn});
 					TweenLite.to(txt5b, .5, {delay:.6, scaleX:1, scaleY:1, opacity:1, ease:Cubic.easeIn});
+					
+
 				}	
 			}
 		}
@@ -329,8 +363,6 @@
 		EB._listenToMessages();
 		EB._sendMessage("responsiveAdaptation", { rule: responsiveAdaptation});
 	}
-
-
 	</script>
 </body>
 </html>

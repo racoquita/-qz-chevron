@@ -25,6 +25,9 @@ function rightClicked(){
 function leftClicked(){
 	moveLeft();
 }
+function gotowebsite(){
+	gotosite();
+}
 
 
 

@@ -8,6 +8,18 @@
 	<title>Chevron Quartz 1100x480</title>
 	<!-- Date: 2013-10-15 -->
 	<link rel="stylesheet" media="all" href="css/style.css"/>
+	<style>
+		#frameLink{
+			position: absolute;
+			display: block;
+			top:0;
+			left:0;
+			bottom:0;
+			right: 0;
+			visibility: hidden;
+
+		}
+	</style>
 </head>
 <body>
 	<script src="js/hammer.min.js"></script>
@@ -83,7 +95,7 @@
 		
 		<div id="reddot">
 		</div>
-		
+		<a target="_blank" href="javascript:gotowebsite();" id="frameLink" ></a>
 		<div id="rarrow">
 			<a href="javascript:rightClicked();" class="fill-div"></a>
 		</div>
@@ -148,6 +160,7 @@
 					}
 					if(slidePos==3){
 						TweenLite.set(bubble3, {visibility:'visible', scaleX:.7, scaleY:.7});
+						//TweenLite.set(frameLink, {visibility:'visible'});
 					}
 			}
 			else{
@@ -164,6 +177,7 @@
 			}
 			if(slidePos==3){
 				TweenLite.set(bubble3, {visibility:'hidden'});
+				TweenLite.set(frameLink, {visibility:'visible'});
 			}
 		}
 		
@@ -173,6 +187,10 @@
 		
 		function ctaOff(){
 			TweenLite.to(ctaarrow, .3, {left:312});
+		}
+		function gotosite(){
+			
+			window.open ('http://www.chevron.com/');
 		}
 	
 		function onInit(){
@@ -207,6 +225,7 @@
 			if(slidePos == 3) {
 				
 				TweenLite.set(rarrow, {visibility:'hidden'});
+				TweenLite.set(frameLink, {visibility:'visible'});
 			}
 		}
 		
@@ -218,6 +237,7 @@
 			
 			if(slidePos > 0 && slideSettled){
 					TweenLite.set(rarrow, {visibility:'visible'});
+					
 					slidePos--;
 					
 					checkAnimation();
@@ -264,6 +284,7 @@
 					TweenLite.set(reddot, {left:236});
 					TweenLite.set(cta, {visibility:'hidden'});
 					TweenLite.set(ctaarrow, {visibility:'hidden'});
+					TweenLite.set(frameLink, {visibility:'hidden'});
 					if(!frame3Done){
 						frame3Done = true;
 						TweenLite.set(f3people, {scaleX:0, scaleY:0, opacity:0});
@@ -283,10 +304,12 @@
 					TweenLite.to(ctaarrow, .4, {opacity:1, delay:.4, ease:Cubic.easeIn});
 					if(!frame4Done){
 						frame4Done = true;
+						TweenLite.set(frameLink, {visibility:'visible'});
 						TweenLite.set(txt5, {scaleX:3, scaleY:3, opacity:0});
 						TweenLite.set(txt5b, {scaleX:3, scaleY:3, opacity:0});
 						TweenLite.to(txt5, .5, {delay:.4, scaleX:1, scaleY:1, opacity:1, ease:Cubic.easeIn});
 						TweenLite.to(txt5b, .5, {delay:.6, scaleX:1, scaleY:1, opacity:1, ease:Cubic.easeIn});
+						
 					}
 				}
 		}
