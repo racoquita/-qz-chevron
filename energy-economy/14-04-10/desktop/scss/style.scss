@@ -34,16 +34,24 @@
 					width: 720px;
 					height: 100%;
 					margin: 0 auto;
-					border: 1px solid red;
 
 					@include breakpoint(900) { 
 						width: 620px; 
+					}
+
+					.info {
+						position: absolute;
+						bottom: 30px;
+						width: 29px;
+						height: 29px;
+						background-image: url(../images/info.png);
 					}
 				}
 				&:nth-child(1) {
 					.heading {
 						margin: 136px 0 0 0;
 						width: 76.5%;
+						display: none;
 
 						@include breakpoint(900) { 
 							margin: 156px 0 0 0;
@@ -82,6 +90,26 @@
 								top: 63px;
 							}
 						}
+						.map-people {
+							position: absolute;
+							top: 43px;
+							right: 7%;
+							width: 60.6%;
+							display: none;
+
+							@include breakpoint(900) { 
+								top: 63px;
+							}
+						}
+					}
+					.info-one {
+						position: absolute;
+						z-index: 101;
+						bottom: 65px;
+						width: 462px;
+						height: 152px;
+						display: none;
+						background-image: url(../images/info-one.jpg);
 					}
 				}
 				&:nth-child(3) {
@@ -101,6 +129,7 @@
 							top: 43px;
 							left: 4%;
 							width: 31.2%;
+							display: none;
 
 							@include breakpoint(900) { 
 								top: 63px;
@@ -111,6 +140,7 @@
 							top: 43px;
 							left: 4%;
 							width: 31.2%;
+							display: none;
 
 							@include breakpoint(900) { 
 								top: 63px;
@@ -127,11 +157,21 @@
 							}
 						}
 					}
+					.info-two {
+						position: absolute;
+						z-index: 101;
+						bottom: 65px;
+						width: 462px;
+						height: 220px;
+						display: none;
+						background-image: url(../images/info-two.jpg);
+					}
 				}
 				&:nth-child(4) {
 					.heading {
 						margin: 156px 0 0 0;
 						width: 97.5%;
+						display: none;
 
 						@include breakpoint(900) { 
 							top: 176px;
@@ -141,8 +181,8 @@
 						width: 242px;
 						height: 16px;
 						margin-top: 16px;
-						display: block;
 						background-image: url(../images/cta.png);
+						display: none;
 					}
 				}
 			}
@@ -183,10 +223,11 @@
 	}
 	.indicator {
 		position: absolute;
+		z-index: 1;
 		bottom: 30px;
 		height: 12px;
-		left: 0;
-		right: 0;
+		left: 20%;
+		right: 20%;
 
 		.dots {
 			width: 84px;
@@ -226,4 +267,82 @@
 			background-size: 75%;
 		}
 	}
+}
+
+@-webkit-keyframes bounceIn {
+	0% {
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+@keyframes bounceIn {
+	0% {
+		-webkit-transform: scale(0);
+		-ms-transform: scale(0);
+		transform: scale(0);
+	}
+
+	100% {
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+.bounceIn {
+	-webkit-animation-name: bounceIn;
+	animation-name: bounceIn;
+	-webkit-animation-duration: .35s;
+	animation-duration: .35s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-timing-function: easeOut;
+	animation-timing-function: easeOut;
+}
+
+@-webkit-keyframes bounceInReverse {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(1.5);
+		transform: scale(1.5);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+@keyframes bounceInReverse {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		transform: scale(1.5);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+.bounceInReverse {
+	-webkit-animation-name: bounceInReverse;
+	animation-name: bounceInReverse;
+	-webkit-animation-duration: .35s;
+	animation-duration: .35s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-timing-function: easeOut;
+	animation-timing-function: easeOut;
 }

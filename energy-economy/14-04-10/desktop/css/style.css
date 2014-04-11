@@ -2,9 +2,10 @@
 #qzad #slider { width: 100%; height: 100%; }
 #qzad #slider .slides { list-style-type: none; margin: 0; padding: 0; width: 400%; height: 480px; overflow: hidden; }
 #qzad #slider .slides .slide { width: 25%; height: 480px; float: left; }
-#qzad #slider .slides .slide .content { width: 720px; height: 100%; margin: 0 auto; border: 1px solid red; }
+#qzad #slider .slides .slide .content { width: 720px; height: 100%; margin: 0 auto; }
 @media (max-width: 900px) { #qzad #slider .slides .slide .content { width: 620px; } }
-#qzad #slider .slides .slide:nth-child(1) .heading { margin: 136px 0 0 0; width: 76.5%; }
+#qzad #slider .slides .slide .content .info { position: absolute; bottom: 30px; width: 29px; height: 29px; background-image: url(../images/info.png); }
+#qzad #slider .slides .slide:nth-child(1) .heading { margin: 136px 0 0 0; width: 76.5%; display: none; }
 @media (max-width: 900px) { #qzad #slider .slides .slide:nth-child(1) .heading { margin: 156px 0 0 0; } }
 #qzad #slider .slides .slide:nth-child(2) .heading { margin: 39px 0 0 0; width: 77.6%; }
 @media (max-width: 900px) { #qzad #slider .slides .slide:nth-child(2) .heading { margin: 59px 0 0 0; } }
@@ -13,27 +14,47 @@
 @media (max-width: 900px) { #qzad #slider .slides .slide:nth-child(2) .animation .red-bubble { top: 73px; } }
 #qzad #slider .slides .slide:nth-child(2) .animation .map { position: absolute; top: 43px; right: 7%; width: 60.6%; }
 @media (max-width: 900px) { #qzad #slider .slides .slide:nth-child(2) .animation .map { top: 63px; } }
+#qzad #slider .slides .slide:nth-child(2) .animation .map-people { position: absolute; top: 43px; right: 7%; width: 60.6%; display: none; }
+@media (max-width: 900px) { #qzad #slider .slides .slide:nth-child(2) .animation .map-people { top: 63px; } }
+#qzad #slider .slides .slide:nth-child(2) .info-one { position: absolute; z-index: 101; bottom: 65px; width: 462px; height: 152px; display: none; background-image: url(../images/info-one.jpg); }
 #qzad #slider .slides .slide:nth-child(3) .heading { margin: 39px 0 0 0; width: 91.6%; }
 @media (max-width: 900px) { #qzad #slider .slides .slide:nth-child(3) .heading { margin: 59px 0 0 0; } }
 #qzad #slider .slides .slide:nth-child(3) .animation { position: relative; }
-#qzad #slider .slides .slide:nth-child(3) .animation .man { position: absolute; top: 43px; left: 4%; width: 31.2%; }
+#qzad #slider .slides .slide:nth-child(3) .animation .man { position: absolute; top: 43px; left: 4%; width: 31.2%; display: none; }
 @media (max-width: 900px) { #qzad #slider .slides .slide:nth-child(3) .animation .man { top: 63px; } }
-#qzad #slider .slides .slide:nth-child(3) .animation .men { position: absolute; top: 43px; left: 4%; width: 31.2%; }
+#qzad #slider .slides .slide:nth-child(3) .animation .men { position: absolute; top: 43px; left: 4%; width: 31.2%; display: none; }
 @media (max-width: 900px) { #qzad #slider .slides .slide:nth-child(3) .animation .men { top: 63px; } }
 #qzad #slider .slides .slide:nth-child(3) .animation .text-3 { position: absolute; top: 120px; right: 4%; width: 52.3%; }
 @media (max-width: 900px) { #qzad #slider .slides .slide:nth-child(3) .animation .text-3 { top: 140px; } }
-#qzad #slider .slides .slide:nth-child(4) .heading { margin: 156px 0 0 0; width: 97.5%; }
+#qzad #slider .slides .slide:nth-child(3) .info-two { position: absolute; z-index: 101; bottom: 65px; width: 462px; height: 220px; display: none; background-image: url(../images/info-two.jpg); }
+#qzad #slider .slides .slide:nth-child(4) .heading { margin: 156px 0 0 0; width: 97.5%; display: none; }
 @media (max-width: 900px) { #qzad #slider .slides .slide:nth-child(4) .heading { top: 176px; } }
-#qzad #slider .slides .slide:nth-child(4) .cta-inner { width: 242px; height: 16px; margin-top: 16px; display: block; background-image: url(../images/cta.png); }
+#qzad #slider .slides .slide:nth-child(4) .cta-inner { width: 242px; height: 16px; margin-top: 16px; background-image: url(../images/cta.png); display: none; }
 #qzad .arrow-left { position: absolute; top: 220px; left: 5%; width: 26px; height: 37px; background: url(../images/larrow.png); display: none; }
 @media (max-width: 900px) { #qzad .arrow-left { left: 2%; } }
 #qzad .arrow-right { position: absolute; top: 220px; right: 5%; width: 26px; height: 37px; background: url(../images/rarrow.png); }
 @media (max-width: 900px) { #qzad .arrow-right { right: 2%; } }
 #qzad .logo { position: absolute; background: url(../images/logo.png) no-repeat top left; width: 73px; height: 69px; bottom: 30px; right: 5%; }
-#qzad .indicator { position: absolute; bottom: 30px; height: 12px; left: 0; right: 0; }
+#qzad .indicator { position: absolute; z-index: 1; bottom: 30px; height: 12px; left: 20%; right: 20%; }
 #qzad .indicator .dots { width: 84px; height: 12px; margin: 0 auto; }
 #qzad .indicator .dots .dot { display: block; width: 12px; height: 12px; float: left; background-image: url(../images/dot.png); }
 #qzad .indicator .dots .dot:not(:last-child) { margin-right: 12px; }
 #qzad .indicator .dots .dot.active { background-image: url(../images/bluedot.png); }
 #qzad .cta { position: absolute; bottom: 30px; right: 5%; display: none; width: 242px; height: 16px; margin-right: 85px; background-image: url(../images/cta.png); background-size: 100%; background-repeat: no-repeat; background-position: right bottom; }
 @media (max-width: 900px) { #qzad .cta { background-size: 75%; } }
+
+@-webkit-keyframes bounceIn { 0% { -webkit-transform: scale(0); transform: scale(0); }
+  100% { -webkit-transform: scale(1); transform: scale(1); } }
+
+@keyframes bounceIn { 0% { -webkit-transform: scale(0); -ms-transform: scale(0); transform: scale(0); }
+  100% { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); } }
+
+.bounceIn { -webkit-animation-name: bounceIn; animation-name: bounceIn; -webkit-animation-duration: .35s; animation-duration: .35s; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-timing-function: easeOut; animation-timing-function: easeOut; }
+
+@-webkit-keyframes bounceInReverse { 0% { opacity: 0; -webkit-transform: scale(1.5); transform: scale(1.5); }
+  100% { opacity: 1; -webkit-transform: scale(1); transform: scale(1); } }
+
+@keyframes bounceInReverse { 0% { opacity: 0; -webkit-transform: scale(1.5); -ms-transform: scale(1.5); transform: scale(1.5); }
+  100% { opacity: 1; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); } }
+
+.bounceInReverse { -webkit-animation-name: bounceInReverse; animation-name: bounceInReverse; -webkit-animation-duration: .35s; animation-duration: .35s; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-timing-function: easeOut; animation-timing-function: easeOut; }
