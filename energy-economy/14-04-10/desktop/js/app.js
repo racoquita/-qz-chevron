@@ -37,8 +37,8 @@ var App = function() {
 	this.handleChange = function() {
 		current == 3 ? $('.arrow-right').hide() : $('.arrow-right').show();
 		current == 0 ? $('.arrow-left').hide() : $('.arrow-left').show();
+		current == 1 || current == 2 ? $('.cta').show() : $('.cta').hide();
 		$('.dot').removeClass('active');
 		$('.dot:nth-child('+ (current + 1) +')').addClass('active');
-		current == 1 || current == 2 ? $('.cta').show() : $('.cta').hide();
 	}
 };

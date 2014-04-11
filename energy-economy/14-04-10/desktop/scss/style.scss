@@ -1,3 +1,8 @@
+@mixin breakpoint($point) {
+	@if $point == 900 {
+		@media (max-width : 900px) {  @content; }
+	}	
+}
 
 #qzad {
 	position: relative;
@@ -26,20 +31,33 @@
 				float: left;
 				
 				.content {
-					width: 75%;
+					width: 720px;
 					height: 100%;
 					margin: 0 auto;
+					border: 1px solid red;
+
+					@include breakpoint(900) { 
+						width: 620px; 
+					}
 				}
 				&:nth-child(1) {
 					.heading {
 						margin: 136px 0 0 0;
 						width: 76.5%;
+
+						@include breakpoint(900) { 
+							margin: 156px 0 0 0;
+						}
 					}
 				}
 				&:nth-child(2) {
 					.heading {
 						margin: 39px 0 0 0;
 						width: 77.6%;
+
+						@include breakpoint(900) { 
+							margin: 59px 0 0 0;
+						}
 					}
 					.animation {
 						position: relative;
@@ -48,13 +66,21 @@
 							position: absolute;
 							top: 53px;
 							left: 5%;
-							width: 26.7%;
+							width: 152px;
+
+							@include breakpoint(900) { 
+								top: 73px;
+							}
 						}
 						.map {
 							position: absolute;
 							top: 43px;
 							right: 7%;
 							width: 60.6%;
+
+							@include breakpoint(900) { 
+								top: 63px;
+							}
 						}
 					}
 				}
@@ -62,11 +88,61 @@
 					.heading {
 						margin: 39px 0 0 0;
 						width: 91.6%;
+
+						@include breakpoint(900) { 
+							margin: 59px 0 0 0;
+						}
+					}
+					.animation {
+						position: relative;
+
+						.man {
+							position: absolute;
+							top: 43px;
+							left: 4%;
+							width: 31.2%;
+
+							@include breakpoint(900) { 
+								top: 63px;
+							}
+						}
+						.men {
+							position: absolute;
+							top: 43px;
+							left: 4%;
+							width: 31.2%;
+
+							@include breakpoint(900) { 
+								top: 63px;
+							}
+						}
+						.text-3 {
+							position: absolute;
+							top: 120px;
+							right: 4%;
+							width: 52.3%;
+
+							@include breakpoint(900) { 
+								top: 140px;
+							}
+						}
 					}
 				}
 				&:nth-child(4) {
 					.heading {
-						
+						margin: 156px 0 0 0;
+						width: 97.5%;
+
+						@include breakpoint(900) { 
+							top: 176px;
+						}
+					}
+					.cta-inner {
+						width: 242px;
+						height: 16px;
+						margin-top: 16px;
+						display: block;
+						background-image: url(../images/cta.png);
 					}
 				}
 			}
@@ -80,6 +156,10 @@
 		height: 37px;
 		background: url(../images/larrow.png);
 		display: none;
+
+		@include breakpoint(900) { 
+			left: 2%; 
+		}
 	}
 	.arrow-right {
 		position: absolute;
@@ -88,6 +168,10 @@
 		width: 26px;
 		height: 37px;
 		background: url(../images/rarrow.png);
+
+		@include breakpoint(900) { 
+			right: 2%; 
+		}
 	}
 	.logo {
 		position: absolute;
@@ -99,7 +183,7 @@
 	}
 	.indicator {
 		position: absolute;
-		bottom: 16px;
+		bottom: 30px;
 		height: 12px;
 		left: 0;
 		right: 0;
@@ -134,5 +218,12 @@
 		height: 16px;
 		margin-right: 85px;
 		background-image: url(../images/cta.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: right bottom;
+
+		@include breakpoint(900) { 
+			background-size: 75%;
+		}
 	}
 }
