@@ -1,4 +1,3 @@
-@import 'responsiveslides';
 
 #qzad {
 	position: relative;
@@ -9,6 +8,22 @@
 	overflow: hidden;
 	background: url(../images/paper.jpg) no-repeat center center;
 
+	.arrow-left {
+		position: absolute;
+		top: 220px;
+		left: 10%;
+		width: 26px;
+		height: 37px;
+		background: url(../images/larrow.png);
+	}
+	.arrow-right {
+		position: absolute;
+		top: 220px;
+		right: 10%;
+		width: 26px;
+		height: 37px;
+		background: url(../images/rarrow.png);
+	}
 	#slider {
 		width: 100%;
 		height: 100%;
@@ -19,11 +34,10 @@
 			padding: 0;
 			width: 400%;
 			height: 480px;
-			border: 1px solid cornflowerBlue;
 			overflow: hidden;
 			
 			.slide {
-				width: 800px;
+				width: 25%;
 				height: 480px;
 				float: left;
 			}
