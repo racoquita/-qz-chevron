@@ -75,10 +75,12 @@ a.fill-div {
 #base-port{
 	overflow:hidden;
 	position:relative;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	padding:0;
 	border:0;
-	width:1100px;
+	width:100%;
+	max-width: 1100px;
+	min-width: 720px;
 	height:480px;
 }
 
@@ -88,7 +90,7 @@ a.fill-div {
 	margin: 0 auto;
 	padding:0;
 	border:0;
-	width:1100px;
+	width:100%;
 	height:480px;
 }
 
@@ -179,13 +181,13 @@ a.fill-div {
 
 #slide {
 	position:absolute;
-	width: 6000px;
+	width: 400%;
 	height: 480px;
 }
 
 #slide1 {
 	position:absolute;
-	width: 800px;
+	width: 72.8%;
 	height: 480px;
 }
 

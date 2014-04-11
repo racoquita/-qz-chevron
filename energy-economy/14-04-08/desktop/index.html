@@ -5,8 +5,9 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1">
+
 	<title>Chevron Quartz 1100x480</title>
-	<!-- Date: 2013-10-15 -->
+
 	<link rel="stylesheet" media="all" href="css/style.css"/>
 	<style>
 		#frameLink{
@@ -17,7 +18,6 @@
 			bottom:0;
 			right: 0;
 			visibility: hidden;
-
 		}
 	</style>
 </head>
@@ -33,102 +33,71 @@
 	<div id="base-port">
 
 		<div id="container">
-		<div id="logo">
-		</div>
-		
-		<div id="slide">
-		
-			<div id = "slide1">
-				<div id="txt1">
+			<div id="logo"></div>
+
+			<div id="slide">
+
+				<div id = "slide1">
+					<div id="txt1"></div>
+					<div id="txt1b"></div>
 				</div>
-				<div id="txt1b">
+
+				<div id = "slide2">
+					<div id="txt2"></div>
+					<div id="txt2b"></div>
+					<div id="f2lines"></div>
+					<div id="f2bigman"></div>
+					<div id="f2smallman1"></div>
+					<div id="f2smallman2"></div>
+					<div id="f2smallman3"></div>
 				</div>
-			</div>
-			
-			<div id = "slide2">
-				<div id="txt2">
+
+				<div id = "slide3">
+					<div id="txt3"></div>
+					<div id="f3map"></div>
+					<div id="f3circle"></div>
+					<div id="f3lines"></div>
+					<div id="f3people"></div>
 				</div>
-				<div id="txt2b">
+				<div id = "slide4">
+					<div id="txt5"></div>
+					<div id="txt5b"></div>
 				</div>
-				<div id="f2lines">
-				</div>
-				<div id="f2bigman">
-				</div>
-				<div id="f2smallman1">
-				</div>
-				<div id="f2smallman2">
-				</div>
-				<div id="f2smallman3">
-				</div>
-			</div>
-			
-			<div id = "slide3">
-				<div id="txt3">
-				</div>
-				<div id="f3map">
-				</div>
-				<div id="f3circle">
-				</div>
-				<div id="f3lines">
-				</div>
-				<div id="f3people">
-				</div>
-			</div>
-			<div id = "slide4">
-				
-				<div id="txt5"></div>
-				<div id="txt5b"></div>
-				
 
 			</div>
-			
-		</div>
 
-		<div id="nav">
-		</div>
-		
-		<div id="paperBg">
-			<a href="javascript:bkndClicked();" class="fill-div"></a>
-		</div>
-		
-		<div id="clickBg">
-			<a href="javascript:bkndClicked();" class="fill-div"></a>
-		</div>
-		
-		<div id="reddot">
-		</div>
-		<a target="_blank" href="javascript:gotowebsite();" id="frameLink" ></a>
-		<div id="rarrow">
-			<a href="javascript:rightClicked();" class="fill-div"></a>
-		</div>
-		
+			<div id="nav"></div>
 
+			<div id="paperBg">
+				<a href="javascript:bkndClicked();" class="fill-div"></a>
+			</div>
 
-		<div id="larrow">
-			<a href="javascript:leftClicked();" class="fill-div"></a>
-		</div>
-		
-		<div id="bubble1">
-		</div>
-		
-		<div id="bubble2">
-		</div>
-		
-		<div id="bubble3">
-		</div>
-		
-		<div id="infobtn" onmouseover="infoRolled();" onmouseout="infoOff();">
-		</div>
-		<div id="ctaarrow">
-		</div>
-		
-		
-		
-		<div id="cta" onmouseover="ctaRolled();" onmouseout="ctaOff();">
-			<a href="javascript:ctaClicked();" class="fill-div"></a>
-		</div>
-		
-		
+			<div id="clickBg">
+				<a href="javascript:bkndClicked();" class="fill-div"></a>
+			</div>
+
+			<div id="reddot"></div>
+			<a target="_blank" href="javascript:gotowebsite();" id="frameLink" ></a>
+
+			<div id="rarrow">
+				<a href="javascript:rightClicked();" class="fill-div"></a>
+			</div>
+
+			<div id="larrow">
+				<a href="javascript:leftClicked();" class="fill-div"></a>
+			</div>
+
+			<div id="bubble1"></div>
+			<div id="bubble2"></div>
+			<div id="bubble3"></div>
+
+			<div id="infobtn" onmouseover="infoRolled();" onmouseout="infoOff();"></div>
+			<div id="ctaarrow"></div>
+
+			<div id="cta" onmouseover="ctaRolled();" onmouseout="ctaOff();">
+				<a href="javascript:ctaClicked();" class="fill-div"></a>
+			</div>
+
 		</div>
 	</div>
 	
@@ -213,7 +182,6 @@
 					TweenLite.set(frameLink, {visibility:'hidden'});
 					TweenLite.set(larrow, {visibility:'visible'});
 					slidePos++;
-					//switchDot();
 					checkAnimation();
 					moveSlide();
 			}
@@ -308,61 +276,46 @@
 		}
 	</script>
 	<script type="text/javascript" charset="utf-8">
-	
-	setResponsiveBanner("container");
+		setResponsiveBanner("container");
 
-	function setResponsiveBanner(id){
-		var responsiveAdaptation = "browserWidth";
-		var transitionMode  = "invisible";
-		bannerImg = document.getElementById(id);
-		EB._listenToMessages = function(){
+		function setResponsiveBanner(id){
+			var responsiveAdaptation = "browserWidth";
+			var transitionMode  = "invisible";
+			bannerImg = document.getElementById(id);
+			EB._listenToMessages = function(){
 
-			/// Listen to messages reaching this window Events are handled by EB._dispatchEvent
-			/// <param name="msg" type="String">Message to send</param>
-			/// <returns type="String">DS url of the file (serving mode) or the local path (local mode)</returns>
-			EBG.log.debug("EB._listenToMessages");
-			EBG.EventName["setBannerSize"] = "setBannerSize";
+				EBG.log.debug("EB._listenToMessages");
+				EBG.EventName["setBannerSize"] = "setBannerSize";
 
-			for(var eventName in EBG.EventName){
-				if(!EBG.EventName.hasOwnProperty(eventName))
-				  continue;
-				// lowercase the event name to make it generic
-				eventName = EBG.EventName[eventName];
-				EBG.log.debug("listening to event: {0}", eventName);
-				EBG.pm.bind(eventName, this._handleEvents, this);
-			}
-		}
-
-		EB._handleEvents = function(msgData, msgEvent){
-			console.log("HEIGHT")
-			/// Handles the specified event which was dispatched with the specified data
-			/// <param name="eventName" type="String">name of the event</param>
-			/// <param name="data" type="Object">event data</param>
-			EBG.log.debug("EB._handleMessages");
-			var data = JSON.parse(msgEvent.data);
-			if (EBG.isGlobalDef("JSON"))
-				EBG.log.debug("eventName={0}, data={1}", data.type, JSON.stringify(data));
-			// Analyze the event and act accordingly
-			if(data && (data.type == "setBannerSize")){
-				EB._adConfig.width = data.data.width;
-				EB._adConfig.height = data.data.height;
-				console.log(data.data.height + "HEIGHT")
-				//bannerImg.style.width = data.data.width + "px";
-				//bannerImg.style.height = data.data.height + "px";
-				if(EB._adConfig.width < 1100){
-					var centerWidth = (EB._adConfig.width-1100)/2;
-					TweenLite.set(container, {left:centerWidth})
-				}
-				else {
-					TweenLite.set(container, {left:0})
+				for(var eventName in EBG.EventName){
+					if(!EBG.EventName.hasOwnProperty(eventName)) continue;
+					eventName = EBG.EventName[eventName];
+					EBG.log.debug("listening to event: {0}", eventName);
+					EBG.pm.bind(eventName, this._handleEvents, this);
 				}
 			}
-			// Dispatch the event to the subscribers
-			this._dispatchEvent(data.type, data);
+
+			EB._handleEvents = function(msgData, msgEvent){
+				EBG.log.debug("EB._handleMessages");
+				var data = JSON.parse(msgEvent.data);
+				if (EBG.isGlobalDef("JSON"))
+					EBG.log.debug("eventName={0}, data={1}", data.type, JSON.stringify(data));
+				if(data && (data.type == "setBannerSize")){
+					EB._adConfig.width = data.data.width;
+					EB._adConfig.height = data.data.height;
+					if(EB._adConfig.width < 1100){
+						var centerWidth = (EB._adConfig.width-1100)/2;
+						TweenLite.set(container, {left:centerWidth})
+					}
+					else {
+						TweenLite.set(container, {left:0})
+					}
+				}
+				this._dispatchEvent(data.type, data);
+			}
+			EB._listenToMessages();
+			EB._sendMessage("responsiveAdaptation", { rule: responsiveAdaptation});
 		}
-		EB._listenToMessages();
-		EB._sendMessage("responsiveAdaptation", { rule: responsiveAdaptation});
-	}
 	</script>
 </body>
 </html>
