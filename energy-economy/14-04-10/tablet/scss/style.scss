@@ -1,18 +1,10 @@
-@mixin breakpoint($point) {
-	@if $point == 900 {
-		@media (max-width : 900px) {  @content; }
-	}	
-}
-
 body {
 	margin: 0;
 }
 #qzad {
 	position: relative;
-	width: 100%;
-	height: 480px;
-	min-width: 720px;
-	max-width: 1100px;
+	width: 480px;
+	height: 550px;
 	overflow: hidden;
 	background: url(../images/paper.jpg) no-repeat center center;
 
@@ -25,165 +17,131 @@ body {
 			margin: 0;
 			padding: 0;
 			width: 400%;
-			height: 480px;
+			height: 550px;
 			overflow: hidden;
 			
 			.slide {
 				width: 25%;
-				height: 480px;
+				height: 550px;
 				float: left;
 				
 				.content {
-					width: 720px;
+					width: 400px;
 					height: 100%;
 					margin: 0 auto;
 
-					@include breakpoint(900) { 
-						width: 620px; 
-					}
-
 					.info {
 						position: absolute;
-						bottom: 30px;
-						width: 29px;
-						height: 29px;
+						bottom: 14px;
+						width: 18px;
+						height: 18px;
 						background-image: url(../images/info.png);
+						background-size: 100%;
 					}
 				}
 				&:nth-child(1) {
 					.heading {
-						margin: 136px 0 0 0;
-						width: 76.5%;
+						margin: 150px 0 0 42px;
+						width: 311px;
 						display: none;
-
-						@include breakpoint(900) { 
-							margin: 156px 0 0 0;
-						}
 					}
 				}
 				&:nth-child(2) {
 					.heading {
-						margin: 39px 0 0 0;
-						width: 77.6%;
-
-						@include breakpoint(900) { 
-							margin: 59px 0 0 0;
-						}
+						margin: 28px 0 0 42px;
+						width: 334px;
 					}
 					.animation {
 						position: relative;
-
+						height: 360px;
+						
 						.red-bubble {
 							position: absolute;
-							top: 53px;
-							left: 5%;
-							width: 152px;
-
-							@include breakpoint(900) { 
-								top: 73px;
-							}
+							top: 20px;
+							left: 125px;
+							width: 154px;
 						}
 						.map {
 							position: absolute;
-							top: 43px;
-							right: 7%;
-							width: 60.6%;
-
-							@include breakpoint(900) { 
-								top: 63px;
-							}
+							top: 188px;
+							right: 50px;
+							width: 326px;
+						}
+						.lines {
+							position: absolute;
+							top: 155px;
+							right: 90px;
+							width: 204px;
+							display: none;
 						}
 						.map-people {
 							position: absolute;
-							top: 43px;
-							right: 7%;
-							width: 60.6%;
+							top: 188px;
+							right: 50px;
+							width: 326px;
 							display: none;
-
-							@include breakpoint(900) { 
-								top: 63px;
-							}
 						}
 					}
 					.info-one {
 						position: absolute;
 						z-index: 101;
-						bottom: 65px;
-						width: 462px;
-						height: 152px;
+						bottom: 40px;
+						width: 243px;
+						height: 141px;
 						display: none;
 						background-image: url(../images/info-one.jpg);
 					}
 				}
 				&:nth-child(3) {
 					.heading {
-						margin: 39px 0 0 0;
-						width: 91.6%;
-
-						@include breakpoint(900) { 
-							margin: 59px 0 0 0;
-						}
+						margin: 28px 0 0 42px;
+						width: 302px;
 					}
 					.animation {
 						position: relative;
+						height: 360px;
 
 						.man {
 							position: absolute;
-							top: 43px;
-							left: 4%;
-							width: 31.2%;
+							top: 22px;
+							left: 98px;
+							height: 257px;
 							display: none;
-
-							@include breakpoint(900) { 
-								top: 63px;
-							}
 						}
 						.men {
 							position: absolute;
-							top: 43px;
-							left: 4%;
-							width: 31.2%;
+							top: 22px;
+							left: 98px;
+							height: 257px;
 							display: none;
-
-							@include breakpoint(900) { 
-								top: 63px;
-							}
 						}
 						.text-3 {
 							position: absolute;
-							top: 120px;
-							right: 4%;
-							width: 52.3%;
-
-							@include breakpoint(900) { 
-								top: 140px;
-							}
+							top: 300px;
+							left: 40px;
+							width: 319px;
 						}
 					}
 					.info-two {
 						position: absolute;
 						z-index: 101;
-						bottom: 65px;
-						width: 462px;
-						height: 220px;
+						bottom: 40px;
+						width: 243px;
+						height: 204px;
 						display: none;
 						background-image: url(../images/info-two.jpg);
 					}
 				}
 				&:nth-child(4) {
 					.heading {
-						margin: 156px 0 0 0;
-						width: 97.5%;
+						margin: 152px 0 0 50px;
+						width: 331px;
 						display: none;
-
-						@include breakpoint(900) { 
-							top: 176px;
-						}
 					}
 					.cta-inner {
-						width: 242px;
-						height: 16px;
-						margin-top: 16px;
+						width: 249px;
+						height: 13px;
+						margin: 16px 0 0 50px;
 						background-image: url(../images/cta.png);
 						display: none;
 					}
@@ -200,9 +158,6 @@ body {
 		background: url(../images/larrow.png);
 		display: none;
 
-		@include breakpoint(900) { 
-			left: 2%; 
-		}
 	}
 	.arrow-right {
 		position: absolute;
@@ -212,63 +167,45 @@ body {
 		height: 37px;
 		background: url(../images/rarrow.png);
 
-		@include breakpoint(900) { 
-			right: 2%; 
-		}
 	}
 	.logo {
 		position: absolute;
 		background: url(../images/logo.png) no-repeat top left;
-		width: 73px;
-		height: 69px;
-		bottom: 30px;
-		right: 5%;
+		width: 59px;
+		height: 56px;
+		bottom: 14px;
+		right: 10px;
 	}
 	.indicator {
 		position: absolute;
 		z-index: 1;
-		bottom: 30px;
-		height: 12px;
+		bottom: 42px;
+		height: 9px;
 		left: 20%;
 		right: 20%;
 
 		.dots {
-			width: 84px;
-			height: 12px;
+			width: 63px;
+			height: 9px;
 			margin: 0 auto;
 
 			.dot {
 				display: block;
-				width: 12px;
-				height: 12px;
+				width: 9px;
+				height: 9px;
 				float: left;
 				background-image: url(../images/dot.png);
+				background-size: 100%;
 			
 				&:not(:last-child) {
-					margin-right: 12px;
+					margin-right: 9px;
 				}
 				&.active {
 					background-image: url(../images/bluedot.png);
+					background-size: 100%;
 				}
 			}
 		}	
-	}
-	.cta {
-		position: absolute;
-		bottom: 30px;
-		right: 5%;
-		display: none;
-		width: 242px;
-		height: 16px;
-		margin-right: 85px;
-		background-image: url(../images/cta.png);
-		background-size: 100%;
-		background-repeat: no-repeat;
-		background-position: right bottom;
-
-		@include breakpoint(900) { 
-			background-size: 75%;
-		}
 	}
 }
 
