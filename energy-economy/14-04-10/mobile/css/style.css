@@ -5,7 +5,6 @@
 body { margin: 0; }
 
 #qzad { position: relative; width: 320px; height: 150px; overflow: hidden; background: url(../images/bg.jpg) no-repeat center center; }
-#qzad .title { position: absolute; top: 12px; left: 22px; width: 219px; height: 49px; background: url(../images/title.png) no-repeat center center; }
-#qzad .title-blue { position: absolute; top: 12px; left: 22px; width: 219px; height: 49px; background: url(../images/title-blue.png) no-repeat center center; }
+#qzad #title { margin: 12px 0 0 22px; }
 #qzad .cta { position: absolute; bottom: 8px; left: 23px; display: block; width: 151px; }
 #qzad .logo { position: absolute; bottom: 8px; right: 13px; display: block; width: 49px; }

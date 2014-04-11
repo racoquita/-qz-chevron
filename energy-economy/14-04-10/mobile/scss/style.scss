@@ -21,21 +21,8 @@ body {
 	overflow: hidden;
 	background: url(../images/bg.jpg) no-repeat center center;
 
-	.title {
-		position: absolute;
-		top: 12px;
-		left: 22px;
-		width: 219px;
-		height: 49px;
-		background: url(../images/title.png) no-repeat center center;
-	}
-	.title-blue {
-		position: absolute;
-		top: 12px;
-		left: 22px;
-		width: 219px;
-		height: 49px;
-		background: url(../images/title-blue.png) no-repeat center center;
+	#title {
+		margin: 12px 0 0 22px;
 	}
 	.cta {
 		position: absolute;
