@@ -1,24 +1,37 @@
 var App = function() {
 	var that = this;
+	var timeouts = [];
+	var intervals = [];
 
 	this.on = function() {
 		c = document.getElementById("title");
 		ctx = c.getContext("2d");
 
+		this.initText();
+		this.createText();
+
+		timeouts[0] = setTimeout(function(){
+			that.animateText();
+		}, 1000);
+	}
+	this.off = function() {
+		$.each(timeouts, function(i, to){
+        	clearTimeout(to);
+        });
+        $.each(intervals, function(i, iv){
+        	clearTimeout(iv);
+        });
+
+		ctx.clearRect (0 , 0 , 320 , 150);
+		this.initText();
+		this.createText();
+	}
+	this.initText = function() {
 		ctx.font="29px interstate_cond_monobold";
 		
 		ctx.fillStyle = '#4f4e4c';
 		ctx.fillText("DRIVES OUR", 96, 22);
 		ctx.fillText("ECONOMY FORWARD.", 0, 48);
-
-		this.createText();
-
-		$('body').on('click', function(){
-			that.animateText();
-		});
-	}
-	this.off = function() {
-
 	}
 	this.createText = function() {
 		var gradient=ctx.createLinearGradient(0,0,c.width,0);
@@ -31,11 +44,12 @@ var App = function() {
 	}
 	this.animateText = function() {
 		var i = 0;
-		var timer = setInterval(function(){
+		
+		intervals[0] = setInterval(function(){
 			that.changetext(i);
 			i++;
 
-			if(i == 100) clearInterval(timer);
+			if(i == 100) clearInterval(intervals[0]);
 		}, 10);
 	}
 	this.changetext = function(i) {
