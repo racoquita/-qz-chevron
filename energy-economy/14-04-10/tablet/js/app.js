@@ -5,6 +5,11 @@ var App = function() {
 	var timeouts = [];
 
 	this.on = function() {
+		c = document.getElementById("sc1");
+		ctx = c.getContext("2d");
+
+		that.initText();
+
 		slider = new IScroll('#slider', {
 			scrollY: false,
 			scrollX: true,
@@ -85,5 +90,15 @@ var App = function() {
 		$('.dot').removeClass('active');
 		$('.dot:nth-child('+ (current + 1) +')').addClass('active');
 		$('.info-one, .info-two').hide();
+	}
+
+	/* ---------- canvas functionality ---------- */
+
+	this.initText = function() {
+		ctx.font="40px interstate_cond_monobold";
+		
+		ctx.fillStyle = '#4f4e4c';
+		ctx.fillText("WHICH INDUSTRY", 0, 30);
+		ctx.fillText("IS", 0, 70);
 	}
 };
