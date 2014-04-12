@@ -6,13 +6,28 @@ var App = function() {
 	var intervals = [];
 
 	this.on = function() {
-		c = document.getElementById("sc1");
-		c.width = 311;
-		c.height = 197;
-		ctx = c.getContext("2d");
+		c1 = document.getElementById("sc1");
+		c1.width = 311;
+		c1.height = 197;
+		ctx1 = c1.getContext("2d");
 
 		that.initText1();
 		that.animateText1();
+
+		c2 = document.getElementById("sc2");
+		c2.width = 334;
+		c2.height = 30;
+		ctx2 = c2.getContext("2d");
+
+		c3 = document.getElementById("sc3");
+		c3.width = 319;
+		c3.height = 51;
+		ctx3 = c3.getContext("2d");
+
+		c4 = document.getElementById("sc4");
+		c4.width = 319;
+		c4.height = 65;
+		ctx4 = c4.getContext("2d");
 
 		slider = new IScroll('#slider', {
 			scrollY: false,
@@ -27,8 +42,11 @@ var App = function() {
 			var page = current = slider.currentPage.pageX;
 
 			if(page == 1) {
+				that.initText2();
+
 				timeouts[0] = setTimeout(function(){
 					$('.lines').show().addClass('bounceIn');
+					that.animateText2();
 
 					timeouts[0] = setTimeout(function(){
 						$('.map-people').show().addClass('bounceIn');
@@ -36,20 +54,29 @@ var App = function() {
 				}, 250);
 			}
 			if(page == 2) {
+				that.initText3();
+
 				timeouts[1] = setTimeout(function(){
 					$('.man').show().addClass('bounceIn');
-
+					
 					timeouts[2] = setTimeout(function(){
 						$('.men').show().addClass('bounceIn');
+						that.animateText3();
 					}, 250);
 				}, 250);
 			}
 			if(page == 3) {
+				that.initText4();
+
 				timeouts[3] = setTimeout(function(){
-					$('.slide:nth-child(4) .heading').show().addClass('bounceIn');
+					$('.slide:nth-child(4) .heading, #sc4').show().addClass('bounceIn');
 
 					timeouts[4] = setTimeout(function(){
 						$('.cta-inner').css('display', 'block').addClass('bounceIn');
+						
+						timeouts[5] = setTimeout(function(){
+							that.animateText4();
+						}, 500);
 					}, 250);
 				}, 250);
 			}
@@ -97,7 +124,7 @@ var App = function() {
 		slider.destroy();
 		slider = null;
 
-		ctx.clearRect (0 , 0 , 480 , 550);
+		ctx1.clearRect (0 , 0 , 480 , 550);
 
 		$('.arrow-left').hide();
 	}
@@ -113,16 +140,17 @@ var App = function() {
 
 	/* ---------- canvas functionality ---------- */
 
+	/* ----- slide 1 ----- */
 	this.initText1 = function() {
-		ctx.font="36px interstate_cond_monobold";
-		ctx.fillStyle = '#4f4e4c';
+		ctx1.font="36px interstate_cond_monobold";
+		ctx1.fillStyle = '#4f4e4c';
 		
-		ctx.fillText("WHICH INDUSTRY", 0, 30);
-		ctx.fillText("IS", 0, 65);
-		ctx.fillText("CREATING", 36, 65);
-		ctx.fillText("AMERICAN JOBS", 0, 100);
-		ctx.fillText("AND STRENGTHENING", 0, 135);
-		ctx.fillText("THE ECONOMY?", 0, 170);
+		ctx1.fillText("WHICH INDUSTRY", 0, 30);
+		ctx1.fillText("IS", 0, 65);
+		ctx1.fillText("CREATING", 36, 65);
+		ctx1.fillText("AMERICAN JOBS", 0, 100);
+		ctx1.fillText("AND STRENGTHENING", 0, 135);
+		ctx1.fillText("THE ECONOMY?", 0, 170);
 	}
 
 	this.animateText1 = function() {
@@ -137,15 +165,108 @@ var App = function() {
 	}
 
 	this.changeText1 = function(i) {
-		var gradient = ctx.createLinearGradient(0,0,c.width,0);
+		var gradient = ctx1.createLinearGradient(0,0,c1.width,0);
 			gradient.addColorStop(i/100,"#009dd9");
 			gradient.addColorStop(i/100,"#4f4e4c");
 
-		ctx.clearRect(36,30,150,36);
-		ctx.clearRect(0,65,250,36);
+		ctx1.clearRect(36,30,150,36);
+		ctx1.clearRect(0,65,250,36);
 
-		ctx.fillStyle = gradient;
-		ctx.fillText("CREATING", 36, 65);
-		ctx.fillText("AMERICAN JOBS", 0, 100);
+		ctx1.fillStyle = gradient;
+		ctx1.fillText("CREATING", 36, 65);
+		ctx1.fillText("AMERICAN JOBS", 0, 100);
+	}
+
+	/* ----- slide 2 ----- */
+	this.initText2 = function() {
+		ctx2.font="36px interstate_cond_monobold";
+		ctx2.fillStyle = '#4f4e4c';
+		
+		ctx2.fillText("THE ANSWER IS", 0, 30);
+		ctx2.fillText("ENERGY", 220, 30);
+	}
+
+	this.animateText2 = function() {
+		var i = 0;
+		
+		intervals[1] = setInterval(function(){
+			that.changeText2(i);
+			i++;
+
+			if(i == 100) clearInterval(intervals[1]);
+		}, 10);
+	}
+
+	this.changeText2 = function(i) {
+		var gradient = ctx2.createLinearGradient(0,0,c2.width,0);
+			gradient.addColorStop(i/100,"#009dd9");
+			gradient.addColorStop(i/100,"#4f4e4c");
+
+		ctx2.clearRect(220,0,110,36);
+
+		ctx2.fillStyle = gradient;
+		ctx2.fillText("ENERGY", 220, 30);
+	}
+
+	/* ----- slide 3 ----- */
+	this.initText3 = function() {
+		ctx3.font="48px interstate_cond_monobold";
+		ctx3.fillStyle = '#4f4e4c';
+		
+		ctx3.fillText("CREATES 3 MORE", 0, 51);
+	}
+
+	this.animateText3 = function() {
+		var i = 0;
+		
+		intervals[2] = setInterval(function(){
+			that.changeText3(i);
+			i++;
+
+			if(i == 100) clearInterval(intervals[2]);
+		}, 10);
+	}
+
+	this.changeText3 = function(i) {
+		var gradient = ctx3.createLinearGradient(0,0,c3.width,0);
+			gradient.addColorStop(i/100,"#009dd9");
+			gradient.addColorStop(i/100,"#4f4e4c");
+
+		ctx3.clearRect(0,0,319,51);
+
+		ctx3.fillStyle = gradient;
+		ctx3.fillText("CREATES 3 MORE", 0, 51);
+	}
+
+	/* ----- slide 4 ----- */
+	this.initText4 = function() {
+		ctx4.font="36px interstate_cond_monobold";
+		ctx4.fillStyle = '#4f4e4c';
+		
+		ctx4.fillText("ENERGY", 0, 30);
+		ctx4.fillText("DRIVES OUR", 118, 30);
+		ctx4.fillText("ECONOMY FORWARD.", 0, 65);
+	}
+
+	this.animateText4 = function() {
+		var i = 0;
+		
+		intervals[3] = setInterval(function(){
+			that.changeText4(i);
+			i++;
+
+			if(i == 100) clearInterval(intervals[3]);
+		}, 10);
+	}
+
+	this.changeText4 = function(i) {
+		var gradient = ctx4.createLinearGradient(0,0,c4.width,0);
+			gradient.addColorStop(i/100,"#009dd9");
+			gradient.addColorStop(i/100,"#4f4e4c");
+
+		ctx4.clearRect(0,0,118,30);
+
+		ctx4.fillStyle = gradient;
+		ctx4.fillText("ENERGY", 0, 30);
 	}
 };
