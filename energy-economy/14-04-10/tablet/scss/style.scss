@@ -14,6 +14,9 @@
 body {
 	margin: 0;
 }
+canvas {
+	font-family: "interstate_cond_monobold" !important;
+}
 #qzad {
 	position: relative;
 	width: 480px;
@@ -169,8 +172,8 @@ body {
 		position: absolute;
 		top: 220px;
 		left: 5%;
-		width: 26px;
-		height: 37px;
+		width: 18px;
+		height: 26px;
 		background: url(../images/larrow.png);
 		display: none;
 
@@ -179,8 +182,8 @@ body {
 		position: absolute;
 		top: 220px;
 		right: 5%;
-		width: 26px;
-		height: 37px;
+		width: 18px;
+		height: 26px;
 		background: url(../images/rarrow.png);
 
 	}

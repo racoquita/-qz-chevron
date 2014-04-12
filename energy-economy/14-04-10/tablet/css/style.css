@@ -4,6 +4,8 @@
 
 body { margin: 0; }
 
+canvas { font-family: "interstate_cond_monobold" !important; }
+
 #qzad { position: relative; width: 480px; height: 550px; overflow: hidden; background: url(../images/paper.jpg) no-repeat center center; }
 #qzad #slider { width: 100%; height: 100%; }
 #qzad #slider .slides { list-style-type: none; margin: 0; padding: 0; width: 400%; height: 550px; overflow: hidden; }
@@ -31,8 +33,8 @@ body { margin: 0; }
 #qzad #slider .slides .slide:nth-child(3) .info-two { position: absolute; z-index: 101; bottom: 40px; width: 243px; height: 204px; display: none; background-image: url(../images/info-two.jpg); }
 #qzad #slider .slides .slide:nth-child(4) .heading { margin: 152px 0 0 50px; width: 331px; display: none; }
 #qzad #slider .slides .slide:nth-child(4) .cta-inner { width: 249px; height: 13px; margin: 16px 0 0 50px; background-image: url(../images/cta.png); display: none; }
-#qzad .arrow-left { position: absolute; top: 220px; left: 5%; width: 26px; height: 37px; background: url(../images/larrow.png); display: none; }
-#qzad .arrow-right { position: absolute; top: 220px; right: 5%; width: 26px; height: 37px; background: url(../images/rarrow.png); }
+#qzad .arrow-left { position: absolute; top: 220px; left: 5%; width: 18px; height: 26px; background: url(../images/larrow.png); display: none; }
+#qzad .arrow-right { position: absolute; top: 220px; right: 5%; width: 18px; height: 26px; background: url(../images/rarrow.png); }
 #qzad .logo { position: absolute; background: url(../images/logo.png) no-repeat top left; width: 59px; height: 56px; bottom: 14px; right: 10px; }
 #qzad .indicator { position: absolute; z-index: 1; bottom: 42px; height: 9px; left: 20%; right: 20%; }
 #qzad .indicator .dots { width: 63px; height: 9px; margin: 0 auto; }
