@@ -37,7 +37,9 @@ body { margin: 0; }
 #qzad #slider .slides .slide:nth-child(3) .animation .text-3b { position: absolute; top: 220px; left: 35%; width: 514px; }
 @media (max-width: 900px) { #qzad #slider .slides .slide:nth-child(3) .animation .text-3b { top: 180px; width: 400px; } }
 #qzad #slider .slides .slide:nth-child(3) .info-two { position: absolute; z-index: 101; bottom: 65px; width: 462px; height: 220px; display: none; background-image: url(../images/info-two.jpg); }
-#qzad #slider .slides .slide:nth-child(4) .heading { margin: 156px 0 0 0; width: 97.5%; display: none; }
+#qzad #slider .slides .slide:nth-child(4) #sc4 { margin: 156px 0 0 0; display: none; }
+@media (max-width: 900px) { #qzad #slider .slides .slide:nth-child(4) #sc4 { width: 95%; } }
+#qzad #slider .slides .slide:nth-child(4) .heading { width: 97.5%; display: none; }
 @media (max-width: 900px) { #qzad #slider .slides .slide:nth-child(4) .heading { top: 176px; } }
 #qzad #slider .slides .slide:nth-child(4) .cta-inner { width: 242px; height: 16px; margin-top: 16px; background-image: url(../images/cta.png); display: none; }
 #qzad .arrow-left { position: absolute; top: 220px; left: 5%; width: 26px; height: 37px; background: url(../images/larrow.png); display: none; }

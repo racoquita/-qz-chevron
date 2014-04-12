@@ -211,8 +211,15 @@ body {
 					}
 				}
 				&:nth-child(4) {
-					.heading {
+					#sc4 {
 						margin: 156px 0 0 0;
+						display: none;
+
+						@include breakpoint(900) { 
+							width: 95%;
+						}
+					}
+					.heading {
 						width: 97.5%;
 						display: none;
 

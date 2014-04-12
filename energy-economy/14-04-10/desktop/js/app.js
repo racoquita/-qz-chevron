@@ -35,6 +35,11 @@ var App = function() {
 			c3.width = 514;
 			c3.height = 87;
 			ctx3 = c3.getContext("2d");
+
+			c4 = document.getElementById("sc4");
+			c4.width = 804;
+			c4.height = 56;
+			ctx4 = c4.getContext("2d");
 		}, 100);
 
 		slider.on('scrollEnd', function(){
@@ -59,11 +64,16 @@ var App = function() {
 				}, 250);
 			}
 			if(page == 3) {
+				that.initText4();
 				timeouts[3] = setTimeout(function(){
-					$('.slide:nth-child(4) .heading').show().addClass('bounceIn');
+					$('.slide:nth-child(4) .heading, #sc4').show().addClass('bounceIn');
 
 					timeouts[4] = setTimeout(function(){
 						$('.cta-inner').css('display', 'block').addClass('bounceIn');
+
+						timeouts[5] = setTimeout(function(){
+							that.animateText4();
+						}, 500);
 					}, 250);
 				}, 250);
 			}
@@ -210,5 +220,36 @@ var App = function() {
 
 		ctx3.fillStyle = gradient;
 		ctx3.fillText("CREATES 3 MORE", 0, 81);
+	}
+
+	/* ----- slide 4 ----- */
+	this.initText4 = function() {
+		ctx4.font="48px interstate_cond_monobold";
+		ctx4.fillStyle = '#4f4e4c';
+		
+		ctx4.fillText("ENERGY", 0, 50);
+		ctx4.fillText("DRIVES OUR ECONOMY FORWARD.", 155, 50);
+	}
+
+	this.animateText4 = function() {
+		var i = 0;
+		
+		intervals[3] = setInterval(function(){
+			that.changeText4(i);
+			i++;
+
+			if(i == 100) clearInterval(intervals[3]);
+		}, 10);
+	}
+
+	this.changeText4 = function(i) {
+		var gradient = ctx4.createLinearGradient(0,0,c4.width,0);
+			gradient.addColorStop(i/100,"#009dd9");
+			gradient.addColorStop(i/100,"#4f4e4c");
+
+		ctx4.clearRect(0,0,155,56);
+
+		ctx4.fillStyle = gradient;
+		ctx4.fillText("ENERGY", 0, 50);
 	}
 };
