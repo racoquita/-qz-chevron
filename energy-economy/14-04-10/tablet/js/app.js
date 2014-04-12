@@ -6,28 +6,30 @@ var App = function() {
 	var intervals = [];
 
 	this.on = function() {
-		c1 = document.getElementById("sc1");
-		c1.width = 311;
-		c1.height = 197;
-		ctx1 = c1.getContext("2d");
+		timeouts[9] = setTimeout(function(){
+			c1 = document.getElementById("sc1");
+			c1.width = 311;
+			c1.height = 197;
+			ctx1 = c1.getContext("2d");
 
-		that.initText1();
-		that.animateText1();
+			that.initText1();
+			that.animateText1();
 
-		c2 = document.getElementById("sc2");
-		c2.width = 334;
-		c2.height = 30;
-		ctx2 = c2.getContext("2d");
+			c2 = document.getElementById("sc2");
+			c2.width = 334;
+			c2.height = 30;
+			ctx2 = c2.getContext("2d");
 
-		c3 = document.getElementById("sc3");
-		c3.width = 319;
-		c3.height = 51;
-		ctx3 = c3.getContext("2d");
+			c3 = document.getElementById("sc3");
+			c3.width = 319;
+			c3.height = 51;
+			ctx3 = c3.getContext("2d");
 
-		c4 = document.getElementById("sc4");
-		c4.width = 319;
-		c4.height = 65;
-		ctx4 = c4.getContext("2d");
+			c4 = document.getElementById("sc4");
+			c4.width = 319;
+			c4.height = 65;
+			ctx4 = c4.getContext("2d");
+		}, 100);
 
 		slider = new IScroll('#slider', {
 			scrollY: false,
