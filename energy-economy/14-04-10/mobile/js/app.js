@@ -4,11 +4,15 @@ var App = function() {
 	var intervals = [];
 
 	this.on = function() {
-		c = document.getElementById("title");
-		ctx = c.getContext("2d");
+		timeouts[9] = setTimeout(function(){
+			c = document.getElementById("title");
+			c.width = 320;
+			c.height = 150;
+			ctx = c.getContext("2d");
 
-		this.initText();
-		this.createText();
+			that.initText();
+			that.createText();
+		}, 100);
 
 		timeouts[0] = setTimeout(function(){
 			that.animateText();
