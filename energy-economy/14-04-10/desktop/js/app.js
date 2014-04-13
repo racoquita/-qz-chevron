@@ -40,7 +40,7 @@ var App = function() {
 			c4.width = 804;
 			c4.height = 56;
 			ctx4 = c4.getContext("2d");
-		}, 100);
+		}, 250);
 
 		slider.on('scrollEnd', function(){
 			var page = slider.currentPage.pageX;

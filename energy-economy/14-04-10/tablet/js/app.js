@@ -29,7 +29,7 @@ var App = function() {
 			c4.width = 319;
 			c4.height = 65;
 			ctx4 = c4.getContext("2d");
-		}, 100);
+		}, 250);
 
 		slider = new IScroll('#slider', {
 			scrollY: false,

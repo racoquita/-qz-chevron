@@ -12,7 +12,7 @@ var App = function() {
 
 			that.initText();
 			that.createText();
-		}, 100);
+		}, 250);
 
 		timeouts[0] = setTimeout(function(){
 			that.animateText();
