@@ -160,22 +160,28 @@ canvas {
 					}
 				}
 				&:nth-child(4) {
-					#sc4 {
-						margin: 152px 0 0 50px;
-						width: 331px;
-						display: none;
-					}
-					.heading {
-						margin: 10px 0 0 50px;
-						width: 331px;
-						display: none;
-					}
-					.cta-inner {
-						width: 249px;
-						height: 13px;
-						margin: 16px 0 0 50px;
-						background-image: url(../images/cta.png);
-						display: none;
+					.last {
+						display: block;
+						height: 100%;
+						
+						#sc4 {
+							margin: 152px 0 0 50px;
+							width: 331px;
+							display: none;
+						}
+						.heading {
+							margin: 10px 0 0 50px;
+							width: 331px;
+							display: none;
+						}
+						.cta-inner {
+							width: 249px;
+							height: 13px;
+							margin: 16px 0 0 50px;
+							background-image: url(../images/cta2.png);
+							background-repeat: no-repeat;
+							display: none;
+						}
 					}
 				}
 			}
@@ -238,6 +244,19 @@ canvas {
 				}
 			}
 		}	
+	}
+	.cta {
+		position: absolute;
+		bottom: 15px;
+		right: 5%;
+		display: none;
+		width: 151px;
+		height: 56px;
+		margin-right: 60px;
+		background-image: url(../images/cta.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: right bottom;
 	}
 }
 

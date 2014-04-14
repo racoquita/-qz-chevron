@@ -29,9 +29,10 @@ canvas { font-family: "interstate_cond_monobold" !important; }
 #qzad #slider .slides .slide:nth-child(3) .animation #sc3 { position: absolute; top: 303px; left: 40px; }
 #qzad #slider .slides .slide:nth-child(3) .animation .text-3b { position: absolute; top: 362px; left: 40px; width: 319px; }
 #qzad #slider .slides .slide:nth-child(3) .info-two { position: absolute; z-index: 101; bottom: 40px; width: 243px; height: 204px; display: none; background-image: url(../images/info-two.jpg); }
-#qzad #slider .slides .slide:nth-child(4) #sc4 { margin: 152px 0 0 50px; width: 331px; display: none; }
-#qzad #slider .slides .slide:nth-child(4) .heading { margin: 10px 0 0 50px; width: 331px; display: none; }
-#qzad #slider .slides .slide:nth-child(4) .cta-inner { width: 249px; height: 13px; margin: 16px 0 0 50px; background-image: url(../images/cta.png); display: none; }
+#qzad #slider .slides .slide:nth-child(4) .last { display: block; height: 100%; }
+#qzad #slider .slides .slide:nth-child(4) .last #sc4 { margin: 152px 0 0 50px; width: 331px; display: none; }
+#qzad #slider .slides .slide:nth-child(4) .last .heading { margin: 10px 0 0 50px; width: 331px; display: none; }
+#qzad #slider .slides .slide:nth-child(4) .last .cta-inner { width: 249px; height: 13px; margin: 16px 0 0 50px; background-image: url(../images/cta2.png); background-repeat: no-repeat; display: none; }
 #qzad .arrow-left { position: absolute; top: 220px; left: 5%; width: 18px; height: 26px; background: url(../images/larrow.png); display: none; }
 #qzad .arrow-right { position: absolute; top: 220px; right: 5%; width: 18px; height: 26px; background: url(../images/rarrow.png); }
 #qzad .logo { position: absolute; background: url(../images/logo.png) no-repeat top left; width: 59px; height: 56px; bottom: 14px; right: 10px; }
@@ -40,6 +41,7 @@ canvas { font-family: "interstate_cond_monobold" !important; }
 #qzad .indicator .dots .dot { display: block; width: 9px; height: 9px; float: left; background-image: url(../images/dot.png); background-size: 100%; }
 #qzad .indicator .dots .dot:not(:last-child) { margin-right: 9px; }
 #qzad .indicator .dots .dot.active { background-image: url(../images/bluedot.png); background-size: 100%; }
+#qzad .cta { position: absolute; bottom: 15px; right: 5%; display: none; width: 151px; height: 56px; margin-right: 60px; background-image: url(../images/cta.png); background-size: 100%; background-repeat: no-repeat; background-position: right bottom; }
 
 @-webkit-keyframes bounceIn { 0% { -webkit-transform: scale(0); transform: scale(0); }
   100% { -webkit-transform: scale(1); transform: scale(1); } }
