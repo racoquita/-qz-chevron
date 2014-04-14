@@ -253,6 +253,7 @@ body {
 		width: 26px;
 		height: 37px;
 		background: url(../images/larrow.png);
+		cursor: pointer;
 		display: none;
 
 		@include breakpoint(900) { 
@@ -266,6 +267,7 @@ body {
 		width: 26px;
 		height: 37px;
 		background: url(../images/rarrow.png);
+		cursor: pointer;
 
 		@include breakpoint(900) { 
 			right: 2%; 

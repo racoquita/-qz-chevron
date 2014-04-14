@@ -44,9 +44,9 @@ body { margin: 0; }
 #qzad #slider .slides .slide:nth-child(4) .last .heading { width: 97.5%; display: none; }
 @media (max-width: 900px) { #qzad #slider .slides .slide:nth-child(4) .last .heading { top: 176px; } }
 #qzad #slider .slides .slide:nth-child(4) .last .cta-inner { width: 242px; height: 16px; margin-top: 16px; background-image: url(../images/cta.png); display: none; }
-#qzad .arrow-left { position: absolute; top: 220px; left: 5%; width: 26px; height: 37px; background: url(../images/larrow.png); display: none; }
+#qzad .arrow-left { position: absolute; top: 220px; left: 5%; width: 26px; height: 37px; background: url(../images/larrow.png); cursor: pointer; display: none; }
 @media (max-width: 900px) { #qzad .arrow-left { left: 2%; } }
-#qzad .arrow-right { position: absolute; top: 220px; right: 5%; width: 26px; height: 37px; background: url(../images/rarrow.png); }
+#qzad .arrow-right { position: absolute; top: 220px; right: 5%; width: 26px; height: 37px; background: url(../images/rarrow.png); cursor: pointer; }
 @media (max-width: 900px) { #qzad .arrow-right { right: 2%; } }
 #qzad .logo { position: absolute; background: url(../images/logo.png) no-repeat top left; width: 73px; height: 69px; bottom: 30px; right: 5%; }
 #qzad .indicator { position: absolute; z-index: 1; bottom: 30px; height: 12px; left: 40%; right: 40%; }
