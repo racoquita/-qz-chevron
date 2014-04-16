@@ -6,12 +6,12 @@ body { margin: 0; }
 
 canvas { font-family: "interstate_cond_monobold" !important; }
 
-#qzad { position: absolute; width: 480px; height: 550px; overflow: hidden; background: url(../images/paper.jpg) no-repeat center center; }
+#qzad { position: absolute; width: 480px; height: 550px; overflow: hidden; background: url(http://ads.quartz.cc/sponsors/chevron/energy-economy/2014-04-10/tablet/images/paper.jpg) no-repeat center center; }
 #qzad #slider { width: 100%; height: 100%; position: relative; z-index: 11; }
 #qzad #slider .slides { list-style-type: none; margin: 0; padding: 0; width: 400%; height: 550px; overflow: hidden; }
 #qzad #slider .slides .slide { width: 25%; height: 550px; float: left; }
 #qzad #slider .slides .slide .content { width: 400px; height: 100%; margin: 0 auto; }
-#qzad #slider .slides .slide .content .info { position: absolute; bottom: 14px; width: 18px; height: 18px; background-image: url(../images/info.png); background-size: 100%; }
+#qzad #slider .slides .slide .content .info { position: absolute; bottom: 14px; width: 18px; height: 18px; background-image: url(http://ads.quartz.cc/sponsors/chevron/energy-economy/2014-04-10/tablet/images/info.png); background-size: 100%; }
 #qzad #slider .slides .slide:nth-child(1) #sc1 { margin: 150px 0 0 42px; }
 #qzad #slider .slides .slide:nth-child(2) #sc2 { margin: 28px 0 0 0; }
 #qzad #slider .slides .slide:nth-child(2) .heading { margin: 10px 0 0 0; height: 36px; }
@@ -19,7 +19,7 @@ canvas { font-family: "interstate_cond_monobold" !important; }
 #qzad #slider .slides .slide:nth-child(2) .animation .red-bubble { position: absolute; top: 20px; left: 125px; width: 154px; }
 #qzad #slider .slides .slide:nth-child(2) .animation .map { position: absolute; top: 135px; right: 50px; width: 326px; }
 #qzad #slider .slides .slide:nth-child(2) .animation .map-people { position: absolute; top: 155px; right: 50px; width: 326px; display: none; }
-#qzad #slider .slides .slide:nth-child(2) .info-one { position: absolute; z-index: 101; bottom: 40px; width: 243px; height: 141px; display: none; background-image: url(../images/info-one.jpg); background-size: 243px 141px; background-repeat: no-repeat; }
+#qzad #slider .slides .slide:nth-child(2) .info-one { position: absolute; z-index: 101; bottom: 40px; width: 243px; height: 141px; display: none; background-image: url(http://ads.quartz.cc/sponsors/chevron/energy-economy/2014-04-10/tablet/images/info-one.jpg); background-size: 243px 141px; background-repeat: no-repeat; }
 #qzad #slider .slides .slide:nth-child(3) .heading { margin: 28px 0 0 42px; width: 302px; }
 #qzad #slider .slides .slide:nth-child(3) .animation { position: relative; height: 360px; }
 #qzad #slider .slides .slide:nth-child(3) .animation .man { position: absolute; top: 22px; left: 98px; height: 257px; display: none; }
@@ -27,20 +27,20 @@ canvas { font-family: "interstate_cond_monobold" !important; }
 #qzad #slider .slides .slide:nth-child(3) .animation .text-3a { position: absolute; top: 300px; left: 40px; width: 319px; }
 #qzad #slider .slides .slide:nth-child(3) .animation #sc3 { position: absolute; top: 303px; left: 40px; }
 #qzad #slider .slides .slide:nth-child(3) .animation .text-3b { position: absolute; top: 362px; left: 40px; width: 319px; }
-#qzad #slider .slides .slide:nth-child(3) .info-two { position: absolute; z-index: 101; bottom: 40px; width: 243px; height: 204px; display: none; background-image: url(../images/info-two.jpg); background-size: 243px 204px; background-repeat: no-repeat; }
+#qzad #slider .slides .slide:nth-child(3) .info-two { position: absolute; z-index: 101; bottom: 40px; width: 243px; height: 204px; display: none; background-image: url(http://ads.quartz.cc/sponsors/chevron/energy-economy/2014-04-10/tablet/images/info-two.jpg); background-size: 243px 204px; background-repeat: no-repeat; }
 #qzad #slider .slides .slide:nth-child(4) .last { display: block; height: 100%; }
 #qzad #slider .slides .slide:nth-child(4) .last #sc4 { margin: 152px 0 0 50px; width: 331px; display: none; }
 #qzad #slider .slides .slide:nth-child(4) .last .heading { margin: 10px 0 0 50px; width: 331px; display: none; }
-#qzad #slider .slides .slide:nth-child(4) .last .cta-inner { width: 249px; height: 13px; margin: 16px 0 0 50px; background-image: url(../images/cta2.png); background-size: 249px 13px; background-repeat: no-repeat; display: none; }
-#qzad .arrow-left { position: absolute; z-index: 201; top: 220px; left: 5%; width: 18px; height: 26px; background: url(../images/larrow.png); cursor: pointer; display: none; }
-#qzad .arrow-right { position: absolute; z-index: 201; top: 220px; right: 5%; width: 18px; height: 26px; background: url(../images/rarrow.png); cursor: pointer; }
-#qzad .logo { position: absolute; z-index: 201; background: url(../images/logo.png) no-repeat top left; background-size: 59px 56px; width: 59px; height: 56px; bottom: 14px; right: 10px; }
+#qzad #slider .slides .slide:nth-child(4) .last .cta-inner { width: 249px; height: 13px; margin: 16px 0 0 50px; background-image: url(http://ads.quartz.cc/sponsors/chevron/energy-economy/2014-04-10/tablet/images/cta2.png); background-size: 249px 13px; background-repeat: no-repeat; display: none; }
+#qzad .arrow-left { position: absolute; z-index: 201; top: 220px; left: 5%; width: 18px; height: 26px; background: url(http://ads.quartz.cc/sponsors/chevron/energy-economy/2014-04-10/tablet/images/larrow.png); cursor: pointer; display: none; }
+#qzad .arrow-right { position: absolute; z-index: 201; top: 220px; right: 5%; width: 18px; height: 26px; background: url(http://ads.quartz.cc/sponsors/chevron/energy-economy/2014-04-10/tablet/images/rarrow.png); cursor: pointer; }
+#qzad .logo { position: absolute; z-index: 201; background: url(http://ads.quartz.cc/sponsors/chevron/energy-economy/2014-04-10/tablet/images/logo.png) no-repeat top left; background-size: 59px 56px; width: 59px; height: 56px; bottom: 14px; right: 10px; }
 #qzad .indicator { position: absolute; z-index: 1; bottom: 42px; height: 9px; left: 20%; right: 20%; }
 #qzad .indicator .dots { width: 63px; height: 9px; margin: 0 auto; }
-#qzad .indicator .dots .dot { display: block; width: 9px; height: 9px; float: left; background-image: url(../images/dot.png); background-size: 100%; }
+#qzad .indicator .dots .dot { display: block; width: 9px; height: 9px; float: left; background-image: url(http://ads.quartz.cc/sponsors/chevron/energy-economy/2014-04-10/tablet/images/dot.png); background-size: 100%; }
 #qzad .indicator .dots .dot:not(:last-child) { margin-right: 9px; }
-#qzad .indicator .dots .dot.active { background-image: url(../images/bluedot.png); background-size: 100%; }
-#qzad .cta { position: absolute; z-index: 201; bottom: 15px; right: 5%; display: none; width: 151px; height: 56px; margin-right: 60px; background-image: url(../images/cta2.png); background-size: 151px 56px; background-size: 100%; background-repeat: no-repeat; background-position: right bottom; }
+#qzad .indicator .dots .dot.active { background-image: url(http://ads.quartz.cc/sponsors/chevron/energy-economy/2014-04-10/tablet/images/bluedot.png); background-size: 100%; }
+#qzad .cta { position: absolute; z-index: 201; bottom: 15px; right: 5%; display: none; width: 151px; height: 56px; margin-right: 60px; background-image: url(http://ads.quartz.cc/sponsors/chevron/energy-economy/2014-04-10/tablet/images/cta2.png); background-size: 151px 56px; background-size: 100%; background-repeat: no-repeat; background-position: right bottom; }
 
 @-webkit-keyframes bounceIn { 0% { -webkit-transform: scale(0); transform: scale(0); }
   100% { -webkit-transform: scale(1); transform: scale(1); } }

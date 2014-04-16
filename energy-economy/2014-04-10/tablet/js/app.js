@@ -190,7 +190,7 @@ var App = function() {
 
 	/* ----- slide 2 ----- */
 	this.initText2 = function() {
-		ctx2.clearRect(220,0,120,36);
+		ctx2.clearRect(220,0,120,40);
 
 		ctx2.font="36px interstate_cond_monobold";
 		ctx2.fillStyle = '#4f4e4c';
@@ -218,7 +218,7 @@ var App = function() {
 			gradient.addColorStop(i/100,"#009dd9");
 			gradient.addColorStop(i/100,"#4f4e4c");
 
-		ctx2.clearRect(220,0,120,36);
+		ctx2.clearRect(220,0,120,40);
 
 		ctx2.fillStyle = gradient;
 		ctx2.fillText("ENERGY", 220, 30);
@@ -261,7 +261,7 @@ var App = function() {
 
 	/* ----- slide 4 ----- */
 	this.initText4 = function() {
-		ctx4.clearRect(0,0,118,30);
+		ctx4.clearRect(0,0,118,35);
 
 		ctx4.font="36px interstate_cond_monobold";
 		ctx4.fillStyle = '#4f4e4c';
@@ -290,7 +290,7 @@ var App = function() {
 			gradient.addColorStop(i/100,"#009dd9");
 			gradient.addColorStop(i/100,"#4f4e4c");
 
-		ctx4.clearRect(0,0,118,30);
+		ctx4.clearRect(0,0,118,35);
 
 		ctx4.fillStyle = gradient;
 		ctx4.fillText("ENERGY", 0, 30);
