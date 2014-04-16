@@ -1,3 +1,5 @@
+!function(a){var b=function(a){var b=a.backingStorePixelRatio||a.webkitBackingStorePixelRatio||a.mozBackingStorePixelRatio||a.msBackingStorePixelRatio||a.oBackingStorePixelRatio||a.backingStorePixelRatio||1;return(window.devicePixelRatio||1)/b},c=function(a,b){for(var c in a)a.hasOwnProperty(c)&&b(a[c],c)},d={fillRect:"all",clearRect:"all",strokeRect:"all",moveTo:"all",lineTo:"all",arc:[0,1,2],arcTo:"all",bezierCurveTo:"all",isPointinPath:"all",isPointinStroke:"all",quadraticCurveTo:"all",rect:"all",translate:"all",createRadialGradient:"all",createLinearGradient:"all"};c(d,function(c,d){a[d]=function(a){return function(){var d,e,f=b(this),g=Array.prototype.slice.call(arguments);if("all"===c)g=g.map(function(a){return a*f});else if(Array.isArray(c))for(d=0,e=c.length;e>d;d++)g[c[d]]*=f;return a.apply(this,g)}}(a[d])}),a.fillText=function(a){return function(){var c=b(this),d=Array.prototype.slice.call(arguments);d[1]*=c,d[2]*=c,this.font=this.font.replace(/(\d+)(px|em|rem|pt)/g,function(a,b,d){return b*c+d}),a.apply(this,d),this.font=this.font.replace(/(\d+)(px|em|rem|pt)/g,function(a,b,d){return b/c+d})}}(a.fillText),a.strokeText=function(a){return function(){var c=b(this),d=Array.prototype.slice.call(arguments);d[1]*=c,d[2]*=c,this.font=this.font.replace(/(\d+)(px|em|rem|pt)/g,function(a,b,d){return b*c+d}),a.apply(this,d),this.font=this.font.replace(/(\d+)(px|em|rem|pt)/g,function(a,b,d){return b/c+d})}}(a.strokeText)}(CanvasRenderingContext2D.prototype),function(a){a.getContext=function(a){return function(b){var c,d,e=a.call(this,b);return"2d"===b&&(c=e.backingStorePixelRatio||e.webkitBackingStorePixelRatio||e.mozBackingStorePixelRatio||e.msBackingStorePixelRatio||e.oBackingStorePixelRatio||e.backingStorePixelRatio||1,d=(window.devicePixelRatio||1)/c,d>1&&(this.style.height=this.height+"px",this.style.width=this.width+"px",this.width*=d,this.height*=d)),e}}(a.getContext)}(HTMLCanvasElement.prototype);
+
 var App = function() {
 	var that = this;
 	var slider = null;
@@ -174,7 +176,7 @@ var App = function() {
 	}
 
 	this.changeText1 = function(i) {
-		var gradient = ctx1.createLinearGradient(0,0,c1.width,0);
+		var gradient = ctx1.createLinearGradient(0,0,390,0);
 			gradient.addColorStop(i/100,"#009dd9");
 			gradient.addColorStop(i/100,"#4f4e4c");
 
@@ -212,7 +214,7 @@ var App = function() {
 	}
 
 	this.changeText2 = function(i) {
-		var gradient = ctx2.createLinearGradient(0,0,c2.width,0);
+		var gradient = ctx2.createLinearGradient(0,0,390,0);
 			gradient.addColorStop(i/100,"#009dd9");
 			gradient.addColorStop(i/100,"#4f4e4c");
 
@@ -247,7 +249,7 @@ var App = function() {
 	}
 
 	this.changeText3 = function(i) {
-		var gradient = ctx3.createLinearGradient(0,0,c3.width,0);
+		var gradient = ctx3.createLinearGradient(0,0,390,0);
 			gradient.addColorStop(i/100,"#009dd9");
 			gradient.addColorStop(i/100,"#4f4e4c");
 
@@ -284,7 +286,7 @@ var App = function() {
 	}
 
 	this.changeText4 = function(i) {
-		var gradient = ctx4.createLinearGradient(0,0,c4.width,0);
+		var gradient = ctx4.createLinearGradient(0,0,390,0);
 			gradient.addColorStop(i/100,"#009dd9");
 			gradient.addColorStop(i/100,"#4f4e4c");
 

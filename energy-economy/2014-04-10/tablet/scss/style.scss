@@ -68,6 +68,7 @@ canvas {
 					}
 					.heading {
 						margin: 10px 0 0 0;
+						height: 36px;
 					} 
 					.animation {
 						position: relative;
@@ -81,20 +82,13 @@ canvas {
 						}
 						.map {
 							position: absolute;
-							top: 188px;
+							top: 135px;
 							right: 50px;
 							width: 326px;
 						}
-						.lines {
-							position: absolute;
-							top: 155px;
-							right: 90px;
-							width: 204px;
-							display: none;
-						}
 						.map-people {
 							position: absolute;
-							top: 188px;
+							top: 155px;
 							right: 50px;
 							width: 326px;
 							display: none;
@@ -108,6 +102,8 @@ canvas {
 						height: 141px;
 						display: none;
 						background-image: url(../images/info-one.jpg);
+						background-size: 243px 141px;
+						background-repeat: no-repeat;
 					}
 				}
 				&:nth-child(3) {
@@ -159,6 +155,8 @@ canvas {
 						height: 204px;
 						display: none;
 						background-image: url(../images/info-two.jpg);
+						background-size: 243px 204px;
+						background-repeat: no-repeat;
 					}
 				}
 				&:nth-child(4) {
@@ -263,7 +261,8 @@ canvas {
 		width: 151px;
 		height: 56px;
 		margin-right: 60px;
-		background-image: url(../images/cta.png);
+		background-image: url(../images/cta2.png);
+		background-size: 151px 56px;
 		background-size: 100%;
 		background-repeat: no-repeat;
 		background-position: right bottom;
