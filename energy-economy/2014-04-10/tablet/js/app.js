@@ -8,26 +8,26 @@ var App = function() {
 	this.on = function() {
 		timeouts[9] = setTimeout(function(){
 			c1 = document.getElementById("sc1");
-			c1.width = 311;
-			c1.height = 197;
+			c1.width = 400;
+			c1.height = 220;
 			ctx1 = c1.getContext("2d");
 
 			that.initText1();
 			that.animateText1();
 
 			c2 = document.getElementById("sc2");
-			c2.width = 334;
-			c2.height = 30;
+			c2.width = 400;
+			c2.height = 50;
 			ctx2 = c2.getContext("2d");
 
 			c3 = document.getElementById("sc3");
-			c3.width = 319;
-			c3.height = 51;
+			c3.width = 400;
+			c3.height = 100;
 			ctx3 = c3.getContext("2d");
 
 			c4 = document.getElementById("sc4");
-			c4.width = 319;
-			c4.height = 65;
+			c4.width = 400;
+			c4.height = 100;
 			ctx4 = c4.getContext("2d");
 		}, 250);
 
@@ -145,6 +145,9 @@ var App = function() {
 
 	/* ----- slide 1 ----- */
 	this.initText1 = function() {
+		ctx1.clearRect(36,30,150,36);
+		ctx1.clearRect(0,65,250,36);
+
 		ctx1.font="36px interstate_cond_monobold";
 		ctx1.fillStyle = '#4f4e4c';
 		
@@ -163,7 +166,10 @@ var App = function() {
 			that.changeText1(i);
 			i++;
 
-			if(i >= 101) clearInterval(intervals[0]);
+			if(i >= 99) {
+				clearInterval(intervals[0]);
+				that.changeText1(100);
+			}
 		}, 5);
 	}
 
@@ -182,6 +188,8 @@ var App = function() {
 
 	/* ----- slide 2 ----- */
 	this.initText2 = function() {
+		ctx2.clearRect(220,0,120,36);
+
 		ctx2.font="36px interstate_cond_monobold";
 		ctx2.fillStyle = '#4f4e4c';
 		
@@ -196,7 +204,10 @@ var App = function() {
 			that.changeText2(i);
 			i++;
 
-			if(i >= 101) clearInterval(intervals[1]);
+			if(i >= 99) {
+				clearInterval(intervals[1]);
+				that.changeText2(100);
+			}
 		}, 5);
 	}
 
@@ -205,7 +216,7 @@ var App = function() {
 			gradient.addColorStop(i/100,"#009dd9");
 			gradient.addColorStop(i/100,"#4f4e4c");
 
-		ctx2.clearRect(220,0,110,36);
+		ctx2.clearRect(220,0,120,36);
 
 		ctx2.fillStyle = gradient;
 		ctx2.fillText("ENERGY", 220, 30);
@@ -213,6 +224,8 @@ var App = function() {
 
 	/* ----- slide 3 ----- */
 	this.initText3 = function() {
+		ctx3.clearRect(0,0,319,55);
+
 		ctx3.font="48px interstate_cond_monobold";
 		ctx3.fillStyle = '#4f4e4c';
 		
@@ -226,7 +239,10 @@ var App = function() {
 			that.changeText3(i);
 			i++;
 
-			if(i >= 101) clearInterval(intervals[2]);
+			if(i >= 99) {
+				clearInterval(intervals[2]);
+				that.changeText3(100);
+			}
 		}, 5);
 	}
 
@@ -235,7 +251,7 @@ var App = function() {
 			gradient.addColorStop(i/100,"#009dd9");
 			gradient.addColorStop(i/100,"#4f4e4c");
 
-		ctx3.clearRect(0,0,319,51);
+		ctx3.clearRect(0,0,319,55);
 
 		ctx3.fillStyle = gradient;
 		ctx3.fillText("CREATES 3 MORE", 0, 51);
@@ -243,6 +259,8 @@ var App = function() {
 
 	/* ----- slide 4 ----- */
 	this.initText4 = function() {
+		ctx4.clearRect(0,0,118,30);
+
 		ctx4.font="36px interstate_cond_monobold";
 		ctx4.fillStyle = '#4f4e4c';
 		
@@ -258,7 +276,10 @@ var App = function() {
 			that.changeText4(i);
 			i++;
 
-			if(i >= 101) clearInterval(intervals[3]);
+			if(i >= 99) {
+				clearInterval(intervals[3]);
+				that.changeText4(100);
+			}
 		}, 5);
 	}
 
