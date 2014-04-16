@@ -213,6 +213,11 @@ body {
 				&:nth-child(4) {
 					.content {
 						width: 780px;
+						margin-left: 100px;
+
+						@include breakpoint(900) { 
+							width: 620px;
+						}
 					}
 					.last {
 						display: block;

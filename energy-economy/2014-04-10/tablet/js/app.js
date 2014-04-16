@@ -37,7 +37,8 @@ var App = function() {
 			snap: 'li',
 			momentum: false,
     		bounceEasing: 'quadratic',
-    		deceleration: 0.01
+    		deceleration: 0.01,
+    		click: true
 		});
 
 		slider.on('scrollEnd', function(){
@@ -162,8 +163,8 @@ var App = function() {
 			that.changeText1(i);
 			i++;
 
-			if(i == 100) clearInterval(intervals[0]);
-		}, 10);
+			if(i >= 101) clearInterval(intervals[0]);
+		}, 5);
 	}
 
 	this.changeText1 = function(i) {
@@ -195,8 +196,8 @@ var App = function() {
 			that.changeText2(i);
 			i++;
 
-			if(i == 100) clearInterval(intervals[1]);
-		}, 10);
+			if(i >= 101) clearInterval(intervals[1]);
+		}, 5);
 	}
 
 	this.changeText2 = function(i) {
@@ -225,8 +226,8 @@ var App = function() {
 			that.changeText3(i);
 			i++;
 
-			if(i == 100) clearInterval(intervals[2]);
-		}, 10);
+			if(i >= 101) clearInterval(intervals[2]);
+		}, 5);
 	}
 
 	this.changeText3 = function(i) {
@@ -257,8 +258,8 @@ var App = function() {
 			that.changeText4(i);
 			i++;
 
-			if(i == 100) clearInterval(intervals[3]);
-		}, 10);
+			if(i >= 101) clearInterval(intervals[3]);
+		}, 5);
 	}
 
 	this.changeText4 = function(i) {
