@@ -1,0 +1,11 @@
+body { margin: 0; }
+
+img { width: 100%; }
+
+#qzad { position: absolute; width: 640px; height: 360px; overflow: hidden; background: url(../images/bg.jpg) no-repeat 100% center; background-size: 1242px 360px; }
+#qzad .headline { display: none; position: absolute; width: 252px; top: 27px; left: 207px; }
+#qzad .agree { display: none; position: absolute; width: 185px; top: 290px; left: 232px; }
+#qzad .info-1 { display: none; position: absolute; width: 358px; top: 71px; left: 164px; }
+#qzad .info-2 { display: none; position: absolute; width: 356px; top: 71px; left: 164px; }
+#qzad .logo { display: none; position: absolute; width: 83px; bottom: 20px; left: 34px; }
+#qzad .cta { display: none; position: absolute; width: 139px; right: 0px; bottom: 20px; }

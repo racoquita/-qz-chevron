@@ -1,0 +1,153 @@
+@mixin breakpoint($point) {
+	@if $point == 1400 {
+		@media (max-width : 1400px) {
+			@content; 
+		}
+	}
+	@else if $point == 1200 {
+		@media (max-width : 1200px) {
+			@content; 
+		}
+	}
+	@else if $point == 1000 {
+		@media (max-width : 1000px) {
+			@content; 
+		}
+	}
+	@else if $point == 800 {
+		@media (max-width : 800px) {
+			@content; 
+		}
+	}
+}
+
+body {
+	margin: 0;
+}
+img {
+	width: 100%;
+}
+#qzad {
+	position: absolute;
+	width: 100%;
+	height: 520px;
+	min-width: 769px;
+	max-width: 1600px;
+	overflow: hidden;
+	background: url(../images/bg.jpg) no-repeat 65% center;
+	background-size: 1600px 520px;
+
+	.headline {
+		display: none;
+		position: absolute;
+		width: 718px;
+		top: 72px;
+		left: 225px;
+
+		@include breakpoint(1400) {
+			width: 644px;
+			top: 70px;
+			left: 183px;
+		}
+		@include breakpoint(1200) {
+			width: 570px;
+			top: 69px;
+			left: 142px;
+		}
+		@include breakpoint(1000) {
+			width: 496px;
+			top: 67px;
+			left: 100px;
+		}
+		@include breakpoint(800) {
+			width: 423px;
+			top: 66px;
+			left: 59px;
+		}
+	}
+	.agree {
+		display: none;
+		position: absolute;
+		width: 366px;
+		top: 259px;
+		left: 380px;
+
+		@include breakpoint(1400) {
+			width: 328x;
+			top: 238px;
+			left: 322px;
+		}
+		@include breakpoint(1200) {
+			width: 291px;
+			top: 217px;
+			left: 264px;
+		}
+		@include breakpoint(1000) {
+			width: 253px;
+			top: 196px;
+			left: 206px;
+		}
+		@include breakpoint(800) {
+			width: 216px;
+			top: 176px;
+			left: 149px;
+		}
+	}
+
+	.info-1 {
+		display: none;
+		position: absolute;
+		width: 390px;
+		top: 66px;
+		left: 225px;
+
+		@include breakpoint(1400) {
+			left: 183px;
+		}
+		@include breakpoint(1200) {
+			left: 142px;
+		}
+		@include breakpoint(1000) {
+			left: 100px;
+		}
+		@include breakpoint(800) {
+			left: 59px;
+		}
+	}
+	.info-2 {
+		display: none;
+		position: absolute;
+		width: 430px;
+		top: 66px;
+		left: 225px;
+
+		@include breakpoint(1400) {
+			left: 183px;
+		}
+		@include breakpoint(1200) {
+			left: 142px;
+		}
+		@include breakpoint(1000) {
+			left: 100px;
+		}
+		@include breakpoint(800) {
+			left: 59px;
+		}
+	}
+
+
+	.logo {
+		display: none;
+		position: absolute;
+		width: 116px;
+		bottom: 24px;
+		left: 65px;
+	}
+	.cta {
+		display: none;
+		position: absolute;
+		width: 158px;
+		right: 0px;
+		bottom: 24px;
+	}
+}

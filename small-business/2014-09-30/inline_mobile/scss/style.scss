@@ -1,0 +1,78 @@
+body {
+	margin: 0;
+}
+img {
+	width: 100%;
+}
+#qzad {
+	position: absolute;
+	min-width: 276px;
+	min-height: 155px;
+	max-width: 640px;
+	max-height: 360px;
+	width: 100%;
+	overflow: hidden;
+
+	// proportionally responsive
+	.outer {
+		position: relative;
+		width: 100%;
+		padding-top: 56.25%;
+
+		.inner {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: url(../images/bg.jpg) no-repeat 100% center;
+			background-size: 194% 100%;
+		}
+	}
+
+	.headline {
+		display: none;
+		position: absolute;
+		width: 39.38%;
+		top: 7.5%;
+		left: 32.34%;
+	}
+	.agree {
+		display: none;
+		position: absolute;
+		width: 28.91%;
+		top: 80.56%;
+		left: 36.25%;
+	}
+
+	.info-1 {
+		display: none;
+		position: absolute;
+		width: 55.94%;
+		top: 19.72%;
+		left: 25.63%;
+	}
+	.info-2 {
+		display: none;
+		position: absolute;
+		width: 55.63%;
+		top: 19.72%;
+		left: 25.63%;
+	}
+
+
+	.logo {
+		display: none;
+		position: absolute;
+		width: 12.97%;
+		bottom: 5.56%;
+		left: 5.31%;
+	}
+	.cta {
+		display: none;
+		position: absolute;
+		width: 21.72%;
+		right: 0%;
+		bottom: 5.56%;
+	}
+}
