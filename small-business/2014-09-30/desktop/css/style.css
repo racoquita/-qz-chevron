@@ -24,4 +24,5 @@ img { width: 100%; }
 @media (max-width: 1000px) { #qzad .info-2 { left: 100px; } }
 @media (max-width: 800px) { #qzad .info-2 { left: 59px; } }
 #qzad .logo { display: none; position: absolute; width: 116px; bottom: 24px; left: 65px; }
-#qzad .cta { display: none; position: absolute; width: 158px; right: 0px; bottom: 24px; }
+#qzad .cta { display: none; position: absolute; width: 158px; right: 1.25%; bottom: 24px; background-color: #156AC4; }
+#qzad .cta img { display: block; width: 131px; margin: 11px auto; }

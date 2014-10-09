@@ -12,6 +12,7 @@ img {
 	max-height: 360px;
 	width: 100%;
 	overflow: hidden;
+	-webkit-tap-highlight-color: transparent;
 
 	// proportionally responsive
 	.outer {
@@ -60,7 +61,6 @@ img {
 		left: 25.63%;
 	}
 
-
 	.logo {
 		display: none;
 		position: absolute;
@@ -74,5 +74,12 @@ img {
 		width: 21.72%;
 		right: 0%;
 		bottom: 5.56%;
+		background-color: #156AC4;
+
+		img{
+			display: block;
+			width: 84.5%;
+			margin: 11px auto;
+		}
 	}
 }

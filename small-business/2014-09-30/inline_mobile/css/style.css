@@ -10,4 +10,5 @@ img { width: 100%; }
 #qzad .info-1 { display: none; position: absolute; width: 55.94%; top: 19.72%; left: 25.63%; }
 #qzad .info-2 { display: none; position: absolute; width: 55.63%; top: 19.72%; left: 25.63%; }
 #qzad .logo { display: none; position: absolute; width: 12.97%; bottom: 5.56%; left: 5.31%; }
-#qzad .cta { display: none; position: absolute; width: 21.72%; right: 0%; bottom: 5.56%; }
+#qzad .cta { display: none; position: absolute; width: 21.72%; right: 0%; bottom: 5.56%; background-color: #156AC4; }
+#qzad .cta img { display: block; width: 84.5%; margin: 11px auto; }

@@ -8,4 +8,5 @@ img { width: 100%; }
 #qzad .info-1 { display: none; position: absolute; width: 358px; top: 71px; left: 164px; }
 #qzad .info-2 { display: none; position: absolute; width: 356px; top: 71px; left: 164px; }
 #qzad .logo { display: none; position: absolute; width: 83px; bottom: 20px; left: 34px; }
-#qzad .cta { display: none; position: absolute; width: 139px; right: 0px; bottom: 20px; }
+#qzad .cta { display: none; position: absolute; width: 139px; right: 0; bottom: 24px; background-color: #156AC4; }
+#qzad .cta img { display: block; width: 115px; margin: 11px auto; }

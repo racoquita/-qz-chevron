@@ -36,6 +36,7 @@ img {
 	overflow: hidden;
 	background: url(../images/bg.jpg) no-repeat 65% center;
 	background-size: 1600px 520px;
+	-webkit-tap-highlight-color: transparent;
 
 	.headline {
 		display: none;
@@ -147,7 +148,14 @@ img {
 		display: none;
 		position: absolute;
 		width: 158px;
-		right: 0px;
+		right: 1.25%;//20px;
 		bottom: 24px;
+		background-color: #156AC4;
+
+		img{
+			display: block;
+			width: 131px;
+			margin: 11px auto;
+		}
 	}
 }
