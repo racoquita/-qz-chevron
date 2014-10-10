@@ -5,37 +5,101 @@ var App = function() {
 		that.showHeadline();
 	}
 	this.showHeadline = function() {
-		$('.headline').velocity('fadeIn', {
-			delay: 1000,
-			duration: 500,
+		$('#qzad').velocity({
+			backgroundPosition: '0%'
+		}, {
+			easing:"linear",
+			duration: 2750,
 			complete: function() {
-				that.showAgree();
+				
+			}
+		});
+		$('.guy').velocity({
+			right:"-10%"
+		},{
+			easing: "easeInOut",
+			duration: 2600
+		});
+		$('.headline').velocity({
+			left: "26.25%"
+		}, {
+			duration:500,
+			easing:"linear",
+			delay: 1000,
+			complete:function () {
+				$('.headline div.needs img').velocity({
+    				marginTop:"0px"
+    			}, {
+    				delay: 1,
+    				duration: 500,
+    				easing: "easeOutSine",
+    				complete:function() {
+    					$('.headline div.sm-bus img').velocity({
+    						marginTop:"0px"
+    					}, {
+    						delay:1,
+    						duration:500,
+    						easing: "easeOutSine",
+    						complete:function () {
+    							that.showAgree();
+    						}
+    					})
+    					
+    				}
+    			})
+			
+			}
+		})
+	}
+	this.showAgree = function() {
+		$('.agree img, .logo').velocity({
+			scale: 3
+		}, {
+			duration: 0,
+			complete: function() {
+				$('.agree img, .logo').velocity({
+					scale: 1,
+					opacity: 1
+				}, {
+					duration: 500,
+					delay: 750,
+					complete: function() {
+						that.hideHeadline();
+						that.showInfo1();
+					}
+				});
+
 			}
 		});
 	}
-	this.showAgree = function() {
-		$('.agree, .logo, .cta').velocity('fadeIn', {
+	this.hideHeadline = function () {
+		$('.headline, .agree').velocity({
+			left: "-100%"
+		}, {
 			delay: 2000,
-			duration: 500,
-			complete: function() {
-				that.showInfo1();
-			}
+			duration: 500
 		});
 	}
 	this.showInfo1 = function() {
-		$('.headline, .agree').velocity('fadeOut', {
-			delay: 3000,
+		$('.info-1').velocity({
+			right:'42.1875%'
+		}, {
+			delay: 2000,
 			duration: 500,
 			complete: function() {
-				$('.info-1').velocity('fadeIn', {
-					delay: 0,
-					duration: 500,
-					complete: function() {
-						that.showInfo2();
+			
+				$('.cta').velocity({ 
+				  right: "20px"
+				},{
+					delay:500,
+					duration:500,
+					complete:function(){ 
+						$('.cta .cta-arrow').addClass('animated bounce');
 					}
-				});
+
+				}, 1000);
 			}
-		});				
+		});		
 	}
 	this.showInfo2 = function() {
 		$('.info-1').velocity('fadeOut', {

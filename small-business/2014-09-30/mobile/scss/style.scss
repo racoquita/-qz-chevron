@@ -23,6 +23,30 @@
       	margin-right: 5%
     }
 }
+@-moz-keyframes bounce{
+    0% {
+    
+        margin-right: 5%
+    }
+    50% {
+       margin-right: 2.5%
+    }
+    100% {
+      	margin-right: 5%
+    }
+}
+@keyframes bounce{
+    0% {
+    
+        margin-right: 5%
+    }
+    50% {
+       margin-right: 2.5%
+    }
+    100% {
+      	margin-right: 5%
+    }
+}
 body {
 	margin: 0;
 }
@@ -41,6 +65,9 @@ img {
 	background: url(../images/bg01.jpg) no-repeat 100% center;
 	background-size: 1060px 430px;
 	-webkit-tap-highlight-color: transparent;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	.guy{
 		position: absolute;
 		top:0;
@@ -128,6 +155,8 @@ img {
 		p {
 			display: block;
 			width: 66.67%;
+			min-width: 268px;
+			padding:0;
 			margin: 0 auto;
 			font-family: "interstate_cond_monobold";
 			font-size: 33px;
@@ -135,22 +164,7 @@ img {
 			text-transform: uppercase;
 		}
 	}
-	.info-2 {
-		display: none;
-		position: absolute;
-		width: 100%;
-		top: 60px;
-
-		p {
-			display: block;
-			width: 73.67%;
-			margin: 0 auto;
-			font-family: "interstate_cond_monobold";
-			font-size: 33px;
-			color: white;
-			text-transform: uppercase;
-		}
-	}
+	
 
 	.logo {
 		display: block;
