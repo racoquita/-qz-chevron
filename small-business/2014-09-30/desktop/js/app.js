@@ -6,7 +6,7 @@ var App = function() {
 	}
 	this.showHeadline = function() {
 		$('#qzad').velocity({
-			backgroundPosition: '0%'
+			backgroundPosition: '65%'
 		}, {
 			easing:"linear",
 			duration: 2750,
@@ -15,7 +15,7 @@ var App = function() {
 			}
 		});
 		$('.guy').velocity({
-			right:"-10%"
+			left:"38.1875%"
 		},{
 			easing: "easeInOut",
 			duration: 2600
@@ -82,14 +82,15 @@ var App = function() {
 	}
 	this.showInfo1 = function() {
 		$('.info-1').velocity({
-			right:'42.1875%'
+			right:'44.625%'
+			//right: '55.1875%'
 		}, {
 			delay: 2000,
 			duration: 500,
 			complete: function() {
 			
 				$('.cta').velocity({ 
-				  right: "20px"
+				  right: "0px"
 				},{
 					delay:500,
 					duration:500,
