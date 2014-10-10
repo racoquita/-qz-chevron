@@ -14,6 +14,12 @@ var App = function() {
 				
 			}
 		});
+		$('.guy').velocity({
+			left:"90%"
+		},{
+			easing: "easeInOut",
+			duration: 2600
+		});
 		$('.headline').velocity({
 			left: "0px"
 		}, {

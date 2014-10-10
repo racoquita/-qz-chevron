@@ -31,15 +31,29 @@ img {
 }
 #qzad {
 	position: absolute;
+	bottom: 0;
+	top:0;
 	width: 100%;
 	height: 430px;
 	min-width: 320px;
 	max-width: 600px;
 	overflow: hidden;
-	background: url(../images/bg.jpg) no-repeat 100% center;
+	background: url(../images/bg01.jpg) no-repeat 100% center;
 	background-size: 1060px 430px;
 	-webkit-tap-highlight-color: transparent;
-
+	.guy{
+		position: absolute;
+		top:0;
+		left:0;
+		bottom:0;
+		width: 573px;
+		img{
+			display: block;
+			position: absolute;
+			bottom:0;
+			width: 100%;
+		}
+	}
 	.headline {
 		display: block;
 		position: absolute;

@@ -10,7 +10,9 @@ body { margin: 0; }
 
 img { width: 100%; }
 
-#qzad { position: absolute; width: 100%; height: 430px; min-width: 320px; max-width: 600px; overflow: hidden; background: url(../images/bg.jpg) no-repeat 100% center; background-size: 1060px 430px; -webkit-tap-highlight-color: transparent; }
+#qzad { position: absolute; bottom: 0; top: 0; width: 100%; height: 430px; min-width: 320px; max-width: 600px; overflow: hidden; background: url(../images/bg01.jpg) no-repeat 100% center; background-size: 1060px 430px; -webkit-tap-highlight-color: transparent; }
+#qzad .guy { position: absolute; top: 0; left: 0; bottom: 0; width: 573px; }
+#qzad .guy img { display: block; position: absolute; bottom: 0; width: 100%; }
 #qzad .headline { display: block; position: absolute; width: 100%; top: 60px; height: 255px; overflow: hidden; left: -100%; }
 #qzad .headline div { position: relative; overflow: auto; }
 #qzad .headline div img { margin-top: -100%; }
