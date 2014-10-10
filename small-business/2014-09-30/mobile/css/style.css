@@ -11,21 +11,21 @@ body { margin: 0; }
 img { width: 100%; }
 
 #qzad { position: absolute; width: 100%; height: 430px; min-width: 320px; max-width: 600px; overflow: hidden; background: url(../images/bg.jpg) no-repeat 100% center; background-size: 1060px 430px; -webkit-tap-highlight-color: transparent; }
-#qzad .headline { display: none; position: absolute; width: 100%; top: 60px; height: 43.5px; overflow: hidden; }
+#qzad .headline { display: block; position: absolute; width: 100%; top: 60px; height: 255px; overflow: hidden; left: -100%; }
 #qzad .headline div { position: relative; overflow: auto; }
 #qzad .headline div img { margin-top: -100%; }
-#qzad .headline .bg-bus { top: 0; height: 44px; border: 1px solid orange; }
+#qzad .headline .bg-bus { top: 0; height: 44px; }
 #qzad .headline .bg-bus img { margin-top: 0; }
-#qzad .headline .needs { border: 1px solid red; height: 75px; }
-#qzad .headline .sm-bus { top: 0px; border: 1px solid blue; height: 124px; }
+#qzad .headline .needs { height: 88px; }
+#qzad .headline .sm-bus { top: 0px; height: 124px; }
 #qzad .headline img { display: block; width: 230.5px; margin: 0 auto; -webkit-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; }
-#qzad .agree { display: none; position: absolute; width: 100%; top: 300px; }
-#qzad .agree img { display: block; width: 183px; margin: 0 auto; }
-#qzad .info-1 { display: none; position: absolute; width: 100%; top: 60px; }
+#qzad .agree { position: absolute; width: 100%; top: 300px; }
+#qzad .agree img { opacity: 0; display: block; width: 183px; margin: 0 auto; }
+#qzad .info-1 { display: block; position: absolute; width: 100%; left: 100%; top: 60px; }
 #qzad .info-1 p { display: block; width: 66.67%; margin: 0 auto; font-family: "interstate_cond_monobold"; font-size: 33px; color: white; text-transform: uppercase; }
 #qzad .info-2 { display: none; position: absolute; width: 100%; top: 60px; }
 #qzad .info-2 p { display: block; width: 73.67%; margin: 0 auto; font-family: "interstate_cond_monobold"; font-size: 33px; color: white; text-transform: uppercase; }
-#qzad .logo { display: none; position: absolute; width: 60px; bottom: 28px; left: 2.3%; }
+#qzad .logo { display: block; opacity: 0; position: absolute; width: 60px; bottom: 28px; left: 2.3%; }
 #qzad .cta { display: block; position: absolute; width: 140px; right: -140px; bottom: 32px; background-color: #5393ce; }
 #qzad .cta img { display: inline-block; }
 #qzad .cta .cta-text { float: left; width: 77.6968%; margin: 11px 1% 11px  5%; }

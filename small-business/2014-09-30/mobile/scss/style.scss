@@ -41,12 +41,13 @@ img {
 	-webkit-tap-highlight-color: transparent;
 
 	.headline {
-		display: none;
+		display: block;
 		position: absolute;
 		width: 100%;
 		top: 60px;
-		height: 43.5px;
+		height: 255px;
 		overflow: hidden;
+		left: -100%;
 		
 		// left: 100%;
 		div{
@@ -58,21 +59,22 @@ img {
 		}
 		.bg-bus{
 			top:0;
+		
 			height: 44px;
-			border: 1px solid orange;
+
 			img{
 				margin-top: 0;
 			}
 		}
 		.needs{
 			
-			border: 1px solid red;
-			height: 75px;
+		
+			height: 88px;
 				
 		}
 		.sm-bus{
 			top:0px;
-			border: 1px solid blue;
+			
 			height: 124px;
 				
 		}
@@ -89,22 +91,24 @@ img {
 
 	}
 	.agree {
-		display: none;
+		//display: none;
 		position: absolute;
 		width: 100%;
 		top: 300px;
-
+		
 		img {
+			opacity: 0;
 			display: block;
 			width: 183px;
-			margin: 0 auto;
+			margin: 0 auto;	
 		}
 	}
 
 	.info-1 {
-		display: none;
+		display: block;
 		position: absolute;
 		width: 100%;
+		left: 100%;
 		top: 60px;
 
 		p {
@@ -135,7 +139,8 @@ img {
 	}
 
 	.logo {
-		display: none;
+		display: block;
+		opacity: 0;
 		position: absolute;
 		width: 60px;
 		bottom: 28px;
