@@ -83,15 +83,17 @@ img {
 	min-width: 768px;
 	max-width: 1600px;
 	overflow: hidden;
-	background: url(../images/bg01.jpg) no-repeat 0% center;
+	background: url(../images/bg01.jpg) 0% center no-repeat;
 	background-size: 1600px 520px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+
+	// -webkit-box-sizing: border-box;
+	// -moz-box-sizing: border-box;
+	// box-sizing: border-box;
+	 
 	.guy{
 		position: absolute;
 		top:0;
-		left: 100%;
+		left:93.3125%;
 		bottom:0px;
 		width: 45%;// 720px;
 		min-width: 711px;
@@ -109,11 +111,28 @@ img {
 		width: 340px;
 		top: 56px;
 		left: -100%;
+		&.resize{
+			@include breakpoint(1400) {
 		
-		@include breakpoint(800) {
-			top:45px;
-			width: 21.25%;//340px;
-			min-width: 262px;
+				top: 70px;
+				left: 183px;
+			}
+			@include breakpoint(1200) {
+				
+				top: 69px;
+				left: 142px;
+			}
+			@include breakpoint(1000) {
+			
+				top: 67px;
+				left: 100px;
+			}
+			@include breakpoint(800) {
+				top:45px;
+				width: 21.25%;//340px;
+				min-width: 262px;
+				left: 59px;
+			}
 		}
 		div{
 			position: relative;
@@ -192,11 +211,26 @@ img {
 		width: 26.635%;//426px;
 		max-width: 426px;
 		min-width: 359.546875px;
+		-webkit-font-smoothing: antialiased;
 		p{
 			margin: 0;
 			padding: 0;
 			width: 100%;
 			
+		}
+		&.resize{
+			@include breakpoint(1400) {
+				left: 183px;
+			}
+			@include breakpoint(1200) {
+				left: 142px;
+			}
+			@include breakpoint(1000) {
+				left: 100px;
+			}
+			@include breakpoint(800) {
+				left: 59px;
+			}
 		}
 	}
 	

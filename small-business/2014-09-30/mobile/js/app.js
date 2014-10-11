@@ -109,6 +109,6 @@ var App = function() {
 		// $('#qzad').css('background-position', '100%');
 		// $('#qzad > div').hide();
 		$('.cta .cta-arrow').removeClass('animated bounce');
-		$('#qzad, .headline, .agree, .agree img, .info-1, .cta, .logo, .needs img, .sm-bus img').removeAttr('style')
+		$('#qzad, .headline, .agree, .agree img, .info-1, .cta, .logo, .needs img, .sm-bus img').removeAttr('style');
 	}
 };
