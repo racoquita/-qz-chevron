@@ -26,25 +26,25 @@
 @-moz-keyframes bounce{
     0% {
     
-        margin-right: 5%
+        margin-right: 6%; //12px
     }
     50% {
-       margin-right: 2.5%
+       margin-right: 3%//6px;
     }
     100% {
-      	margin-right: 5%
+      	margin-right: 6%;
     }
 }
 @keyframes bounce{
     0% {
     
-        margin-right: 5%
+        margin-right: 6%; //12px
     }
     50% {
-       margin-right: 2.5%
+       margin-right: 3%//6px;
     }
     100% {
-      	margin-right: 5%
+      	margin-right: 6%;
     }
 }
 body {

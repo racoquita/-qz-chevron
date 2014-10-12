@@ -6,13 +6,13 @@
   50% { margin-right: 3%; }
   100% { margin-right: 6%; } }
 
-@-moz-keyframes bounce { 0% { margin-right: 5%; }
-  50% { margin-right: 2.5%; }
-  100% { margin-right: 5%; } }
+@-moz-keyframes bounce { 0% { margin-right: 6%; }
+  50% { margin-right: 3%; }
+  100% { margin-right: 6%; } }
 
-@keyframes bounce { 0% { margin-right: 5%; }
-  50% { margin-right: 2.5%; }
-  100% { margin-right: 5%; } }
+@keyframes bounce { 0% { margin-right: 6%; }
+  50% { margin-right: 3%; }
+  100% { margin-right: 6%; } }
 
 body { margin: 0; }
 
