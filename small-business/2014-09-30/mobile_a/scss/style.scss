@@ -152,15 +152,15 @@ img {
 		width: 100%;
 		left: 100%;
 		top: 60px;
-
+		-webkit-font-smoothing:antialiased;
 		p {
 			display: block;
-			width: 66.67%;
+			width: 63.166667%;
 			min-width: 268px;
 			padding:0;
 			margin: 0 auto;
 			font-family: "interstate_cond_monobold";
-			font-size: 33px;
+			font-size: 40px;
 			color: white;
 			text-transform: uppercase;
 		}
@@ -181,7 +181,7 @@ img {
 		width: 140px;
 		right: -140px;
 		bottom: 32px;
-		background-color: #5393ce;
+		background-color: rgba(31, 146, 208, 1.0);
 		img{
 			display: inline-block;
 		}
