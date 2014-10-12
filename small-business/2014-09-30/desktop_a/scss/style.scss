@@ -48,26 +48,28 @@
 @-moz-keyframes bounce{
     0% {
     
-        margin-right: 5%
+        margin-right: 6%; //12px
     }
     50% {
-       margin-right: 2.5%
+       margin-right: 3%//6px;
     }
     100% {
-      	margin-right: 5%
+      	margin-right: 6%;
     }
+
 }
 @keyframes bounce{
     0% {
     
-        margin-right: 5%
+        margin-right: 6%; //12px
     }
     50% {
-       margin-right: 2.5%
+       margin-right: 3%//6px;
     }
     100% {
-      	margin-right: 5%
+      	margin-right: 6%;
     }
+
 }
 
 body {
@@ -83,7 +85,8 @@ img {
 	min-width: 768px;
 	max-width: 1600px;
 	overflow: hidden;
-	background: url(../images/bg01.jpg) 65% center no-repeat;
+	//background: url(../images/bg01.jpg) 65% center no-repeat;
+	background: url(../images/bg01.jpg) 0% center no-repeat;
 	background-size: 1600px 520px;
 
 	-webkit-box-sizing: border-box;
@@ -94,7 +97,8 @@ img {
 		position: absolute;
 		top:0;
 		//left:93.3125%;
-		left: 0;
+		//left: 0;
+		left:38.1875%;
 		bottom:0px;
 		width: 45%;// 720px;
 		min-width: 711px;
@@ -112,6 +116,9 @@ img {
 		width: 340px;
 		top: 56px;
 		left: -100%;
+		@include breakpoint(800) {
+				width: 266px;
+		}
 		&.resize{
 			@include breakpoint(1400) {
 		

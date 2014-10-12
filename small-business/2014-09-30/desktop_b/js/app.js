@@ -6,7 +6,7 @@ var App = function() {
 	}
 	this.showHeadline = function() {
 		$('#qzad').velocity({
-			backgroundPosition: '65%'
+			backgroundPosition: '0%'
 		}, {
 			easing:"linear",
 			duration: 2750
