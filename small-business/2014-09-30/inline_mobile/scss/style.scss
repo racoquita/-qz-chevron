@@ -8,31 +8,12 @@
 @mixin breakpoint($point) {
 	
 	
-	@if $point == 555 {
-		@media (max-width : 555px) {
+	@if $point == 500 {
+		@media (max-width : 500px) {
 			@content; 
 		}
 	}
-	@else if $point == 502 {
-		@media (max-width : 502px) {
-			@content; 
-		}
-	}
-	@else if $point == 470 {
-		@media (max-width : 470px) {
-			@content; 
-		}
-	}
-	@else if $point == 385 {
-		@media (max-width : 385px) {
-			@content; 
-		}
-	}
-	@else if $point == 300 {
-		@media (max-width : 300px) {
-			@content; 
-		}
-	}
+	
 	
 }
 .animated {
@@ -178,57 +159,20 @@ img {
 	.info-1 {
 		
 		position: absolute;
-		
+		width: 50%;
 		top: 19.72%;
 		//left: 25.63%;
 		left: 100%;
-		// @include breakpoint(555){
-		// 	width: 55%;
-		// 	top:17%;
-		// }
-		// @include breakpoint(502){
-		// 	width: 55%;
-		// 	top:17%;
-		// }
-		// @include breakpoint(470){
-		// 	width: 53%;
-		// 	top:18%;
-		// }
-		// @include breakpoint(385){
-		// 	width: 50%;
-		// 	top:19%;
-		// }
-		// @include breakpoint(300){
-		// 	width:224px;
-		// 	top:10%;
-		// }
+		
 
 		p {
 			display: block;
-			//width: 100%;
-			width: 50%;
+			width: 100%;
 			padding:0;
 			margin: 0;
 			font-family: "interstate_cond_monobold";
 			font-size: 2.063em;
 			color: white;
-			// @include breakpoint(555){
-			// 	font-size: 2em;
-			// }
-			
-			// @include breakpoint(502){
-			// 	font-size: 1.55em;
-			// }
-			// @include breakpoint(470){
-			// 	font-size: 1.55em;
-			// }
-			// @include breakpoint(385){
-			// 	font-size: 1.36em;
-			// }
-			// @include breakpoint(300){
-			// 	font-size: 0.5em;
-			// }
-			
 			text-transform: uppercase;
 		}
 	}

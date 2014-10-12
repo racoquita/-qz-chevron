@@ -33,8 +33,8 @@ img { width: 100%; }
 #qzad .headline .sm-bus { top: 0px; height: 48%; }
 #qzad .agree { position: absolute; width: 28.91%; top: 80.56%; left: 36.25%; }
 #qzad .agree img { opacity: 0; }
-#qzad .info-1 { position: absolute; top: 19.72%; left: 100%; }
-#qzad .info-1 p { display: block; width: 50%; padding: 0; margin: 0; font-family: "interstate_cond_monobold"; font-size: 2.063em; color: white; text-transform: uppercase; }
+#qzad .info-1 { position: absolute; width: 50%; top: 19.72%; left: 100%; }
+#qzad .info-1 p { display: block; width: 100%; padding: 0; margin: 0; font-family: "interstate_cond_monobold"; font-size: 2.063em; color: white; text-transform: uppercase; }
 #qzad .logo { opacity: 0; position: absolute; width: 12.97%; bottom: 5.56%; left: 5.31%; }
 #qzad .cta { z-index: 5; position: absolute; display: block; width: 21.72%; right: -30%; bottom: 5.56%; background-color: #156AC4; overflow: hidden; }
 #qzad .cta a { display: block; width: 100%; position: relative; overflow: auto; }
