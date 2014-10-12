@@ -6,7 +6,7 @@ var App = function() {
 	}
 	this.showHeadline = function() {
 		$('#qzad').velocity({
-			backgroundPosition: '65%'
+			backgroundPosition: '0%'
 		}, {
 			easing:"linear",
 			duration: 2750
@@ -15,7 +15,7 @@ var App = function() {
 			left:"38.1875%"
 		},{
 			easing: "easeInOut",
-			duration: 2600,
+			duration: 2000,
 			complete:function() {
 				$('.guy').addClass('resize');
 			}
