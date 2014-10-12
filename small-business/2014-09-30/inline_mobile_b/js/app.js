@@ -21,7 +21,8 @@ var App = function() {
 			duration: 2600
 		});
 		$('.headline').velocity({
-			left: "32.34%"
+			left: "32.34%",
+			width: '39.38%'
 		}, {
 			duration:500,
 			easing:"linear",

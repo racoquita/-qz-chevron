@@ -9,10 +9,7 @@ var App = function() {
 			backgroundPosition: '0%'
 		}, {
 			easing:"linear",
-			duration: 2950,
-			complete: function() {
-				
-			}
+			duration: 2950
 		});
 		$('.guy').velocity({
 			left:"100%"
@@ -21,7 +18,8 @@ var App = function() {
 			duration: 2600
 		});
 		$('.headline').velocity({
-			left: "32.34%"
+			left: "32.34%",
+			width: '39.38%'
 		}, {
 			duration:500,
 			easing:"linear",
