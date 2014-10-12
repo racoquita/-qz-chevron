@@ -24,9 +24,9 @@ img { width: 100%; }
 #qzad .headline { display: block; position: absolute; width: 255px; top: 27px; left: -422px; }
 #qzad .headline div { position: relative; overflow: auto; width: 100%; }
 #qzad .headline div img { margin-top: -100%; display: block; }
-#qzad .headline .bg-bus { top: 0; height: 44px; overflow: hidden; }
+#qzad .headline .bg-bus { top: 0; height: 48px; overflow: hidden; }
 #qzad .headline .bg-bus img { margin-top: 0; }
-#qzad .headline .needs { height: 92px; overflow: hidden; }
+#qzad .headline .needs { height: 93px; overflow: hidden; }
 #qzad .headline .sm-bus { top: 0px; height: 153px; }
 #qzad .agree { position: absolute; width: 188px; top: 291px; left: 230px; }
 #qzad .agree img { opacity: 0; display: block; width: 188px; }
