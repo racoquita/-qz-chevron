@@ -74,10 +74,10 @@ var App = function() {
 	}
 	this.hideHeadline = function () {
 		$('.headline, .agree').velocity({
-			left: "+=434px"
+			left: "-100%"
 		}, {
 			delay: 2000,
-			duration: 760
+			duration: 500
 		});
 	}
 	this.showInfo1 = function() {
@@ -85,8 +85,8 @@ var App = function() {
 			left:'25.46875%'
 			//right: '55.1875%'
 		}, {
-			delay: 2500,
-			duration: 760,
+			delay: 2000,
+			duration: 500,
 			complete: function() {
 			
 				$('.cta').velocity({ 

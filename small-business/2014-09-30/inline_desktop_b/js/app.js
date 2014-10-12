@@ -77,7 +77,7 @@ var App = function() {
 			left: "-100%"
 		}, {
 			delay: 2000,
-			duration: 760
+			duration: 500
 		});
 	}
 	this.showInfo1 = function() {
@@ -85,8 +85,8 @@ var App = function() {
 			left:'25.46875%'
 			//right: '55.1875%'
 		}, {
-			delay: 2500,
-			duration: 760,
+			delay: 2000,
+			duration: 500,
 			complete: function() {
 			
 				$('.cta').velocity({ 
@@ -105,7 +105,7 @@ var App = function() {
 	
 	this.off = function() {
 		
-		$('#qzad > div').hide();
+		//$('#qzad > div').hide();
 		$('.cta .cta-arrow').removeClass('animated bounce');
 		$('#qzad, .headline, .agree, .agree img, .info-1, .cta, .logo, .needs img, .sm-bus img').removeAttr('style')
 	}
