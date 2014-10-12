@@ -69,7 +69,7 @@ module.exports = function(grunt) {
           client: 'chevron',
           campaign: 'small-business',
           date: '2014-09-30',
-          unit: 'mobile',
+          unit: 'desktop_b',
           version: '1',
           internal_scripts: [
             
