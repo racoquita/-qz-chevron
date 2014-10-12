@@ -6,13 +6,13 @@
   50% { margin-right: 3%; }
   100% { margin-right: 6%; } }
 
-@-moz-keyframes bounce { 0% { margin-right: 5%; }
-  50% { margin-right: 2.5%; }
-  100% { margin-right: 5%; } }
+@-moz-keyframes bounce { 0% { margin-right: 6%; }
+  50% { margin-right: 3%; }
+  100% { margin-right: 6%; } }
 
-@keyframes bounce { 0% { margin-right: 5%; }
-  50% { margin-right: 2.5%; }
-  100% { margin-right: 5%; } }
+@keyframes bounce { 0% { margin-right: 6%; }
+  50% { margin-right: 3%; }
+  100% { margin-right: 6%; } }
 
 body { margin: 0; }
 
@@ -45,7 +45,7 @@ img { width: 100%; }
 #qzad .info-1.resize { -webkit-transition: all 0.5s ease; }
 @media (max-width: 800px) { #qzad .info-1.resize { left: 59px; } }
 #qzad .logo { opacity: 0; position: absolute; width: 116px; bottom: 24px; left: 65px; }
-#qzad .cta { display: block; position: absolute; width: 12.5%; min-width: 165px; right: -25%; bottom: 24px; background-color: #156AC4; }
+#qzad .cta { display: block; position: absolute; width: 12.5%; min-width: 165px; right: -25%; bottom: 24px; background-color: #1f92d0; }
 #qzad .cta img { display: block; }
 #qzad .cta .cta-text { float: left; width: 67.5%; margin: 11px 0 11px 11.5%; }
 #qzad .cta .cta-arrow { width: 13%; float: right; margin: 11px 6% 11px 0px; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; }

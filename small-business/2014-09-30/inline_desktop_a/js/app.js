@@ -53,20 +53,28 @@ var App = function() {
 	}
 	this.showAgree = function() {
 		$('.agree img, .logo').velocity({
-				scale: 1,
-				opacity: 1
+			scale: 3
 		}, {
-				duration: 500,
-				delay: 750,
-				complete: function() {
-					that.hideHeadline();
-					that.showInfo1();
-				}
+			duration: 0,
+			complete: function() {
+				$('.agree img, .logo').velocity({
+					scale: 1,
+					opacity: 1
+				}, {
+					duration: 500,
+					delay: 750,
+					complete: function() {
+						that.hideHeadline();
+						that.showInfo1();
+					}
+				});
+
+			}
 		});
 	}
 	this.hideHeadline = function () {
 		$('.headline, .agree').velocity({
-			left: "+=434px"
+			left: "-100%"
 		}, {
 			delay: 2000,
 			duration: 760

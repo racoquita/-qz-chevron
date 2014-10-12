@@ -169,7 +169,7 @@ img {
 		top: 19.72%;
 		//left: 25.63%;
 		left: 100%;
-		
+		-webkit-font-smoothing:antialiased;
 
 		p {
 			display: block;
@@ -208,7 +208,7 @@ img {
 		width: 21.72%;
 		right: -30%;
 		bottom: 5.56%;
-		background-color: #156AC4;
+		background-color: rgba(31, 146, 208, 1.0);
 		overflow: hidden;
 		a{
 			display: block;

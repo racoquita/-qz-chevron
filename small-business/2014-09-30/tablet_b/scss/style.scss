@@ -48,25 +48,25 @@
 @-moz-keyframes bounce{
     0% {
     
-        margin-right: 5%
+        margin-right: 6%; //12px
     }
     50% {
-       margin-right: 2.5%
+       margin-right: 3%//6px;
     }
     100% {
-      	margin-right: 5%
+      	margin-right: 6%;
     }
 }
 @keyframes bounce{
     0% {
     
-        margin-right: 5%
+        margin-right: 6%; //12px
     }
     50% {
-       margin-right: 2.5%
+       margin-right: 3%//6px;
     }
     100% {
-      	margin-right: 5%
+      	margin-right: 6%;
     }
 }
 
@@ -260,7 +260,7 @@ img {
 		min-width: 165px;
 		right: -25%;
 		bottom: 24px;
-		background-color: #156AC4;
+		background-color: rgba(31, 146, 208, 1.0);
 
 		img{
 			display: block;

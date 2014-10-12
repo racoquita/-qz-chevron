@@ -96,14 +96,14 @@ img {
 		}
 		.bg-bus{
 			top:0;
-			height: 44px;
+			height: 47px;
 			overflow: hidden;
 			img{
 				margin-top: 0;
 			}
 		}
 		.needs{
-			height: 92px;
+			height: 94px;
 			overflow: hidden;
 		}
 		.sm-bus{
@@ -137,6 +137,7 @@ img {
 		font-family: 'interstate_cond_monobold';
 		text-transform: uppercase;
 		color:white;
+		-webkit-font-smoothing:antialiased;
 		p{
 			margin: 0;
 			padding: 0;
@@ -157,7 +158,7 @@ img {
 		width: 139px;
 		right: -140px;
 		bottom: 24px;
-		background-color: #156AC4;
+		background-color: rgba(31, 146, 208, 1.0);
 
 		img{
 			display: block;
