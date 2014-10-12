@@ -82,7 +82,8 @@ var App = function() {
 	}
 	this.showInfo1 = function() {
 		$('.info-1').velocity({
-				left:'25.63%'
+				left:'25.63%',
+				width: '50%'
 			}, {
 				delay: 2000,
 				duration: 500,

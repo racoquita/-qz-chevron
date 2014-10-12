@@ -6,15 +6,21 @@
 
 }
 @mixin breakpoint($point) {
-	
-	
 	@if $point == 500 {
 		@media (max-width : 500px) {
 			@content; 
 		}
 	}
-	
-	
+	@else if $point == 400 {
+		@media (max-width : 400px) {
+			@content; 
+		}
+	}
+	@else if $point == 300 {
+		@media (max-width : 300px) {
+			@content; 
+		}
+	}
 }
 .animated {
     -webkit-animation-duration: 500ms;
@@ -174,6 +180,16 @@ img {
 			font-size: 2.063em;
 			color: white;
 			text-transform: uppercase;
+
+			@include breakpoint(500) {
+				font-size: 1.5em;
+			}
+			@include breakpoint(400) {
+				font-size: 1em;
+			}
+			@include breakpoint(300) {
+				font-size: .8em;
+			}
 		}
 	}
 	
