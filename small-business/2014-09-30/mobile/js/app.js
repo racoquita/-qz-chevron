@@ -49,7 +49,7 @@ var App = function() {
     			})
 			
 			}
-		})
+		});
 	}
 	this.showAgree = function() {
 		$('.agree img, .logo').velocity({
