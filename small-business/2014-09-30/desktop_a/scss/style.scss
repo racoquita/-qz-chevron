@@ -113,9 +113,10 @@ img {
 	.headline {
 		display: block;
 		position: absolute;
-		width: 340px;
+		width: 21.25%;//340px;
 		top: 56px;
 		left: -100%;
+		min-width: 257px;
 		@include breakpoint(800) {
 				width: 266px;
 		}
@@ -142,9 +143,9 @@ img {
 				left: 59px;
 			}
 		}
-		div{
+		.bg-bus, .needs, .sm-bus{
 			position: relative;
-			overflow: auto;
+			overflow: hidden;
 			img{
 				margin-top: -100%;
 				display: block;
@@ -154,33 +155,20 @@ img {
 		}
 		.bg-bus{
 			top:0;
-			height: 64px;
-			@include breakpoint(800) {
-				height: 49px;
-			}
 			img{
 				margin-top: 0;
 			}
 		}
-		.needs{
-			height: 126px;
-			@include breakpoint(800) {
-				height: 96px;
-			}
-				
-		}
+		
 		.sm-bus{
 			top:0px;	
-			height: 178px;
-			@include breakpoint(800) {
-				height: 135px;
-			}
+			
 				
 		}
 		img {
 			display: block;
-			width: 340px;
-			margin: 0 auto;
+			//width: 340px;
+			//margin: 0 auto;
 			-webkit-transition: all 0.4s ease;
 			-o-transition: all 0.4s ease;
 			transition: all 0.4s ease;
@@ -190,14 +178,15 @@ img {
 	}
 	.agree {
 	
-		position: absolute;
+		position: relative;
 		width: 366px;
-		top: 415px;
-		left: 28.1975%;
-		@include breakpoint(800) {
+		bottom: 8px;//415px;
+		//left: 28.1975%;
+		left: 0;
+		// @include breakpoint(800) {
 
-			top:318px;
-		}
+		// 	top:318px;
+		// }
 		img{
 			opacity: 0;
 			display: block;
@@ -247,6 +236,12 @@ img {
 		width: 116px;
 		bottom: 24px;
 		left: 65px;
+		a{
+			display: block;
+			img{
+				display: block;
+			}
+		}
 	}
 	.cta {
 		display: block;
