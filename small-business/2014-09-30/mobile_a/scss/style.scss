@@ -15,37 +15,37 @@
 @-webkit-keyframes bounce{
     0% {
     
-        margin-right: 5%
+        margin-right: 5.71428571429%
     }
     50% {
        margin-right: 2.5%
     }
     100% {
-      	margin-right: 5%
+      	margin-right: 5.71428571429%
     }
 }
 @-moz-keyframes bounce{
     0% {
     
-        margin-right: 5%
+        margin-right: 5.71428571429%
     }
     50% {
        margin-right: 2.5%
     }
     100% {
-      	margin-right: 5%
+      	margin-right: 5.71428571429%
     }
 }
 @keyframes bounce{
     0% {
     
-        margin-right: 5%
+        margin-right: 5.71428571429%
     }
     50% {
        margin-right: 2.5%
     }
     100% {
-      	margin-right: 5%
+      	margin-right: 5.71428571429%
     }
 }
 body {
@@ -191,19 +191,25 @@ img {
 		right: -140px;
 		bottom: 32px;
 		background-color: rgba(31, 146, 208, 1.0);
+		a{
+			display: block;
+			overflow: hidden;
+
+		}
 		img{
-			display: inline-block;
+			display: block;
 		}
 		.cta-text{
 			float: left;
-			width: 77.6968%;//84.5%;
-			margin: 11px 1% 11px  5%;
+			width: 67.1428571429%;//94px;
+			min-width: 94px;
+			margin: 9px 1% 9px  11.4285714286%;
 			
 		}
 		.cta-arrow{
-			width: 10.7913%;
+			width: 8.57142857143%;
 			float: right;
-			margin: 11px 5% 11px 0%;
+			margin: 9px 5.71428571429% 9px 0%;
 			-webkit-transition: all 0.5s ease;
 			-o-transition: all 0.5s ease;
 			transition: all 0.5s ease;
