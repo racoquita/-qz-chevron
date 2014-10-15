@@ -48,4 +48,4 @@ img { width: 100%; }
 #qzad .cta img { display: block; }
 #qzad .cta .cta-text { float: left; width: 67.5%; margin: 11px 0 11px 11.5%; }
 #qzad .cta .cta-arrow { width: 13%; float: right; margin: 11px 6% 11px 0px; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; }
-#qzad .cta .cta-arrow.bounce { -webkit-animation-name: bounce; animation-name: bounce; -webkit-animation-iteration-count: 3; animation-iteration-count: 3; }
+#qzad .cta .cta-arrow.bounce { -webkit-animation-name: bounce; -moz-animation-name: bounce; animation-name: bounce; -webkit-animation-iteration-count: 3; -moz-animation-iteration-count: 3; animation-iteration-count: 3; }

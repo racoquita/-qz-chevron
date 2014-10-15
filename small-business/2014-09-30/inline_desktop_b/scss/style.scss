@@ -7,8 +7,10 @@
 }
 .animated {
     -webkit-animation-duration: 500ms;
+    -moz-animation-duration: 500ms;
     animation-duration: 500ms;
     -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
     animation-fill-mode: both;
 }
 @-webkit-keyframes bounce{
@@ -49,6 +51,7 @@
 }
 body {
 	margin: 0;
+	font-size:16px;
 }
 img {
 	width: 100%;
@@ -58,18 +61,19 @@ img {
 	width: 640px;
 	height: 360px;
 	overflow: hidden;
-	background: url(../images/bg01.jpg) no-repeat 100% center;
+	background: url(../images/bg01.jpg) right center no-repeat;
 	background-size: 1242px 360px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	 -webkit-font-smoothing: antialiased;
+	
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	.guy{
 		position: absolute;
 		top:14px;
 		left: 79px;
 		bottom:0px;
-		// width: 45%;// 720px;
 		width: 542px;
 		height: 345px;
 		img{
@@ -87,30 +91,30 @@ img {
 		left:-422px;
 		div{
 			position: relative;
-			overflow: auto;
+			overflow: hidden;
 			width: 100%; 
 			img{
 				margin-top: -100%;
 				display: block;
+				-webkit-transition: all 0.5s ease;
+				-moz-transition: all 0.5s ease;
+				-o-transition: all 0.5s ease;
+				transition: all 0.5s ease;
 			}
 		}
 		.bg-bus{
 			top:0;
 			height: 48px;
-			overflow: hidden;
 			img{
 				margin-top: 0;
 			}
 		}
 		.needs{
 			height: 93px;
-			overflow: hidden;
 		}
 		.sm-bus{
 			top:0px;	
-			height: 153px;
-			
-				
+			height: 153px;	
 		}
 	}
 	.agree {
@@ -131,16 +135,18 @@ img {
 		position: absolute;
 		width: 385.996552px;
 		top: 70px;
-		//left: -513px;
 		left: 100%;
 		font-size: 2.577em;
 		font-family: 'interstate_cond_monobold';
 		text-transform: uppercase;
 		color:white;
+
 		p{
 			margin: 0;
 			padding: 0;
 			width: 100%;
+			-webkit-font-smoothing:antialiased;
+			text-shadow: 0 0 1px rgba(0,0,0,0.3);
 			
 		}
 	}
@@ -158,12 +164,9 @@ img {
 		right: -140px;
 		bottom: 24px;
 		background-color: rgba(31, 146, 208, 1.0);
-
 		img{
 			display: block;
-			
 		}
-
 		.cta-text{
 			float: left;
 			width: 67.5%;// 135px;
@@ -175,12 +178,16 @@ img {
 			float: right;
 			margin: 11px 6% 11px 0px;
 			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
 			-o-transition: all 0.5s ease;
 			transition: all 0.5s ease;
 			&.bounce{
 				-webkit-animation-name: bounce;
+				-moz-animation-name: bounce;
     			animation-name: bounce;
+    			
     			-webkit-animation-iteration-count: 3; 
+    			-moz-animation-iteration-count: 3; 
     			animation-iteration-count: 3;
 			}
 			

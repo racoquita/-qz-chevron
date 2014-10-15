@@ -87,7 +87,6 @@ img {
 	min-width: 768px;
 	max-width: 1600px;
 	overflow: hidden;
-	//background: url(../images/bg01.jpg) 65% center no-repeat;
 	background: url(../images/bg01.jpg) 0% center no-repeat;
 	background-size: 1600px 520px;
 
@@ -98,8 +97,6 @@ img {
 	.guy{
 		position: absolute;
 		top:0;
-		//left:93.3125%;
-		//left: 0;
 		left:38.1875%;
 		bottom:0px;
 		width: 45%;// 720px;
@@ -169,8 +166,6 @@ img {
 		}
 		img {
 			display: block;
-			//width: 340px;
-			//margin: 0 auto;
 			-webkit-transition: all 0.4s ease;
 			-moz-transition: all 0.4s ease;
 			-o-transition: all 0.4s ease;
@@ -184,17 +179,11 @@ img {
 		position: relative;
 		width: 366px;
 		bottom: 8px;//415px;
-		//left: 28.1975%;
 		left: 0;
-		// @include breakpoint(800) {
-
-		// 	top:318px;
-		// }
 		img{
 			opacity: 0;
 			display: block;
 			width: 256px;
-
 		}
 	}
 
@@ -274,8 +263,10 @@ img {
 			transition: all 0.5s ease;
 			&.bounce{
 				-webkit-animation-name: bounce;
+				-moz-animation-name: bounce;
     			animation-name: bounce;
     			-webkit-animation-iteration-count: 3; 
+    			-moz-animation-iteration-count: 3; 
     			animation-iteration-count: 3;
 			}
 			

@@ -15,7 +15,7 @@ var App = function() {
 			}
 		});
 		$('.guy').velocity({
-			left:"90%"
+			left:"100%"
 		},{
 			easing: "easeInOut",
 			duration: 2600

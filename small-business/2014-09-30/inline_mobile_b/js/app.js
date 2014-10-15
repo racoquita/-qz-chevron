@@ -9,7 +9,7 @@ var App = function() {
 			backgroundPosition: '0%'
 		}, {
 			easing:"linear",
-			duration: 2950,
+			duration: 2750,
 			complete: function() {
 				
 			}

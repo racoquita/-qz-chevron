@@ -7,8 +7,10 @@
 }
 .animated {
     -webkit-animation-duration: 500ms;
+    -moz-animation-duration: 500ms;
     animation-duration: 500ms;
     -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
     animation-fill-mode: both;
 }
 @-webkit-keyframes bounce{
@@ -87,7 +89,7 @@ img {
 		left:-422px;
 		div{
 			position: relative;
-			overflow: auto;
+			overflow: hidden;
 			width: 100%; 
 			img{
 				margin-top: -100%;
@@ -97,7 +99,6 @@ img {
 		.bg-bus{
 			top:0;
 			height: 48px;
-			overflow: hidden;
 			img{
 				margin-top: 0;
 			}
@@ -108,9 +109,7 @@ img {
 		}
 		.sm-bus{
 			top:0px;	
-			height: 153px;
-			
-				
+			height: 153px;	
 		}
 	}
 	.agree {
@@ -123,6 +122,11 @@ img {
 			opacity: 0;
 			display: block;
 			width: 188px;
+
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
 		}
 	}
 
@@ -131,7 +135,6 @@ img {
 		position: absolute;
 		width: 387px;
 		top: 70px;
-		//left: -513px;
 		left: 100%;
 		font-size: 2.577em;
 		font-family: 'interstate_cond_monobold';
@@ -176,12 +179,15 @@ img {
 			float: right;
 			margin: 11px 6% 11px 0px;
 			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
 			-o-transition: all 0.5s ease;
 			transition: all 0.5s ease;
 			&.bounce{
 				-webkit-animation-name: bounce;
+				-moz-animation-name: bounce;
     			animation-name: bounce;
     			-webkit-animation-iteration-count: 3; 
+    			-moz-animation-iteration-count: 3; 
     			animation-iteration-count: 3;
 			}
 			
