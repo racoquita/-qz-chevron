@@ -82,7 +82,7 @@ var App = function() {
 	}
 	this.showInfo1 = function() {
 		$('.info-1').velocity({
-			left:'25.46875%'
+			left:'19.46875%'
 			//right: '55.1875%'
 		}, {
 			delay: 2500,

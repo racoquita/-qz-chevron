@@ -32,7 +32,7 @@ img { width: 100%; }
 #qzad .headline .sm-bus { top: 0px; }
 #qzad .agree { position: absolute; width: 28.91%; top: 80.56%; left: 36.25%; }
 #qzad .agree img { opacity: 0; }
-#qzad .info-1 { position: absolute; width: 50%; top: 19.72%; left: 100%; }
+#qzad .info-1 { position: absolute; width: 54%; top: 19.72%; left: 100%; }
 #qzad .info-1 p { display: block; width: 100%; padding: 0; margin: 0; font-family: "interstate_cond_monobold"; font-size: 2.063em; color: white; text-transform: uppercase; -webkit-font-smoothing: antialiased; }
 @media (max-width: 500px) { #qzad .info-1 p { font-size: 1.5em; } }
 @media (max-width: 400px) { #qzad .info-1 p { font-size: 1em; } }
