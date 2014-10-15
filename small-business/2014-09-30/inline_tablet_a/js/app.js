@@ -8,8 +8,8 @@ var App = function() {
 		$('#qzad').velocity({
 			backgroundPosition: '0%'
 		},{
-			easing:"linear",
-			duration: 2750,
+			easing:"easeInOut",
+			duration: 3000,
 			complete: function() {
 				
 			}
@@ -23,15 +23,15 @@ var App = function() {
 		$('.headline').velocity({
 			left: "32.65625%"
 		}, {
-			duration:500,
+			duration: 1000,
 			easing:"linear",
-			delay: 1000,
+			delay: 900,
 			complete:function () {
 				$('.headline div.needs img').velocity({
     				marginTop:"0px"
     			}, {
-    				delay: 1,
-    				duration: 500,
+    				delay: 0,
+    				duration: 800,
     				easing: "easeOutSine",
     				complete:function() {
     					$('.headline div.sm-bus img').velocity({
@@ -76,8 +76,8 @@ var App = function() {
 		$('.headline, .agree').velocity({
 			left: "-100%"
 		}, {
-			delay: 2000,
-			duration: 500
+			delay: 1800,
+			duration: 750
 		});
 	}
 	this.showInfo1 = function() {
@@ -85,8 +85,8 @@ var App = function() {
 			left:'25.46875%'
 			//right: '55.1875%'
 		}, {
-			delay: 2000,
-			duration: 500,
+			delay: 2500,
+			duration: 600,
 			complete: function() {
 			
 				$('.cta').velocity({ 

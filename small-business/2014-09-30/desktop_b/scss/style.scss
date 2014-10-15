@@ -148,35 +148,27 @@ img {
 				margin-top: -100%;
 				display: block;
 				width: 100%;
-
+				// -webkit-transition: all 0.4s ease;
+				// -moz-transition: all 0.4s ease;
+				// -o-transition: all 0.4s ease;
+				// transition: all 0.4s ease;
 			}
 		}
 		.bg-bus{
 			top:0;
-			
 			img{
 				margin-top: 0;
 			}
 		}
-		
 		.sm-bus{
 			top:0px;	
 		}
-		img {
-			
-			-webkit-transition: all 0.4s ease;
-			-moz-transition: all 0.4s ease;
-			-o-transition: all 0.4s ease;
-			transition: all 0.4s ease;
-			
-		}
-
 	}
 	.agree {
 		position: relative;
 		width: 366px;
 		bottom:8px;
-		left: 0;
+		left: 2%;
 		img{
 			opacity: 0;
 			display: block;
@@ -225,8 +217,8 @@ img {
 		opacity: 0;
 		position: absolute;
 		width: 116px;
-		bottom: 24px;
-		left: 65px;
+		bottom:30px;
+		left: 30px;
 		a{
 			display: block;
 			img{
@@ -240,7 +232,7 @@ img {
 		width: 12.5%;//200px;
 		min-width: 165px;
 		right: -25%;
-		bottom: 24px;
+		bottom: 30px;
 		background-color: rgba(31, 146, 208, 1.0);
 
 		img{

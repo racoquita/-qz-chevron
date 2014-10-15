@@ -11,18 +11,7 @@ var App = function() {
 			easing:"linear",
 			duration: 2750
 		});
-		$('.guy').velocity({
-
-			//left:"33.1875%"
-		},{
-			easing: "easeInOut",
-			delay:500,
-			duration: 2000,
-			complete:function() {
-				//$('.guy').addClass('resize');
-
-			}
-		});
+		
 		$('.headline').velocity({
 			left: "26.25%"
 		}, {

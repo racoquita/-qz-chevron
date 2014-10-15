@@ -122,11 +122,6 @@ img {
 			opacity: 0;
 			display: block;
 			width: 188px;
-
-			-webkit-transition: all 0.5s ease;
-			-moz-transition: all 0.5s ease;
-			-o-transition: all 0.5s ease;
-			transition: all 0.5s ease;
 		}
 	}
 
@@ -135,7 +130,7 @@ img {
 		position: absolute;
 		width: 387px;
 		top: 70px;
-		left: 100%;
+		left: -100%;
 		font-size: 2.577em;
 		font-family: 'interstate_cond_monobold';
 		text-transform: uppercase;
