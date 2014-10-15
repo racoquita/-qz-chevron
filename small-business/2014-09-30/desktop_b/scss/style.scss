@@ -29,6 +29,7 @@
 }
 .animated {
     -webkit-animation-duration: 500ms;
+    -moz-animation-duration: 500ms;
     animation-duration: 500ms;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
@@ -164,6 +165,7 @@ img {
 		img {
 			
 			-webkit-transition: all 0.4s ease;
+			-moz-transition: all 0.4s ease;
 			-o-transition: all 0.4s ease;
 			transition: all 0.4s ease;
 			
@@ -256,12 +258,15 @@ img {
 			float: right;
 			margin: 11px 6% 11px 0px;
 			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
 			-o-transition: all 0.5s ease;
 			transition: all 0.5s ease;
 			&.bounce{
 				-webkit-animation-name: bounce;
+				-moz-animation-name: bounce;
     			animation-name: bounce;
     			-webkit-animation-iteration-count: 3; 
+    			-moz-animation-iteration-count: 3; 
     			animation-iteration-count: 3;
 			}
 			

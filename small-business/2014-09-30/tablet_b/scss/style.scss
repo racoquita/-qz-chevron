@@ -29,8 +29,10 @@
 }
 .animated {
     -webkit-animation-duration: 500ms;
+    -moz-animation-duration: 500ms;
     animation-duration: 500ms;
     -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
     animation-fill-mode: both;
 }
 @-webkit-keyframes bounce{
@@ -113,7 +115,8 @@ img {
 	.headline {
 		display: block;
 		position: absolute;
-		width: 340px;
+		width: 21.25%;//340px;
+		min-width: 257px;
 		overflow: hidden;
 		top: 56px;
 		left: -100%;
@@ -144,7 +147,7 @@ img {
 				left: 59px;
 			}
 		}
-		div{
+		.bg-bus, .needs, .sm-bus{
 			position: relative;
 			overflow: hidden;
 			img{
@@ -157,34 +160,17 @@ img {
 		}
 		.bg-bus{
 			top:0;
-			height: 64px;
-			@include breakpoint(800) {
-				height: 49px;
-			}
 			img{
 				margin-top: 0;
 			}
 		}
-		.needs{
-			height: 126px;
-			@include breakpoint(800) {
-				height: 96px;
-			}
-				
-		}
 		.sm-bus{
-			top:0px;	
-			height: 178px;
-			@include breakpoint(800) {
-				height: 135px;
-			}
-				
+			top:0px;			
 		}
 		img {
-			// display: block;
-			// width: 340px;
-			// margin: 0 auto;
+			
 			-webkit-transition: all 0.4s ease;
+			-moz-transition: all 0.4s ease;
 			-o-transition: all 0.4s ease;
 			transition: all 0.4s ease;
 			
@@ -193,14 +179,11 @@ img {
 	}
 	.agree {
 	
-		position: absolute;
+		position: relative;
 		width: 366px;
-		top: 415px;
-		left: 28.1975%;
-		@include breakpoint(800) {
-			left:26.1975%;
-			top:318px;
-		}
+		left: 0;
+		bottom: 8px;
+		
 		img{
 			opacity: 0;
 			display: block;
@@ -256,8 +239,8 @@ img {
 	.cta {
 		display: block;
 		position: absolute;
-		width: 12.5%;//200px;
-		min-width: 165px;
+		width: 10%;//160px;
+		min-width: 160px;
 		right: -25%;
 		bottom: 24px;
 		background-color: rgba(31, 146, 208, 1.0);
@@ -268,21 +251,25 @@ img {
 		}
 		.cta-text{
 			float: left;
-			width: 67.5%;// 135px;
-			margin: 11px 0 11px 11.5%;//23px;
+			width: 66.875%;// 107px;
+			margin: 11px 0 11px 11.25%;//23px;
 			
 		}
 		.cta-arrow{
-			width: 13%;//26px;
+			width: 8.75%;//14px;
 			float: right;
 			margin: 11px 6% 11px 0px;
 			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
 			-o-transition: all 0.5s ease;
 			transition: all 0.5s ease;
 			&.bounce{
 				-webkit-animation-name: bounce;
+				-moz-animation-name: bounce;
     			animation-name: bounce;
+
     			-webkit-animation-iteration-count: 3; 
+    			-moz-animation-iteration-count: 3;
     			animation-iteration-count: 3;
 			}
 			

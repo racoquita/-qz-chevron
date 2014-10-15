@@ -64,8 +64,8 @@ var App = function() {
 					duration: 500,
 					delay: 750,
 					complete: function() {
-						//that.hideHeadline();
-						//that.showInfo1();
+						that.hideHeadline();
+						that.showInfo1();
 					}
 				});
 			}

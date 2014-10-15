@@ -29,8 +29,10 @@
 }
 .animated {
     -webkit-animation-duration: 500ms;
+    -moz-animation-duration: 500ms;
     animation-duration: 500ms;
     -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
     animation-fill-mode: both;
 }
 @-webkit-keyframes bounce{
@@ -170,6 +172,7 @@ img {
 			//width: 340px;
 			//margin: 0 auto;
 			-webkit-transition: all 0.4s ease;
+			-moz-transition: all 0.4s ease;
 			-o-transition: all 0.4s ease;
 			transition: all 0.4s ease;
 			

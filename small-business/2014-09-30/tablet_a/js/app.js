@@ -13,13 +13,13 @@ var App = function() {
 		});
 		$('.guy').velocity({
 
-			left:"33.1875%"
+			//left:"33.1875%"
 		},{
 			easing: "easeInOut",
 			delay:500,
 			duration: 2000,
 			complete:function() {
-				$('.guy').addClass('resize');
+				//$('.guy').addClass('resize');
 
 			}
 		});
