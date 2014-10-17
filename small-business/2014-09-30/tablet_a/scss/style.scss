@@ -115,7 +115,7 @@ img {
 		position: absolute;
 		width: 21.25%;//340px;
 		min-width: 257px;
-		overflow: hidden;
+		// overflow: hidden;
 		top: 56px;
 		left: -100%;
 		
@@ -170,14 +170,13 @@ img {
 	
 		position: relative;
 		width: 366px;
-		bottom:8px;
-		left: 0;
-		
+		bottom: 8px;//415px;
+		left: 2%;
+		//left: 28.1975%;
 		img{
 			opacity: 0;
 			display: block;
 			width: 256px;
-
 		}
 	}
 
@@ -187,7 +186,7 @@ img {
 		position: absolute;
 		overflow: auto;
 		top: 66px;
-		right: -100%;
+		left: -100%;
 		font-family: 'interstate_cond_monobold';
 		text-transform: uppercase;
 		font-size: 2.875em;

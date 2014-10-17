@@ -7,25 +7,26 @@ var App = function() {
 	this.showHeadline = function() {
 		$('#qzad').velocity({
 			backgroundPosition: '0%'
-		},{
-			easing:"easeInOut",
-			duration: 3000,
-			complete: function() {
-				
-			}
+		}, {
+			easing:"easeInOutQuad",
+			delay: 250,
+			duration: 2750
 		});
+
 		$('.guy').velocity({
-			left:"100%"
+			left:"125%"
 		},{
-			easing: "easeInOut",
-			duration: 2600
+			easing: "easeInOutCubic",
+			delay: 500,
+			duration: 3500
 		});
+
 		$('.headline').velocity({
 			left: "32.65625%"
 		}, {
-			duration: 1000,
+			duration: 500,
 			easing:"linear",
-			delay: 900,
+			delay: 2000,
 			complete:function () {
 				$('.headline div.needs img').velocity({
     				marginTop:"0px"

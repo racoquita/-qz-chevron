@@ -8,25 +8,26 @@ var App = function() {
 		$('.inner').velocity({
 			backgroundPosition: '0%'
 		}, {
-			easing:"linear",
-			duration: 2750,
-			complete: function() {
-				
-			}
+			easing:"easeInOutQuad",
+			delay: 250,
+			duration: 2750
 		});
+
 		$('.guy').velocity({
-			left:"100%"
+			left:"125%"
 		},{
-			easing: "easeInOut",
-			duration: 2600
+			easing: "easeInOutCubic",
+			delay: 500,
+			duration: 3500
 		});
+
 		$('.headline').velocity({
 			left: "32.34%",
 			width: '39.38%'
 		}, {
 			duration:500,
 			easing:"linear",
-			delay: 1000,
+			delay: 2000,
 			complete:function () {
 				$('.headline div.needs img').velocity({
     				marginTop:"0%"
