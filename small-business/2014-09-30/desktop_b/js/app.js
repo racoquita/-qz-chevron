@@ -64,8 +64,8 @@ var App = function() {
 					duration: 500,
 					delay: 750,
 					complete: function() {
-						that.hideHeadline();
-						that.showInfo1();
+						//that.hideHeadline();
+						//that.showInfo1();
 					}
 				});
 			}
@@ -84,7 +84,8 @@ var App = function() {
 	}
 	this.showInfo1 = function() {
 		$('.info-1').velocity({
-			left:'14%'
+			left:'14%',
+			minWidth: '374.546875px'
 			//right: '55.1875%'
 		}, {
 			delay: 2000,

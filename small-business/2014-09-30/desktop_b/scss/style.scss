@@ -166,9 +166,11 @@ img {
 	}
 	.agree {
 		position: relative;
-		width: 366px;
+		width: 255px;
 		bottom:8px;
-		left: 3.5%;
+		left: 5%;
+		
+
 		img{
 			opacity: 0;
 			display: block;
@@ -189,7 +191,7 @@ img {
 		font-size: 46px;
 		width: 26.635%;//426px;
 		max-width: 426px;
-		min-width: 359.546875px;
+		min-width: 374.546875px;
 		-webkit-font-smoothing: antialiased;
 		p{
 			margin: 0;
