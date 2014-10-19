@@ -172,9 +172,12 @@ img {
 	.agree {
 	
 		position: relative;
-		width: 366px;
+		width: 21.25%;
+		min-width: 257px;
+		margin: 0 auto;
 		bottom: 8px;//415px;
-		left: 3.5%;
+		// left: 4%;
+		
 		//left: 28.1975%;
 		img{
 			opacity: 0;
